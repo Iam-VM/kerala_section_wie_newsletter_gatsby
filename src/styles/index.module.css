@@ -12,7 +12,8 @@
     width: 100%;
     height: 40vh;
     /*background-image: url("Images/Cover3.jpeg");*/
-    background-color:   #bf084e;
+    /*background-color:   #bf084e;*/
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
