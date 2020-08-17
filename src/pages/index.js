@@ -9,13 +9,23 @@ const IndexPage = () => {
   return (
     <div className={indexStyles.main}>
       {/*cover*/}
-      <div className={indexStyles.coverContainer}></div>
+      <div className={indexStyles.coverContainer}>
+        <div className={indexStyles.headDegree1Container}>
+          <div className={indexStyles.underlineDegree1}></div>
+          <div className={indexStyles.underlineDegree1Top}></div>
+          <div className={indexStyles.headDegree1}>WIE</div>
+          <div className={indexStyles.headDegree1}>ECHOES</div>
+          <div className={indexStyles.underlineDegree1Bottom}></div>
+          <div className={indexStyles.underlineDegree1}></div>
+        </div>
+      </div>
 
       {/*ieee wie */}
       <div className={indexStyles.container}>
         <div className={indexStyles.headContainer}>
           <h1 className={indexStyles.headDegree2}>IEEE WiE</h1>
-          <div className={indexStyles.underline}></div>
+          <div className={indexStyles.underlineDegree2Top}></div>
+          <div className={indexStyles.underlineDegree2Bottom}></div>
         </div>
         <div className={indexStyles.paraContainer}>
           <p className={indexStyles.standardPara}>
@@ -34,7 +44,8 @@ const IndexPage = () => {
       <div className={indexStyles.container}>
         <div className={indexStyles.headContainer}>
           <h1 className={indexStyles.headDegree2}>Mission & Vision</h1>
-          <div className={indexStyles.underline}></div>
+          <div className={indexStyles.underlineDegree2Top}></div>
+          <div className={indexStyles.underlineDegree2Bottom}></div>
         </div>
         <div className={indexStyles.paraContainer}>
           <p className={indexStyles.standardPara}>
@@ -49,7 +60,8 @@ const IndexPage = () => {
        <div className={indexStyles.container}>
          <div className={indexStyles.headContainer}>
            <h1 className={indexStyles.headDegree2}>WiE AG - Kerala Section</h1>
-           <div className={indexStyles.underline}></div>
+           <div className={indexStyles.underlineDegree2Top}></div>
+           <div className={indexStyles.underlineDegree2Bottom}></div>
          </div>
          <div className={indexStyles.paraContainer}>
            <p className={indexStyles.standardPara}>
