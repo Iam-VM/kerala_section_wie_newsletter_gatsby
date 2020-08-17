@@ -113,6 +113,9 @@
     font-family: 'Montserrat', sans-serif;
 }
 @media only screen and (max-width: 786px) {
+    .underline{
+        margin-top: -2vh;
+    }
     .container {
         width: 90%;
     }

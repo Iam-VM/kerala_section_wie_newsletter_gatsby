@@ -1,6 +1,8 @@
 import React from "react";
+import {Link} from "gatsby";
 import "../styles/utils.css";
 import indexStyles from "../styles/index.module.css";
+
 
 
 const IndexPage = () => {
@@ -62,8 +64,11 @@ const IndexPage = () => {
          </div>
        </div>
 
-      {/*carousel*/}
 
+      <Link to={"/malabar-hub"}>Malabar Hub</Link>
+      <Link to={"/kochi-hub"}>Kochi Hub</Link>
+      <Link to={"/travancore-hub"}>Travancore Hub</Link>
+      {/*carousel*/}
 
      </div>
   );
