@@ -22,7 +22,7 @@ const IndexPage = () => {
 
       {/*ieee wie */}
       <div className={indexStyles.container}>
-        <div className={indexStyles.headContainer}>
+        <div className={indexStyles.headDegree2Container}>
           <h1 className={indexStyles.headDegree2}>IEEE WiE</h1>
           <div className={indexStyles.underlineDegree2Top}></div>
           <div className={indexStyles.underlineDegree2Bottom}></div>
@@ -42,7 +42,7 @@ const IndexPage = () => {
 
        {/*mission and vision*/}
       <div className={indexStyles.container}>
-        <div className={indexStyles.headContainer}>
+        <div className={indexStyles.headDegree2Container}>
           <h1 className={indexStyles.headDegree2}>Mission & Vision</h1>
           <div className={indexStyles.underlineDegree2Top}></div>
           <div className={indexStyles.underlineDegree2Bottom}></div>
@@ -58,7 +58,7 @@ const IndexPage = () => {
 
        {/*wie ag - ks*/}
        <div className={indexStyles.container}>
-         <div className={indexStyles.headContainer}>
+         <div className={indexStyles.headDegree2Container}>
            <h1 className={indexStyles.headDegree2}>WiE AG - Kerala Section</h1>
            <div className={indexStyles.underlineDegree2Top}></div>
            <div className={indexStyles.underlineDegree2Bottom}></div>
