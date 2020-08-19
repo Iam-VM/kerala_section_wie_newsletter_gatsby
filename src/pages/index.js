@@ -2,7 +2,9 @@ import React from "react";
 import {Link} from "gatsby";
 import "../styles/utils.css";
 import indexStyles from "../styles/index.module.css";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import HubCard from "../components/hubCards";
+import ControlledCarousel from "../components/carousel"
 
 
 const IndexPage = () => {
@@ -75,11 +77,21 @@ const IndexPage = () => {
            </p>
          </div>
        </div>
+      <div className={indexStyles.container}>
+        <div className={indexStyles.headDegree2Container}>
+          <h1 className={indexStyles.headDegree2}>Link Reports</h1>
+          <div className={indexStyles.underlineDegree2TopLengthy}></div>
+          <div className={indexStyles.underlineDegree2BottomLengthy}></div>
+        </div>
+        <div className={indexStyles.hubCardContainer}>
+          <Link to={"/malabar-hub"} className={indexStyles.linkWrap}><HubCard hubName={"Malabar Hub"} /></Link>
+          <Link to={"/kochi-hub"} className={indexStyles.linkWrap}><HubCard hubName={"Kochi Hub"} /></Link>
+          <Link to={"/travancore-hub"} className={indexStyles.linkWrap}><HubCard hubName={"Travancore Hub"} /></Link>
+        </div>
+      </div>
+      <ControlledCarousel />
 
 
-      <Link to={"/malabar-hub"}>Malabar Hub</Link>
-      <Link to={"/kochi-hub"}>Kochi Hub</Link>
-      <Link to={"/travancore-hub"}>Travancore Hub</Link>
       {/*carousel*/}
 
      </div>
