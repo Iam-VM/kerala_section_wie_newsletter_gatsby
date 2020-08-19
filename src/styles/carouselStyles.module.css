@@ -1,0 +1,14 @@
+.carouselImages {
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.head {
+    color: #663399;
+    font-family: 'Russo One', sans-serif;
+}
+
+.text {
+    color: #663399;
+    font-family: 'Russo One', sans-serif;
+}

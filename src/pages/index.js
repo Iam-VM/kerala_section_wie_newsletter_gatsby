@@ -80,8 +80,8 @@ const IndexPage = () => {
       <div className={indexStyles.container}>
         <div className={indexStyles.headDegree2Container}>
           <h1 className={indexStyles.headDegree2}>Link Reports</h1>
-          <div className={indexStyles.underlineDegree2TopLengthy}></div>
-          <div className={indexStyles.underlineDegree2BottomLengthy}></div>
+          <div className={indexStyles.underlineDegree2Top}></div>
+          <div className={indexStyles.underlineDegree2Bottom}></div>
         </div>
         <div className={indexStyles.hubCardContainer}>
           <Link to={"/malabar-hub"} className={indexStyles.linkWrap}><HubCard hubName={"Malabar Hub"} /></Link>
@@ -89,7 +89,20 @@ const IndexPage = () => {
           <Link to={"/travancore-hub"} className={indexStyles.linkWrap}><HubCard hubName={"Travancore Hub"} /></Link>
         </div>
       </div>
-      <ControlledCarousel />
+      <div className={indexStyles.carousalContainer}>
+        <div className={indexStyles.headDegree2Container}>
+          <h1 className={indexStyles.headDegree2}>Meet the Team</h1>
+          <div className={indexStyles.underlineDegree2Top}></div>
+          <div className={indexStyles.underlineDegree2Bottom}></div>
+        </div>
+        <div className={indexStyles.carousalImageContainer}>
+          <ControlledCarousel />
+        </div>
+      </div>
+
+      <div className={indexStyles.container}>
+        {/*<img src={}>*/}
+      </div>
 
 
       {/*carousel*/}

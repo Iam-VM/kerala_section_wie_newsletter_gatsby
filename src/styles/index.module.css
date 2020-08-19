@@ -86,6 +86,7 @@
     margin-bottom: 2rem;
 }
 .headDegree2 {
+    margin-bottom: 0.5rem;
     text-align: center;
     color: #484848;
     font-size: 40px;
@@ -95,7 +96,7 @@
 .underlineDegree2Top {
     /*margin-left: 3px;*/
     box-shadow: 1px 1px 1px  #d5d1d4 ;
-    margin-top: -1.5rem;
+    margin-top: -0.3rem;
     margin-bottom: 1px;
     background-color: #5D5C5D;
     border-radius: 4px;
@@ -116,13 +117,21 @@
     align-self: center;
     /*margin-left: 3px;*/
     box-shadow: 1px 1px 1px  #d5d1d4 ;
-    margin-top: -1.5rem;
+    margin-top: -0.4rem;
     margin-bottom: 1px;
     background-color: #5D5C5D;
     border-radius: 4px;
     /*background: linear-gradient(90deg, rgba(102,51,153,1) 35%, rgba(62,167,220,1) 77%, rgba(255,255,255,1) 100%);*/
     width: 100%;
     height: 2px;
+}
+.carousalContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.carousalImageContainer {
 }
 .underlineDegree2BottomLengthy {
     align-self: center;
@@ -154,41 +163,12 @@
     border-radius: 3px;
 }
 .hubCardContainer {
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-}
-.carouselContainer {
-    position: relative;
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-.carouselImageContainer {
-    display: none;
-}
-.dotsContainer {
-
-}
-.dot {
-    cursor: pointer;
-    height: 8px;
-    width: 8px;
-    margin: 0 2px;
-    background-color: #f79de7;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-.dot:hover {
-    background-color: #bf084e;
-}
-.dotActive {
-    background-color: #bf084e;
 }
 .darkContainer {
     display: flex;
@@ -207,7 +187,7 @@
 .linkWrap {
     text-decoration: none;
 }
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 786px){
     .underline{
         margin-top: -2vh;
     }
@@ -225,5 +205,10 @@
     }
     .underlineDegree2BottomLengthy {
         width: 69%;
+    }
+}
+@media only screen and (min-width: 786px) {
+    .carousalContainer {
+        display: none;
     }
 }
