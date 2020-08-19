@@ -8,17 +8,17 @@ const CustomCarousel = () => {
 
 
   return (
-    <Carousel infiniteLoop useKeyboardArrows autoPlay showThumbs={false} showStatus={false} interval={3000} transitionTime={500} swipeScrollTolerance={20}>
+    <Carousel infiniteLoop useKeyboardArrows autoPlay showThumbs={false} showStatus={false} interval={3000} transitionTime={500} swipeScrollTolerance={50}>
       <div>
-        <img src="wieTeam.png" alt={"WiE Team"}/>
+        <img src="wieTeam.png" alt={"WiE Team"} className={carouselStyles.carouselImages}/>
         {/*<p className="legend">WiE Team</p>*/}
       </div>
       <div>
-        <img src="designTeam.png" alt={"Design Team"}/>
+        <img src="designTeam.png" alt={"Design Team"} className={carouselStyles.carouselImages}/>
         {/*<p className="legend">Design Team</p>*/}
       </div>
       <div>
-        <img src="contentTeam.png" alt={"Content Team"}/>
+        <img src="contentTeam.png" alt={"Content Team"} className={carouselStyles.carouselImages}/>
         {/*<p className="legend">Content Team</p>*/}
       </div>
     </Carousel>
