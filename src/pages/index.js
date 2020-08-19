@@ -4,7 +4,8 @@ import "../styles/utils.css";
 import indexStyles from "../styles/index.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HubCard from "../components/hubCards";
-import ControlledCarousel from "../components/carousel"
+import CustomCarousel from "../components/carousel";
+import ControlledCarousel from "../components/carousel";
 
 
 const IndexPage = () => {
@@ -96,7 +97,7 @@ const IndexPage = () => {
           <div className={indexStyles.underlineDegree2Bottom}></div>
         </div>
         <div className={indexStyles.carousalImageContainer}>
-          <ControlledCarousel />
+          <CustomCarousel />
         </div>
       </div>
 
