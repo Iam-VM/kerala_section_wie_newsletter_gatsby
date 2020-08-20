@@ -3,8 +3,8 @@
 }
 
 .rectangle {
-    margin-right: 2rem;
-    margin-left: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     box-shadow: 2px 2px 5px black;
     color: #eaeded;
     border-radius: 15px;
@@ -54,6 +54,7 @@
     }
     .container {
         margin-right: 0;
-        margin-bottom: 3.5rem;
+        margin-bottom: 1.25rem;
+        margin-top: 1.25rem;
     }
 }
