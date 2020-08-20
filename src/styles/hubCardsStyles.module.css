@@ -17,10 +17,22 @@
     height: 60px;
     background-color: #663399 ;
 }
+.simpleApproach {
+
+}
 .hubName {
+    transition: all 0.5s;
+    cursor: pointer;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #333333;
+    font-family: 'Cinzel', serif;
+    color: #333333;
     font-size: 25px;
     align-self: center;
     /*margin-bottom: -40px;*/
+}
+.hubName:hover {
+    color: black;
 }
 
 .iconContainer {
