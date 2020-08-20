@@ -28,7 +28,7 @@ const IndexPage = () => {
       <div className={indexStyles.container}>
         <div className={indexStyles.headDegree2Container}>
           <h1 className={indexStyles.headDegree2}>IEEE WiE</h1>
-          {/*<div className={indexStyles.underlineDegree2Top}></div>*/}
+          <div className={indexStyles.underlineDegree2Top}></div>
           {/*<div className={indexStyles.underlineDegree2Bottom}></div>*/}
         </div>
         <div className={indexStyles.paraContainer}>
@@ -48,7 +48,7 @@ const IndexPage = () => {
       <div className={indexStyles.container}>
         <div className={indexStyles.headDegree2Container}>
           <h1 className={indexStyles.headDegree2}>Mission & Vision</h1>
-          {/*<div className={indexStyles.underlineDegree2Top}></div>*/}
+          <div className={indexStyles.underlineDegree2Top}></div>
           {/*<div className={indexStyles.underlineDegree2Bottom}></div>*/}
         </div>
         <div className={indexStyles.paraContainer}>
@@ -64,7 +64,7 @@ const IndexPage = () => {
        <div className={indexStyles.container}>
          <div className={indexStyles.headDegree2Container}>
            <h1 className={indexStyles.headDegree2}>WiE AG - Kerala Section</h1>
-           {/*<div className={indexStyles.underlineDegree2TopLengthy}></div>*/}
+           <div className={indexStyles.underlineDegree2TopLengthy}></div>
            {/*<div className={indexStyles.underlineDegree2BottomLengthy}></div>*/}
          </div>
          <div className={indexStyles.paraContainer}>
@@ -82,7 +82,7 @@ const IndexPage = () => {
       <div className={indexStyles.container}>
         <div className={indexStyles.headDegree2Container}>
           <h1 className={indexStyles.headDegree2}>Link Reports</h1>
-          {/*<div className={indexStyles.underlineDegree2Top}></div>*/}
+          <div className={indexStyles.underlineDegree2Top}></div>
           {/*<div className={indexStyles.underlineDegree2Bottom}></div>*/}
         </div>
         <div className={indexStyles.hubCardContainer}>
@@ -91,15 +91,23 @@ const IndexPage = () => {
           <Link to={"/travancore-hub"} className={indexStyles.linkWrap}><HubCard hubName={"Travancore Hub"} /></Link>
         </div>
       </div>
+
+
       <div className={indexStyles.carouselContainer}>
-        <div className={indexStyles.headDegree2Container}>
-          <h1 className={indexStyles.carouselHead}>Meet the WiE Team</h1>
-          {/*<div className={indexStyles.underlineDegree2Top}></div>*/}
-          {/*<div className={indexStyles.underlineDegree2Bottom}></div>*/}
-        </div>
+        {/*<div className={indexStyles.headDegree2Container}>*/}
+        {/*  */}
+        {/*  /!*<div className={indexStyles.underlineDegree2Top}></div>*!/*/}
+        {/*  /!*<div className={indexStyles.underlineDegree2Bottom}></div>*!/*/}
+        {/*</div>*/}
+        <h1 className={indexStyles.carouselHead}>Meet the WiE Team</h1>
         <div className={indexStyles.carouselImageContainer}>
           <CustomCarousel />
         </div>
+      </div>
+
+
+      <div className={indexStyles.devFooter}>
+
       </div>
 
      </div>
