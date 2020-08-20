@@ -158,7 +158,7 @@
 .paraContainer {
     padding: 2rem;
     border-radius: 8px;
-    background-color:  #eaeded ;
+    /*background-color:  #eaeded ;*/
 }
 .standardPara {
     font-family: 'Noto Sans SC', sans-serif;

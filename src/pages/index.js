@@ -93,7 +93,7 @@ const IndexPage = () => {
       </div>
       <div className={indexStyles.container}>
         <div className={indexStyles.headDegree2Container}>
-          <h1 className={indexStyles.headDegree2}>Meet the Team</h1>
+          <h1 className={indexStyles.headDegree2}>Meet the WiE Team</h1>
           <div className={indexStyles.underlineDegree2Top}></div>
           <div className={indexStyles.underlineDegree2Bottom}></div>
         </div>
