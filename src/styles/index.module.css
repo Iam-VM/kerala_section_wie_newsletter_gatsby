@@ -7,20 +7,24 @@
     justify-content: flex-start;
 }
 .coverContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     box-shadow: 4px 2px 10px black;
-    margin-bottom: 2rem;
+    /*margin-bottom: 2rem;*/
     width: 100%;
     height: 40vh;
-    /*background-image: url("Images/Cover3.jpeg");*/
-    background-color:   #663399;
-    background-size: cover;
+    /*!*background-image: url("Images/Cover3.jpeg");*!*/
+    /*background-color:   #663399;*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    background-image: url("../../static/wieEchoes.png");
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
 .headDegree1Container {
