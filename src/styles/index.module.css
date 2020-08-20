@@ -198,6 +198,9 @@
     text-decoration: none;
 }
 @media only screen and (max-width: 786px) {
+    .coverContainer {
+        background-position: -150px;
+    }
     .postersContainer {
         display: none;
     }
@@ -209,9 +212,6 @@
     }
 }
 @media only screen and (max-width: 390px) {
-    .coverContainer {
-        background-position: -150px;
-    }
     .underlineDegree2TopLengthy {
         width: 69%;
     }
