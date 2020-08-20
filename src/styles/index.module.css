@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
 .main{
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,7 +69,6 @@
     display: inline-block;
     font-family: 'Russo One', sans-serif;
     font-size: 45px;
-
 }
 .container {
     align-self: center;
@@ -90,12 +88,13 @@
     margin-bottom: 1rem;
 }
 .headDegree2 {
+    border-bottom: 1px solid #333333;
     margin-bottom: 0.5rem;
     text-align: center;
     color: #484848;
     font-size: 40px;
     letter-spacing: 1px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 .underlineDegree2Top {
     /*margin-left: 3px;*/
@@ -129,19 +128,33 @@
     width: 100%;
     height: 2px;
 }
-.carousalContainer {
-    border: 2px dashed green;
+.carouselContainer {
+    align-self: center;
+    margin-top: 3rem;
+    max-width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    /*background: linear-gradient(90deg, rgba(102,51,153,1) 0%, rgba(121,9,89,1) 57%, rgba(51,48,0,1) 100%);*/
+    background-color: #663399;
 }
-.carousalImageContainer {
-    border-radius: 10px;
-    margin-top: 3rem;
-    height: 60vh;
+.carouselHead {
+    margin-top: 2rem;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #eaeded;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: 'Quicksand', sans-serif;
+}
+.carouselImageContainer {
     width: 100vw;
+    height: 20vh;
 }
+
 .underlineDegree2BottomLengthy {
     align-self: center;
     /*margin-left: 3px;*/
@@ -172,6 +185,7 @@
     border-radius: 3px;
 }
 .hubCardContainer {
+    margin-bottom: 2rem;
     margin-top: 2rem;
     width: 100%;
     align-self: center;
@@ -179,7 +193,7 @@
     margin-left: auto;
     padding: 2rem;
     border-radius: 8px;
-    background-color:  #eaeded ;
+    background-color:  #eaeded;
     /*margin-top: 1rem;*/
     /*margin-bottom: 3rem;*/
     display: flex;
@@ -218,6 +232,9 @@
     .container {
         width: 90%;
     }
+    .headDegree2 {
+        font-size: 30px;
+    }
 }
 @media only screen and (max-width: 390px) {
     .underlineDegree2TopLengthy {
@@ -228,10 +245,22 @@
     }
 }
 @media only screen and (min-width: 786px) {
-    .carousalImageContainer {
-        border-radius: 10px;
-        margin-top: 3rem;
-        height: 42vh;
-        width: 32vw;
+    .carouselContainer {
+        width: 100%;
+        height: 114vh;
+        padding: 2.5rem;
+    }
+    .carouselHead {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 38px;
+    }
+    .carouselImageContainer {
+        margin-bottom: 0.5rem;
+        max-width: 50vw;
+        max-height: 60vh;
+        height: 42%;
+        width: 36%;
+        align-self: center;
     }
 }
