@@ -87,7 +87,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .headDegree2 {
     margin-bottom: 0.5rem;
@@ -172,6 +172,7 @@
     border-radius: 3px;
 }
 .hubCardContainer {
+    margin-top: 2rem;
     width: 100%;
     align-self: center;
     margin-right: auto;
