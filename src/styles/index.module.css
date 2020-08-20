@@ -126,12 +126,11 @@
     height: 2px;
 }
 .carousalContainer {
+    border: 2px dashed green;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-}
-.carousalImageContainer {
 }
 .underlineDegree2BottomLengthy {
     align-self: center;
@@ -163,6 +162,7 @@
     border-radius: 3px;
 }
 .hubCardContainer {
+    margin-top: 4rem;
     margin-bottom: 3rem;
     display: flex;
     flex-direction: row;
@@ -187,16 +187,15 @@
 .linkWrap {
     text-decoration: none;
 }
-@media only screen and (max-width: 786px){
+@media only screen and (max-width: 786px) {
+    .postersContainer {
+        display: none;
+    }
     .underline{
         margin-top: -2vh;
     }
     .container {
         width: 90%;
-    }
-    .posterImage {
-        width: 100vw;
-        height: 500px;
     }
 }
 @media only screen and (max-width: 390px) {
@@ -208,7 +207,10 @@
     }
 }
 @media only screen and (min-width: 786px) {
-    .carousalContainer {
-        display: none;
+    .carousalImageContainer {
+        border-radius: 10px;
+        margin-top: 3rem;
+        height: 42vh;
+        width: 32vw;
     }
 }

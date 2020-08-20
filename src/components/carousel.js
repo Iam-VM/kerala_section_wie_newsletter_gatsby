@@ -7,16 +7,16 @@ import { Carousel } from 'react-responsive-carousel';
 const CustomCarousel = () => {
   return (
     <Carousel className={carouselStyles.carousel} infiniteLoop useKeyboardArrows autoPlay showThumbs={false} showStatus={false} interval={3000} transitionTime={500} swipeScrollTolerance={0.5}>
-      <div>
-        <img src="wieTeam.png" alt={"WiE Team"} />
+      <div className={carouselStyles.slide}>
+        <img src="wieTeam.png" alt={"WiE Team"} className={carouselStyles.carouselImage}/>
         {/*<p className="legend">WiE Team</p>*/}
       </div>
-      <div>
-        <img src="designTeam.png" alt={"Design Team"}/>
+      <div className={carouselStyles.slide}>
+        <img src="designTeam.png" alt={"Design Team"} className={carouselStyles.carouselImage}/>
         {/*<p className="legend">Design Team</p>*/}
       </div>
-      <div>
-        <img src="contentTeam.png" alt={"Content Team"}/>
+      <div className={carouselStyles.slide}>
+        <img src="contentTeam.png" alt={"Content Team"} className={carouselStyles.carouselImage}/>
         {/*<p className="legend">Content Team</p>*/}
       </div>
     </Carousel>

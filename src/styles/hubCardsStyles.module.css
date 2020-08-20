@@ -1,12 +1,13 @@
 .container {
-    margin-right: 4rem;
     align-items: flex-start;
 }
 
 .rectangle {
+    margin-right: 2rem;
+    margin-left: 2rem;
     box-shadow: 2px 2px 5px black;
     color: #eaeded;
-    border-radius: 10px;
+    border-radius: 15px;
     font-family: 'Russo One', sans-serif;
     display: flex;
     flex-direction: column;
@@ -18,8 +19,6 @@
 }
 .hubName {
     font-size: 25px;
-    margin-top: 5px;
-    margin-bottom: -20px;
     align-self: center;
     /*margin-bottom: -40px;*/
 }
@@ -51,8 +50,10 @@
 }
 
 @media only screen and (max-width: 786px) {
+    .rectangle {
+    }
     .container {
         margin-right: 0;
-        margin-bottom: 2.5rem;
+        margin-bottom: 3.5rem;
     }
 }

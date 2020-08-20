@@ -41,7 +41,7 @@ const IndexPage = () => {
              benefit of humanity.
           </p>
         </div>
-       </div>
+      </div>
 
        {/*mission and vision*/}
       <div className={indexStyles.container}>
@@ -90,7 +90,7 @@ const IndexPage = () => {
           <Link to={"/travancore-hub"} className={indexStyles.linkWrap}><HubCard hubName={"Travancore Hub"} /></Link>
         </div>
       </div>
-      <div className={indexStyles.carousalContainer}>
+      <div className={indexStyles.container}>
         <div className={indexStyles.headDegree2Container}>
           <h1 className={indexStyles.headDegree2}>Meet the Team</h1>
           <div className={indexStyles.underlineDegree2Top}></div>
@@ -100,13 +100,6 @@ const IndexPage = () => {
           <CustomCarousel />
         </div>
       </div>
-
-      <div className={indexStyles.container}>
-        {/*<img src={}>*/}
-      </div>
-
-
-      {/*carousel*/}
 
      </div>
   );

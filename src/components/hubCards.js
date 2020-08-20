@@ -8,7 +8,7 @@ const HubCard = (props) => {
     <div className={hubCardsStyles.container}>
       <div className={hubCardsStyles.rectangle}>
         <div className={hubCardsStyles.hubName}>{props.hubName}</div>
-        <div className={hubCardsStyles.iconContainer}><FaAngleDoubleRight className={hubCardsStyles.goTriangle} /></div>
+        {/*<div className={hubCardsStyles.iconContainer}><FaAngleDoubleRight className={hubCardsStyles.goTriangle} /></div>*/}
       </div>
     </div>
   );
