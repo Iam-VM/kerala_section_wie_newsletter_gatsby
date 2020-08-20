@@ -129,6 +129,7 @@
     height: 2px;
 }
 .carouselContainer {
+    margin-bottom: 4rem;
     align-self: center;
     margin-top: 3rem;
     max-width: 100vw;
@@ -142,19 +143,19 @@
 }
 .carouselHead {
     margin-top: 2rem;
-    border-bottom: 1px solid #eee;
+    /*border-bottom: 1px solid #eee;*/
     margin-bottom: 3rem;
     text-align: center;
     color: #eaeded;
-    font-size: 30px;
+    font-size: 27px;
     letter-spacing: 1px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Russo One', sans-serif;
 }
 .carouselImageContainer {
+    margin-bottom: 3rem;
     width: 100vw;
     height: 20vh;
 }
-
 .underlineDegree2BottomLengthy {
     align-self: center;
     /*margin-left: 3px;*/
@@ -209,7 +210,7 @@
     align-items: center;
     margin-top: 15vh;
     padding-top: 4rem;
-    background-color:  #f2f4f4;
+    background-color: #f2f4f4;
     width: 100vw;
 }
 .headDegree2v2 {
@@ -223,10 +224,13 @@
     text-decoration: none;
 }
 @media only screen and (max-width: 786px) {
+    .carouselContainer {
+        margin-bottom: 3rem;
+    }
     .postersContainer {
         display: none;
     }
-    .underline{
+    .underline {
         margin-top: -2vh;
     }
     .container {
@@ -247,7 +251,7 @@
 @media only screen and (min-width: 786px) {
     .carouselContainer {
         width: 100%;
-        height: 114vh;
+        height: 117vh;
         padding: 2.5rem;
     }
     .carouselHead {
@@ -256,9 +260,8 @@
         font-size: 38px;
     }
     .carouselImageContainer {
-        margin-bottom: 0.5rem;
-        max-width: 50vw;
-        max-height: 60vh;
+        max-width: 45vw;
+        max-height: 55vh;
         height: 42%;
         width: 36%;
         align-self: center;
