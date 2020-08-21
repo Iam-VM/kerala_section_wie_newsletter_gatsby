@@ -119,7 +119,7 @@
     align-self: flex-start;
     margin-top: -0.4rem;
     margin-bottom: 1px;
-    background-color: #777;
+    background-color: #2a2a56;
     border-radius: 4px;
     width: 75%;
     height: 1px;
@@ -212,6 +212,12 @@
     border-top: 1px solid #333333;
     width: 100%;
     height: 25vh;
+}
+.blue {
+    color: #2a2a56;
+}
+.headLinkReports {
+    align-self: center;
 }
 
 
