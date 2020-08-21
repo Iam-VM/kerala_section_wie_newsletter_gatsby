@@ -201,7 +201,8 @@
     margin: 1rem 0 4rem 0;
     font-family: 'Red Rose', cursive;
     /*color: #ddd;*/
-    color: #eaeded;
+    /*color: #eaeded;*/
+    color: #eee;
 }
 .devFooter {
     background-color: #262627;
