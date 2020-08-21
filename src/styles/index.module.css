@@ -239,8 +239,8 @@
 .carouselHead {
     margin: 1rem 0 4rem 0;
     font-family: 'Red Rose', cursive;
-    color: #ddd;
-    /*color: #eaeded;*/
+    /*color: #ddd;*/
+    color: #eaeded;
 }
 .devFooter {
     background-color: #262627;
@@ -257,6 +257,7 @@
         font-size: 30px;
     }
     .carouselContainer {
+        border-radius: 4px;
         box-shadow: 1px 1px 1px  #d5d1d4 ;
     }
     /*.carouselHead {*/
