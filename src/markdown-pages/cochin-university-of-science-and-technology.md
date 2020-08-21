@@ -18,7 +18,7 @@ The WIE AG ExeCom training session was handled by Ms. Mini Ulanat, the WIE Chair
 
 A platform opened by IEEE CUSAT SB & WIE AG for the CUSAT community to share their technical knowledge with their colleagues in the form of webinars. 8 webinars were conducted under the webinar series. 
 
-| No. | Topics |
+|  | Topics |
 |----|---------|
 | 1. | 'System Design for Mission100kft Payload' |
 | 2. | 'Wave Star Energy – an Eco-friendly Solution to the Energy Crisis' |
