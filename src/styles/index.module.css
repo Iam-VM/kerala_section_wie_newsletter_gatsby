@@ -124,7 +124,7 @@
     background-color: #777;
     border-radius: 4px;
     /*background: linear-gradient(90deg, rgba(102,51,153,1) 35%, rgba(62,167,220,1) 77%, rgba(255,255,255,1) 100%);*/
-    width: 100%;
+    width: 75%;
     height: 1px;
 }
 /*.carouselContainer {*/
@@ -237,13 +237,12 @@
     color: #eaeded;
 }
 .devFooter {
-    background-color: #333333;
+    background-color: #262627;
     margin-top: 2rem;
     border-top: 1px solid #333333;
     width: 100%;
-    height: 40vh;
+    height: 25vh;
 }
-
 
 
 @media only screen and (max-width: 786px) {
@@ -251,11 +250,9 @@
         align-self: center;
         font-size: 25px;
     }
-    /*.carouselContainer {*/
-    /*    width: 100%;*/
-    /*    height: 117vh;*/
-    /*    padding: 2rem;*/
-    /*}*/
+    .carouselContainer {
+        box-shadow: 1px 1px 1px  #d5d1d4 ;
+    }
     /*.carouselHead {*/
     /*    margin-top: -0.5rem;*/
     /*    margin-bottom: 2.5rem;*/
@@ -293,6 +290,9 @@
 
 
 @media only screen and (min-width: 786px) {
+    .underlineDegree2TopLengthy {
+        width: 100%;
+    }
     .carouselImageContainer{
         height: 35%;
         width: 35%;
