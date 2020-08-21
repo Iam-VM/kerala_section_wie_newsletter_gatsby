@@ -27,7 +27,7 @@ const IndexPage = () => {
       {/*ieee WIE */}
       <div className={indexStyles.container}>
         <div className={indexStyles.headDegree2Container}>
-          <h1 className={indexStyles.headDegree2}><span className={indexStyles.blue}>I</span>EEE WIE</h1>
+          <h1 className={indexStyles.headDegree2}><span className={indexStyles.blue}>I</span>EEE <span className={indexStyles.blue}>W</span>IE</h1>
           <div className={indexStyles.underlineDegree2Top}></div>
           {/*<div className={indexStyles.underlineDegree2Bottom}></div>*/}
         </div>
@@ -47,7 +47,7 @@ const IndexPage = () => {
        {/*mission and vision*/}
       <div className={indexStyles.container}>
         <div className={indexStyles.headDegree2Container}>
-          <h1 className={indexStyles.headDegree2}><span className={indexStyles.blue}>M</span>ission & Vision</h1>
+          <h1 className={indexStyles.headDegree2}><span className={indexStyles.blue}>M</span>ission & <span className={indexStyles.blue}>V</span>ision</h1>
           <div className={indexStyles.underlineDegree2Top}></div>
           {/*<div className={indexStyles.underlineDegree2Bottom}></div>*/}
         </div>
@@ -63,7 +63,7 @@ const IndexPage = () => {
        {/*WIE ag - ks*/}
        <div className={indexStyles.container}>
          <div className={indexStyles.headDegree2Container}>
-           <h1 className={indexStyles.headDegree2}><span className={indexStyles.blue}>W</span>IE AG - Kerala Section</h1>
+           <h1 className={indexStyles.headDegree2}><span className={indexStyles.blue}>WIE AG</span> - <span className={indexStyles.blue}>K</span>erala <span className={indexStyles.blue}>S</span>ection</h1>
            <div className={indexStyles.underlineDegree2TopLengthy}></div>
            {/*<div className={indexStyles.underlineDegree2BottomLengthy}></div>*/}
          </div>
@@ -81,7 +81,7 @@ const IndexPage = () => {
        </div>
       <div className={indexStyles.container}>
         <div className={indexStyles.headDegree2Container}>
-          <h1 className={`${indexStyles.headDegree2} ${indexStyles.headLinkReports}`}><span className={indexStyles.blue}>L</span>ink Reports</h1>
+          <h1 className={`${indexStyles.headDegree2} ${indexStyles.headLinkReports}`}><span className={indexStyles.blue}>L</span>ink <span className={indexStyles.blue}>R</span>eports</h1>
           <div className={indexStyles.underlineDegree2Top}></div>
           {/*<div className={indexStyles.underlineDegree2Bottom}></div>*/}
         </div>
