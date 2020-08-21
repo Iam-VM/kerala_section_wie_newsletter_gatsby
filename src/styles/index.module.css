@@ -81,6 +81,8 @@
     margin: 15vh auto 0 auto;
 }
 .headDegree2Container {
+    margin-left: 1rem;
+    align-self: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -89,7 +91,7 @@
 }
 .headDegree2 {
     margin-bottom: 0.5rem;
-    text-align: center;
+    text-align: left;
     color: #484848;
     font-size: 40px;
     letter-spacing: 1px;
@@ -100,7 +102,7 @@
     /*box-shadow: 1px 1px 1px  #d5d1d4 ;*/
     margin-top: -0.3rem;
     margin-bottom: 1px;
-    background-color: #777;
+    background-color: #2a2a56;
     border-radius: 4px;
     /*background: linear-gradient(90deg, rgba(102,51,153,1) 35%, rgba(62,167,220,1) 77%, rgba(255,255,255,1) 100%);*/
     width: 100%;
@@ -114,7 +116,7 @@
     height: 2px;
 }
 .underlineDegree2TopLengthy {
-    align-self: center;
+    align-self: flex-start;
     margin-top: -0.4rem;
     margin-bottom: 1px;
     background-color: #777;
@@ -250,6 +252,13 @@
 
 
 @media only screen and (min-width: 786px) {
+    .headDegree2Container {
+        align-self: center;
+        margin-left: 0;
+    }
+    .underlineDegree2TopLengthy {
+        align-self: center;
+    }
     .underlineDegree2TopLengthy {
         width: 100%;
     }
