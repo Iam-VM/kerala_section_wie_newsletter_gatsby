@@ -207,24 +207,23 @@
     color: #eee;
 }
 .devFooter {
-    background-color: #262627;
+    /*background-color: #262627;*/
     margin-top: 2rem;
     border-top: 1px solid #333333;
     width: 100%;
     height: 25vh;
 }
 .blue {
-    color: #663399;
+    color: #484848;
 }
 .headLinkReports {
     align-self: center;
 }
-
-
 @media only screen and (max-width: 786px) {
     .carouselHead{
+        margin-top: 2rem;
         align-self: center;
-        font-size: 30px;
+        font-size: 35px;
     }
     .carouselContainer {
         border-radius: 4px;
