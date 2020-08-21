@@ -1,6 +1,6 @@
 import React from "react";
 import hubCardsStyles from "../styles/hubCardsStyles.module.css";
-import {FaAngleDoubleRight} from "react-icons/fa";
+import {FaLink} from "react-icons/fa";
 
 
 const HubCard = (props) => {
@@ -8,6 +8,7 @@ const HubCard = (props) => {
     <div className={hubCardsStyles.container}>
       <div className={hubCardsStyles.simpleApproach}>
         <h3 className={hubCardsStyles.hubName}>{props.hubName}</h3>
+        <span className={hubCardsStyles.linkIconSpan}>[<FaLink />]</span>
         {/*<div className={hubCardsStyles.iconContainer}><FaAngleDoubleRight className={hubCardsStyles.goTriangle} /></div>*/}
       </div>
     </div>

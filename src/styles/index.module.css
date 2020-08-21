@@ -78,7 +78,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 15vh;
+    margin: 15vh auto 0 auto;
 }
 .headDegree2Container {
     display: flex;
@@ -221,6 +221,11 @@
 }
 .linkWrap:hover {
     text-decoration: none;
+    color: #2a2a56;
+}
+.linkWrap:active {
+    text-decoration: none;
+    color: #2a2a56;
 }
 .carouselContainer {
     margin: 3rem 0 3rem 0;
@@ -229,12 +234,13 @@
     align-self: center;
     align-items: center;
     justify-content: flex-start;
-    background-color: #663399;
+    background-color: #2a2a56;
 }
 .carouselHead {
-    margin: 1rem 0 2rem 0;
-    font-family: 'Russo One', sans-serif;
-    color: #eaeded;
+    margin: 1rem 0 4rem 0;
+    font-family: 'Red Rose', cursive;
+    color: #ddd;
+    /*color: #eaeded;*/
 }
 .devFooter {
     background-color: #262627;
@@ -248,7 +254,7 @@
 @media only screen and (max-width: 786px) {
     .carouselHead{
         align-self: center;
-        font-size: 25px;
+        font-size: 30px;
     }
     .carouselContainer {
         box-shadow: 1px 1px 1px  #d5d1d4 ;

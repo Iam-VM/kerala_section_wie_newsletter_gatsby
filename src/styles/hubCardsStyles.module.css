@@ -18,6 +18,10 @@
     background-color: #663399 ;
 }
 .simpleApproach {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 
 }
 .hubName {
@@ -31,8 +35,15 @@
     align-self: center;
     /*margin-bottom: -40px;*/
 }
+.linkIconSpan {
+    margin-bottom: 13px;
+    margin-left: 9px;
+    color: #333333;
+    font-size: 20px;
+    align-self: flex-end;
+}
 .hubName:hover {
-    color: black;
+    color: #2a2a56;
 }
 
 .iconContainer {
@@ -62,8 +73,6 @@
 }
 
 @media only screen and (max-width: 786px) {
-    .rectangle {
-    }
     .container {
         margin-right: 0;
         margin-bottom: 1.25rem;

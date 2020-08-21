@@ -24,10 +24,10 @@ const IndexPage = () => {
         {/*</div>*/}
       </div>
 
-      {/*ieee wie */}
+      {/*ieee WIE */}
       <div className={indexStyles.container}>
         <div className={indexStyles.headDegree2Container}>
-          <h1 className={indexStyles.headDegree2}>IEEE WiE</h1>
+          <h1 className={indexStyles.headDegree2}>IEEE WIE</h1>
           <div className={indexStyles.underlineDegree2Top}></div>
           {/*<div className={indexStyles.underlineDegree2Bottom}></div>*/}
         </div>
@@ -60,10 +60,10 @@ const IndexPage = () => {
         </div>
       </div>
 
-       {/*wie ag - ks*/}
+       {/*WIE ag - ks*/}
        <div className={indexStyles.container}>
          <div className={indexStyles.headDegree2Container}>
-           <h1 className={indexStyles.headDegree2}>WiE AG - Kerala Section</h1>
+           <h1 className={indexStyles.headDegree2}>WIE AG - Kerala Section</h1>
            <div className={indexStyles.underlineDegree2TopLengthy}></div>
            {/*<div className={indexStyles.underlineDegree2BottomLengthy}></div>*/}
          </div>
@@ -99,7 +99,7 @@ const IndexPage = () => {
         {/*  /!*<div className={indexStyles.underlineDegree2Top}></div>*!/*/}
         {/*  /!*<div className={indexStyles.underlineDegree2Bottom}></div>*!/*/}
         {/*</div>*/}
-        <h1 className={indexStyles.carouselHead}>Meet the WiE Team</h1>
+        <h1 className={indexStyles.carouselHead}>Meet the WIE Team</h1>
         <div className={indexStyles.carouselImageContainer}>
           <CustomCarousel />
         </div>
