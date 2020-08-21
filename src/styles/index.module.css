@@ -197,14 +197,15 @@
     justify-content: flex-start;
     /*background-color: #2a2a56;*/
     /*background-color:  #d90a87 ;*/
-    background: linear-gradient(90deg, rgba(62,21,87,1) 0%, rgba(143,66,125,1) 57%, rgba(235,32,140,1) 100%);
+    /*background: linear-gradient(90deg, rgba(62,21,87,1) 0%, rgba(143,66,125,1) 57%, rgba(235,32,140,1) 100%);*/
 }
 .carouselHead {
+    border-bottom: 1px solid #2a2a56;
     margin: 1rem 0 4rem 0;
     font-family: 'Red Rose', cursive;
     /*color: #ddd;*/
     /*color: #eaeded;*/
-    color: #eee;
+    color: #484848;
 }
 .devFooter {
     /*background-color: #262627;*/
