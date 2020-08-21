@@ -81,8 +81,7 @@
     margin: 15vh auto 0 auto;
 }
 .headDegree2Container {
-    margin-left: 1rem;
-    align-self: flex-start;
+    align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -91,22 +90,22 @@
 }
 .headDegree2 {
     margin-bottom: 0.5rem;
-    text-align: left;
+    text-align: center;
     color: #484848;
-    font-size: 40px;
+    font-size: 45px;
     letter-spacing: 1px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Bebas Neue', cursive;
 }
 .underlineDegree2Top {
     /*margin-left: 3px;*/
-    /*box-shadow: 1px 1px 1px  #d5d1d4 ;*/
-    margin-top: -0.3rem;
+    box-shadow: 1px 1px 1px  #d5d1d4 ;
+    margin-top: -0.8rem;
     margin-bottom: 1px;
     background-color: #2a2a56;
     border-radius: 4px;
     /*background: linear-gradient(90deg, rgba(102,51,153,1) 35%, rgba(62,167,220,1) 77%, rgba(255,255,255,1) 100%);*/
     width: 100%;
-    height: 1px;
+    height: 2px;
 }
 .underlineDegree2Bottom {
     box-shadow: 1px 1px 1px  #d5d1d4 ;
@@ -116,13 +115,14 @@
     height: 2px;
 }
 .underlineDegree2TopLengthy {
-    align-self: flex-start;
-    margin-top: -0.4rem;
+    box-shadow: 1px 1px 1px  #d5d1d4 ;
+    align-self: center;
+    margin-top: -0.8rem;
     margin-bottom: 1px;
     background-color: #2a2a56;
     border-radius: 4px;
-    width: 75%;
-    height: 1px;
+    width: 100%;
+    height: 2px;
 }
 .underlineDegree2BottomLengthy {
     align-self: center;
@@ -200,9 +200,10 @@
     /*background: linear-gradient(90deg, rgba(62,21,87,1) 0%, rgba(143,66,125,1) 57%, rgba(235,32,140,1) 100%);*/
 }
 .carouselHead {
-    border-bottom: 1px solid #2a2a56;
+    box-shadow: 1px 1px 1px  #d5d1d4 ;
+    border-bottom: 2px solid #5D5C5D;
     margin: 1rem 0 4rem 0;
-    font-family: 'Red Rose', cursive;
+    font-family: 'Bebas Neue', cursive;
     /*color: #ddd;*/
     /*color: #eaeded;*/
     color: #484848;
@@ -246,7 +247,7 @@
 
 
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 323px) {
     .underlineDegree2TopLengthy {
         width: 69%;
     }
