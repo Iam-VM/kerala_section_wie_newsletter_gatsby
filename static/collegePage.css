@@ -115,6 +115,9 @@ center{
     p {
         width: 70%;
     }
+    td {
+        margin: 0 auto 0 auto;
+    }
 
 }
 
