@@ -1,7 +1,117 @@
+.collegePageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto 0 auto;
+}
+
+/*h4 is for hubname head*/
+.hubName {
+    border-radius: 3px;
+    padding: 0 4px 0 4px;
+    background-color: #eee;
+    margin-top: 2rem;
+    font-weight: 800;
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    color: #2a2a56;
+    align-self: center;
+}
+
+/*h1 is for collegeName*/
+.collegeName {
+    font-weight: 500;
+    font-family: 'Bebas Neue', cursive;
+    color: #333333;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    align-self: center;
+}
 h2 {
-    color: yellow;
+    padding: 1rem;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    align-self: center;
+    text-align: center;
+    color: #2a2a56;
+    margin-bottom: 1rem;
+}
+h2:before {
+    content: "#";
+    margin-right: 8px;
+    color: #bf084e;
 }
 
 p {
-    color: #037b98;
+    font-weight: 500;
+    padding: 0 1rem 0 1rem;
+    align-self: center;
+    margin: 2rem auto 4rem auto;
+    text-align: center;
+    font-family: 'Noto Sans SC', sans-serif;
 }
+code {
+    color: #333333;
+    align-self: center;
+}
+table {
+    margin: 0 auto 0.3rem auto;
+    height: 70vh;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    border-collapse: collapse;
+    border-radius: 4px;
+    width: 75%;
+    align-self: center;
+    align-content: center;
+}
+thead {
+    text-align: center;
+    background-color: #2a2a56;
+    color: #eaeded;
+    font-family: 'Roboto Mono', monospace;
+}
+th {
+    text-align: center;
+    margin: 0 0.5rem 0 0.5rem;
+    padding: 0 0.5rem 0 0.5rem;
+}
+td {
+    text-align: center;
+    margin: 0 0.5rem 0 0.5rem;
+    padding: 0 0.5rem 0 0.5rem;
+}
+tbody {
+    background-color: #dbdbee;
+}
+caption {
+    align-self: center;
+    align-content: center;
+    margin: 0 auto 4rem auto;
+    text-align: center;
+}
+center{
+    margin-bottom: 4rem;
+}
+@media only screen and (max-width: 786px) {
+    table {
+        width: auto;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    th {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (min-width: 786px) {
+    p {
+        width: 70%;
+    }
+
+}
+
+
+

@@ -5,11 +5,9 @@ slug: "/kochi-hub/cochin-university-of-science-and-technology"
 ---
 
 ## The WIE AG ExeCom Training
-<div>
-<span>Date:  25 April 2020</span>
-<span>Attendance:  17</span>
-</div>
 
+```Date: 25 April 2020```<br />
+```Attendance: 17```
 
 The WIE AG ExeCom training session was handled by Ms. Mini Ulanat, the WIE Chair of IEEE Kerala Section. All the new WIE members became aware of the opportunities in WIE, the various travel grants, funding, WIE awards, the importance of proper office reporting and documentation of events.
  
@@ -20,20 +18,24 @@ The WIE AG ExeCom training session was handled by Ms. Mini Ulanat, the WIE Chair
 
 A platform opened by IEEE CUSAT SB & WIE AG for the CUSAT community to share their technical knowledge with their colleagues in the form of webinars. 8 webinars were conducted under the webinar series. 
 
-* 'System Design for Mission100kft Payload'
-* 'Wave Star Energy – an Eco-friendly Solution to the Energy Crisis'
-* 'Basics of Networking and Protocols’
-* 'Introduction to UI design and Prototyping’
-* 'Are Hackathons for you?’
-* 'Introduction to Android App Development’
-* 'Introduction to MATLAB
-* 'Computer Vision'
+| No. | Topics |
+|----|---------|
+| 1. | 'System Design for Mission100kft Payload' |
+| 2. | 'Wave Star Energy – an Eco-friendly Solution to the Energy Crisis' |
+| 3. | 'Basics of Networking and Protocols’ |
+| 4. | 'Introduction to UI design and Prototyping’ |
+| 5. | 'Are Hackathons for you?’ |
+| 6. | 'Introduction to Android App Development’ |
+| 7. | 'Introduction to MATLAB |
+| 8. | 'Computer Vision' |
+<center><caption>Topics of Webinars</caption></center>
+
+
 
 ## INWED 20 Photography Contest
-<div>
-<span>Date:  25 June 2020</span>
-<span>Attendance:  16</span>
-</div>
+
+```Date:  25 June 2020```<br />
+```Attendance:  16```
 
 
 IEEE CUSAT WIE AG celebrated this year’s International Women in Engineering Day by conducting a Photography contest with the theme ‘The women Engineer in you’. 

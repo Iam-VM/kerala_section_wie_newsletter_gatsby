@@ -13,15 +13,15 @@ const IndexPage = () => {
     <div className={indexStyles.main}>
       {/*cover*/}
       <div className={indexStyles.coverContainer}>
-        {/*<div className={indexStyles.headDegree1Container}>*/}
-        {/*  <div className={indexStyles.coverImage}></div>*/}
-        {/*  /!*<div className={indexStyles.underlineDegree1}></div>*!/*/}
-        {/*  /!*<div className={indexStyles.underlineDegree1Top}></div>*!/*/}
-        {/*  /!*<div className={indexStyles.headDegree1}>WIE</div>*!/*/}
-        {/*  /!*<div className={indexStyles.headDegree1}>ECHOES</div>*!/*/}
-        {/*  /!*<div className={indexStyles.underlineDegree1Bottom}></div>*!/*/}
-        {/*  /!*<div className={indexStyles.underlineDegree1}></div>*!/*/}
-        {/*</div>*/}
+        <div className={indexStyles.headDegree1Container}>
+          {/*<div className={indexStyles.coverImage}></div>*/}
+          {/*<div className={indexStyles.underlineDegree1}></div>*/}
+          {/*<div className={indexStyles.underlineDegree1Top}></div>*/}
+          <div className={indexStyles.headDegree1}>WIE</div>
+          <div className={indexStyles.headDegree1}>ECHOES</div>
+          {/*<div className={indexStyles.underlineDegree1Bottom}></div>*/}
+          {/*<div className={indexStyles.underlineDegree1}></div>*/}
+        </div>
       </div>
 
       {/*ieee WIE */}
@@ -107,10 +107,10 @@ const IndexPage = () => {
 
 
       <div className={indexStyles.devFooter}>
-
+        <center><footer>under development</footer></center>
       </div>
 
-     </div>
+    </div>
   );
 };
 

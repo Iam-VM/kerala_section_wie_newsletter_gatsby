@@ -17,11 +17,11 @@
     width: 100%;
     height: 40vh;
     /*!*background-image: url("Images/Cover3.jpeg");*!*/
-    /*background-color:   #663399;*/
+    background-color:   #663399;
     /*background-size: cover;*/
     /*background-repeat: no-repeat;*/
     /*background-position: center;*/
-    background-image: url("../../static/wieEchoes.png");
+    /*background-image: url("../../static/wieEchoes.png");*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

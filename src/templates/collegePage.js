@@ -1,5 +1,6 @@
 import React from "react";
 import {graphql} from "gatsby";
+import "../../static/collegePage.css";
 
 const CollegePage = ({data}) => {
   const {markdownRemark} = data;
@@ -12,13 +13,11 @@ const CollegePage = ({data}) => {
   </head>
     ${html}`;
 
-  console.log(html);
-  console.log(typeof html);
   return (
     <div className={"collegePageContainer"}>
-      <h4>{frontmatter.hubname}</h4>
-      <h2>{frontmatter.collegename}</h2>
-      <div className={"blogPostContent"} dangerouslySetInnerHTML={{__html: htmlToBeInjected}} />
+      <h4 className={"hubName"}>{frontmatter.hubname}</h4>
+      <h1 className={"collegeName"}>{frontmatter.collegename}</h1>
+      <div dangerouslySetInnerHTML={{__html: htmlToBeInjected}} />
     </div>
   );
 };
