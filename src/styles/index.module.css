@@ -6,6 +6,7 @@
     justify-content: flex-start;
 }
 .coverContainer {
+    margin-bottom: 6rem;
     /*display: flex;*/
     /*flex-direction: row;*/
     /*justify-content: center;*/
@@ -201,7 +202,7 @@
     /*background: linear-gradient(90deg, rgba(62,21,87,1) 0%, rgba(143,66,125,1) 57%, rgba(235,32,140,1) 100%);*/
 }
 .carouselHead {
-    border-bottom: 2px solid #5D5C5D;
+    /*border-bottom: 2px solid #5D5C5D;*/
     margin: 1rem 0 4rem 0;
     font-family: 'Bebas Neue', cursive;
     /*color: #ddd;*/
