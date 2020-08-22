@@ -79,6 +79,18 @@ const IndexPage = () => {
            </p>
          </div>
        </div>
+      <div className={indexStyles.carouselContainer}>
+        {/*<div className={indexStyles.headDegree2Container}>*/}
+        {/*  */}
+        {/*  /!*<div className={indexStyles.underlineDegree2Top}></div>*!/*/}
+        {/*  /!*<div className={indexStyles.underlineDegree2Bottom}></div>*!/*/}
+        {/*</div>*/}
+        {/*<h1 className={indexStyles.carouselHead}>Meet the WIE Team</h1>*/}
+        <div className={indexStyles.carouselImageContainer}>
+          <CustomCarousel />
+        </div>
+        <caption className={indexStyles.carouselCaption}>The WIE Team</caption>
+      </div>
       <div className={indexStyles.container}>
         <div className={`${indexStyles.headDegree2Container} ${indexStyles.headLinkReports}`}>
           <h1 className={indexStyles.headDegree2}>Link Reports</h1>
@@ -93,17 +105,17 @@ const IndexPage = () => {
       </div>
 
 
-      <div className={indexStyles.carouselContainer}>
-        {/*<div className={indexStyles.headDegree2Container}>*/}
-        {/*  */}
-        {/*  /!*<div className={indexStyles.underlineDegree2Top}></div>*!/*/}
-        {/*  /!*<div className={indexStyles.underlineDegree2Bottom}></div>*!/*/}
-        {/*</div>*/}
-        <h1 className={indexStyles.carouselHead}>Meet the WIE Team</h1>
-        <div className={indexStyles.carouselImageContainer}>
-          <CustomCarousel />
-        </div>
-      </div>
+      {/*<div className={indexStyles.carouselContainer}>*/}
+      {/*  /!*<div className={indexStyles.headDegree2Container}>*!/*/}
+      {/*  /!*  *!/*/}
+      {/*  /!*  /!*<div className={indexStyles.underlineDegree2Top}></div>*!/*!/*/}
+      {/*  /!*  /!*<div className={indexStyles.underlineDegree2Bottom}></div>*!/*!/*/}
+      {/*  /!*</div>*!/*/}
+      {/*  <h1 className={indexStyles.carouselHead}>Meet the WIE Team</h1>*/}
+      {/*  <div className={indexStyles.carouselImageContainer}>*/}
+      {/*    <CustomCarousel />*/}
+      {/*  </div>*/}
+      {/*</div>*/}
 
 
       <div className={indexStyles.devFooter}>

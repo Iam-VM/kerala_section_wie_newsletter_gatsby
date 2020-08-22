@@ -191,7 +191,7 @@
     color: #2a2a56;
 }
 .carouselContainer {
-    margin: 3rem 0 3rem 0;
+    margin: 1rem 0 3rem 0;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -208,6 +208,14 @@
     /*color: #ddd;*/
     /*color: #eaeded;*/
     color: #484848;
+}
+.carouselCaption {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 500;
+    border-bottom: 1px solid #999;
+    padding-bottom: 2px;
 }
 .devFooter {
     /*background-color: #262627;*/
@@ -227,11 +235,11 @@
     .carouselHead{
         margin-top: 2rem;
         align-self: center;
-        font-size: 35px;
+        font-size: 40px;
     }
     .carouselContainer {
         border-radius: 4px;
-        box-shadow: 1px 1px 1px  #d5d1d4 ;
+        /*box-shadow: 1px 1px 1px  #d5d1d4 ;*/
     }
     .postersContainer {
         display: none;
@@ -272,12 +280,12 @@
         width: 100%;
     }
     .carouselImageContainer{
-        height: 35%;
-        width: 35%;
-        margin: 1rem 0 2rem 0;
+        height: 30%;
+        width: 30%;
+        margin: 1rem 0 1rem 0;
     }
     .carouselHead{
         margin: 1.5rem 0 2rem 0;
-        font-size: 35px;
+        font-size: 45px;
     }
 }
