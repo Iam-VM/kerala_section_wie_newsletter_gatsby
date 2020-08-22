@@ -27,8 +27,8 @@ const IndexPage = () => {
       {/*ieee WIE */}
       <div className={indexStyles.container}>
         <div className={indexStyles.headDegree2Container}>
-          <h1 className={indexStyles.headDegree2}>IEEE <span className={indexStyles.blue}>WIE</span></h1>
-          <div className={indexStyles.underlineDegree2Top}></div>
+          <h1 className={indexStyles.headDegree2}>IEEE WIE</h1>
+          {/*<div className={indexStyles.underlineDegree2Top}></div>*/}
           {/*<div className={indexStyles.underlineDegree2Bottom}></div>*/}
         </div>
         <div className={indexStyles.paraContainer}>
@@ -47,8 +47,8 @@ const IndexPage = () => {
        {/*mission and vision*/}
       <div className={indexStyles.container}>
         <div className={indexStyles.headDegree2Container}>
-          <h1 className={indexStyles.headDegree2}><span className={indexStyles.blue}>M</span>ission & <span className={indexStyles.blue}>V</span>ision</h1>
-          <div className={indexStyles.underlineDegree2Top}></div>
+          <h1 className={indexStyles.headDegree2}>Mission & Vision</h1>
+          {/*<div className={indexStyles.underlineDegree2Top}></div>*/}
           {/*<div className={indexStyles.underlineDegree2Bottom}></div>*/}
         </div>
         <div className={indexStyles.paraContainer}>
@@ -63,8 +63,8 @@ const IndexPage = () => {
        {/*WIE ag - ks*/}
        <div className={indexStyles.container}>
          <div className={indexStyles.headDegree2Container}>
-           <h1 className={indexStyles.headDegree2}><span className={indexStyles.blue}>WIE AG</span> - <span className={indexStyles.blue}>K</span>erala <span className={indexStyles.blue}>S</span>ection</h1>
-           <div className={indexStyles.underlineDegree2TopLengthy}></div>
+           <h1 className={indexStyles.headDegree2}>WIE AG - Kerala Section</h1>
+           {/*<div className={indexStyles.underlineDegree2TopLengthy}></div>*/}
            {/*<div className={indexStyles.underlineDegree2BottomLengthy}></div>*/}
          </div>
          <div className={indexStyles.paraContainer}>
@@ -81,7 +81,7 @@ const IndexPage = () => {
        </div>
       <div className={indexStyles.container}>
         <div className={`${indexStyles.headDegree2Container} ${indexStyles.headLinkReports}`}>
-          <h1 className={indexStyles.headDegree2}><span className={indexStyles.blue}>L</span>ink <span className={indexStyles.blue}>R</span>eports</h1>
+          <h1 className={indexStyles.headDegree2}>Link Reports</h1>
           <div className={indexStyles.underlineDegree2Top}></div>
           {/*<div className={indexStyles.underlineDegree2Bottom}></div>*/}
         </div>

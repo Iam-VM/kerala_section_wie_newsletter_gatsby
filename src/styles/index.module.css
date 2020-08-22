@@ -78,7 +78,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin: 15vh auto 0 auto;
+    margin: 5vh auto 0 auto;
 }
 .headDegree2Container {
     align-self: center;
@@ -86,13 +86,14 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 .headDegree2 {
     margin-bottom: 0.5rem;
     text-align: center;
-    color: #484848;
+    /*color: #484848;*/
     font-size: 45px;
+    color: #000;
     letter-spacing: 1px;
     font-family: 'Bebas Neue', cursive;
 }
@@ -136,10 +137,10 @@
     margin-bottom: 5rem;
 }
 .paraContainer {
-    padding: 1rem;
     border-radius: 8px;
 }
 .standardPara {
+    margin-top: -2rem;
     font-family: 'Noto Sans SC', sans-serif;
     font-size: 18px;
 }
@@ -200,7 +201,6 @@
     /*background: linear-gradient(90deg, rgba(62,21,87,1) 0%, rgba(143,66,125,1) 57%, rgba(235,32,140,1) 100%);*/
 }
 .carouselHead {
-    box-shadow: 1px 1px 1px  #d5d1d4 ;
     border-bottom: 2px solid #5D5C5D;
     margin: 1rem 0 4rem 0;
     font-family: 'Bebas Neue', cursive;
@@ -216,7 +216,8 @@
     height: 25vh;
 }
 .blue {
-    color: #484848;
+    /*color: #484848;*/
+    color: #000;
 }
 .headLinkReports {
     align-self: center;
