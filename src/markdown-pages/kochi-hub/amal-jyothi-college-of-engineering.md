@@ -15,7 +15,7 @@ An online essay writing competition was held as a part of women’s week celebra
 
 ## WIE Webinar : ‘Know it all’ to ‘Learn it all’: Developing a culture of continual learning and personal branding
 
-```Date: 19th May 2020```
+```Date: 19th May 2020```<br />
 ```No. of participants: 136```
 
 WIE webinar was led by Ms. Aisha Nazia Nasir Mayin, growth facilitator and outreach expert. The talk included various aspects of continual learning like ikigai, personal growth, social media, and personal branding. 
