@@ -8,7 +8,7 @@ slug: "/kochi-hub/amal-jyothi-college-of-engineering"
 
 
 ## WIE Essay Writing Competition
-```Date: 20th March 2020```
+```Date: 20th March 2020```<br />
 ```No. of participants: 19```
 
 An online essay writing competition was held as a part of women’s week celebration at our SB. This was a program open to all female students of the college. The topic of the competition was ‘Women-the real architects of the society’. 

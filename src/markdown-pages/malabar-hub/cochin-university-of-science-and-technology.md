@@ -5,8 +5,9 @@ slug: "/kochi-hub/cochin-university-of-science-and-technology"
 ---
 
 ## The WIE AG ExeCom Training
-```Date:  25 April 2020```
+```Date:  25 April 2020```<br />
 ```No. of Participants:  17```
+
 
 The WIE AG ExeCom training session was handled by Ms. Mini Ulanat, the WIE Chair of IEEE Kerala Section. All the new WIE members became aware of the opportunities in WIE, the various travel grants, funding, WIE awards, the importance of proper office reporting and documentation of events.
  

@@ -58,7 +58,7 @@ code {
     align-self: center;
 }
 table {
-    margin: 0 auto 0.3rem auto;
+    margin: 0 auto 3rem auto;
     height: 70vh;
     overflow-x: scroll;
     overflow-y: scroll;
@@ -110,6 +110,12 @@ center{
         padding: 1rem;
         width: auto;
     }
+}
+h4 {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 20px;
+    align-self: center;
+    text-align: center;
 }
 
 @media only screen and (min-width: 786px) {

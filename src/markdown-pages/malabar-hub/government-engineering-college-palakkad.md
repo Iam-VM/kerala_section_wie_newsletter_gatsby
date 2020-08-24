@@ -6,7 +6,7 @@ slug: "/malabar-hub/government-engineering-college-palakkad"
 
 ## FIGURE IT UP
 ```Date:  16-03-2020```<br />
-```Attendees: 9```
+```Attendance: 9```
 
 
 With regards to WIE Week, IEEE WIE SB GEC Palakkad had conducted an online Logo Designing Competition with the theme “IEEE WIE SB GEC Palakkad”.
@@ -39,8 +39,8 @@ As part of WIE Week celebrations, posters containing lesser-known scientific and
 
 ## JR. NEWTON
 
-```Date:  1-04-2020```<br />
-```Attendees no: 8```
+```Date:  01-04-2020```<br />
+```Attendance: 8```
 
 
 Jr. Newton was a challenge to post the innovative idea or project as videos or images which aim to bring young innovators to the spotlight.
@@ -49,7 +49,7 @@ Jr. Newton was a challenge to post the innovative idea or project as videos or i
 ## ONLINE QUIZ
 
 ```Date:  7–04–2020```<br />
-```Attendees no: 276```
+```Attendance: 276```
 
 WIE in association with IEEE SB GEC Palakkad has put forward an amazing online competition called 'Online Quiz'. Backbone of WIE , women ,science and technology was our theme
 for questions.
@@ -59,7 +59,7 @@ for questions.
 
 ## ARTIFEX
 ```Date:  15–04–2020```<br />
-```Attendees no: 3```
+```Attendance: 3```
 
 As a part of monthly activity, IEEE WIE SB GEC Palakkad has conducted an online Digital Painting Competition with the theme of Women.
 
@@ -69,7 +69,7 @@ As a part of monthly activity, IEEE WIE SB GEC Palakkad has conducted an online 
 ## WIE TALK
 
 ```Date:  30-04-2020```<br />
-```Attendees no: 31```
+```Attendance: 31```
 
 
 IEEE WIE AG SB GEC Palakkad has put forward an initiative to conduct a talk on “Englishes Today and Tomorrow; Internet Is Bae” by Dr. Reenu Punnoose, Professor of Humanities and Social Sciences from IIT Palakkad, through Google Meet.
@@ -78,7 +78,7 @@ IEEE WIE AG SB GEC Palakkad has put forward an initiative to conduct a talk on �
 ## WEB CRAWLER
 
 ```Date:  5-05-2020```<br />
-```Attendees no: 31```
+```Attendance: 31```
 
 
 Web Crawler was an online scavenger hunt in which students from various colleges participated. It consists of five different web pages that contain unique solutions such as decoding, steganography, etc.
@@ -86,7 +86,7 @@ Web Crawler was an online scavenger hunt in which students from various colleges
 
 
 ## WIE LEARN
-```Attendees no: 67```
+```Attendance: 67```
 
 WIE LEARN is an engaging initiative by WIE AG of IEEE SB GEC Palakkad in association with Women in Computing (WIC) under IEEE CS SBC GEC Palakkad that seeks to train the students with a domineering technical skill that comes up with a tagline- ‘We learn through WIE.
 
@@ -104,7 +104,7 @@ With regards to International WiE Day celebrated as a one week programme and was
 ## MOON DAY WEBINAR
 
 ```Date:  24-07-2020```<br />
-```Attendees no: 113```
+```Attendance: 113```
 
 
 WIE IEEE SB GEC Palakkad on account of Moon Day conducted an interactive session with Mr. Vivek Srambikkal S, Scientist/Engineer at ISRO on the topic: The Gateway
