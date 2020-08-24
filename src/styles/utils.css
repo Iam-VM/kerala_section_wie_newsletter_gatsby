@@ -13,8 +13,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 /*font-family: 'Cinzel Decorative', cursive;*/
 .bodyNoMargin {
     margin: 0;
+}
+.linkWrap {
+    text-decoration: none;
+}
+.linkWrap:hover {
+    text-decoration: none;
+    color: #2a2a56;
+}
+.linkWrap:active {
+    text-decoration: none;
+    color: #2a2a56;
 }

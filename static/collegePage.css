@@ -119,13 +119,20 @@ h4 {
 }
 
 @media only screen and (min-width: 786px) {
+    table {
+        height: 50vh;
+        width: 50%;
+    }
     p {
-        width: 70%;
+        width: 60%;
     }
     td {
         margin: 0 auto 0 auto;
     }
-
+    img {
+        max-height: 400px;
+        max-width: 400px;
+    }
 }
 
 

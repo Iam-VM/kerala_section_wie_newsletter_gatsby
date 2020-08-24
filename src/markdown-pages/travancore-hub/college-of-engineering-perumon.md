@@ -9,7 +9,7 @@ slug: "/travancore-hub/college-of-engineering-perumon"
 ```Date: 29/02/2020```<br />
 ``` No. of Participants: 53```
 
-![kudumbasree](Travancore/cep.png)
+![kudumbasree](/travancore/cep.png)
 
 It was an awareness session for kudumbasree members conducted on behalf of Women’s Day celebrations. The session was really useful for them to get familiar with the online transactions, registrations etc.
  
