@@ -1,3 +1,23 @@
 .main {
 
 }
+
+.textContentBodyContainer {
+    margin: 5rem 5rem 0 5rem;
+    /*border: 2px solid red;*/
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@media only screen and (max-width: 786px) {
+    .textContentBodyContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 3rem 0 0 0;
+        width: 100%;
+    }
+}
