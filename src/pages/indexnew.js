@@ -4,6 +4,7 @@ import indexStyles from "../styles/indexNew.module.css";
 //local
 import Cover from "../components/indexNew/cover";
 import ParaBlock from "../components/indexNew/paraBlocks";
+import ReportLinksComponent from "../components/indexNew/reportLinkComponent"
 
 const NewIndexPage = () => {
   return (
@@ -16,11 +17,13 @@ const NewIndexPage = () => {
         <ParaBlock headPart1={"Mission & Vision"} headPart2={"OF WOMEN IN ENGINEERING"} para={["Our goal is to facilitate the recruitment and retention of women in technical disciplines globally. We\n" +
         "            envision a vibrant community of IEEE women and men collectively using their diverse talents to innovate for\n" +
         "            the benefit of humanity."]} heightInPX={200} widthInPX={300} />
-        <ParaBlock headPart1={"WOMEN IN ENGINEERING"} headPart2={"Affinity Group Kerala Section"} para={["Kerala Section WIE affinity group has always been an active and vibrant group with passionate volunteers.\n" +
+        <ParaBlock headPart1={"WOMEN IN ENGINEERING"} headPart2={"Affinity Group - Kerala Section"} para={["Kerala Section WIE affinity group has always been an active and vibrant group with passionate volunteers.\n" +
         "             Membership status and quality of programs have shown a tremendous hike in the last two years."]} heightInPX={200} widthInPX={300} />
       </div>
+      <ReportLinksComponent />
     </div>
   );
 };
+
 
 export default NewIndexPage;
