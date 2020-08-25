@@ -36,7 +36,7 @@
     box-shadow: 1px 1px 5px #772583;
 }
 .echoesText {
-    margin-top: 24px;
+    margin-top: 28px;
     letter-spacing: 0.1rem;
     align-self: flex-start;
     font-size: 25px;
@@ -58,19 +58,36 @@
     font-family: 'Montserrat', sans-serif;
     transition: all 0.3s;
     border-bottom: 2px solid #fff;
+    border-radius: 2px;
 }
 .navBarButton:hover {
     border-bottom: 2px solid #772583;
 }
 .navBarButtonIcons {
     margin-top: -4px;
-    font-size: 22px;
+    margin-bottom: 20px;
+    font-size: 28px;
     border-bottom: none;
 }
 .navBarButtonIcons:hover {
+    color: #772583;
     border-bottom: none;
 }
+.coverBodyContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+}
+.verticalNavBar {
+
+}
 @media only screen and (max-width: 786px){
+    .navBarButtonIcons {
+        color: #772583;
+    }
     .navBarContainer {
         height: 70px;
     }

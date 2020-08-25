@@ -1,0 +1,22 @@
+.container {
+    color: #333333;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.head {
+    font-size: 25px;
+    color: #333333;
+    font-family: Bebas Neue, cursive;
+}
+.head:after {
+    content: " .";
+    color: #772583;
+    font-size: 30px;
+}
+.para {
+    color: black;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 16px;
+}
