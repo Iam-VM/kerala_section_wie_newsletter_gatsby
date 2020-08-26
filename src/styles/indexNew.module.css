@@ -12,6 +12,8 @@
     align-items: flex-start;
 }
 
+
+
 @media only screen and (max-width: 786px) {
     .textContentBodyContainer {
         flex-direction: column;

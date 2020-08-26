@@ -1,0 +1,66 @@
+.container {
+    /*border: 2px solid green;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 350px;
+    height: 100px;
+    margin-bottom: 0.6rem;
+}
+.imageContainer {
+    height: 100%;
+    width: 40%;
+    /*border: 2px solid brown;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.creditImage {
+    margin-right: 1rem;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+.detailsContainer {
+    margin-top: 1rem;
+}
+.name {
+    color: #2a2a56;
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+}
+
+.designation {
+    color: #333333;
+
+    font-family: 'Alata', sans-serif;
+    font-size: 14px;
+}
+
+.collegeName {
+    font-size: 14px;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    color: #5D5C5D;
+}
+
+@media only screen and (max-width: 786px) {
+    .container {
+        width: 250px;
+        flex-direction: column;
+    }
+    .detailsContainer {
+        align-self: center;
+        margin: -1rem 0 0 -1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .name {
+        margin-bottom: 3px;
+        font-size: 16px;
+    }
+}

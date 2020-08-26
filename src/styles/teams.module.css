@@ -1,0 +1,37 @@
+.container {
+    margin: 0 5rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.space {
+    margin-bottom: 5rem;
+}
+.teamHeadText {
+    color: #333333;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+}
+.teamHeadText:after {
+    content: " .";
+    color: #c70062;
+}
+.headByLine {
+    margin-top: -1rem;
+    font-size: 16px;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+.headByLine:after {
+    content: " .";
+    color: #c70062;
+    font-size: 25px;
+}
+.creditImagesComponentContainer {
+    margin: 1rem 0 0 -4rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
