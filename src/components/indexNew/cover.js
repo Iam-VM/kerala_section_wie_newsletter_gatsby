@@ -23,8 +23,8 @@ const Cover = () => {
       </div>
       <div className={indexComponentStyles.coverBodyContainer}>
         <div className={indexComponentStyles.verticalNavBar}>
-          <a href={"#"} className={"linkWrap"}><div className={`${indexComponentStyles.navBarButton} ${indexComponentStyles.navBarButtonIcons}`}><AiFillInstagram /></div></a>
-          <a href={"#"}><div className={`${indexComponentStyles.navBarButton} ${indexComponentStyles.navBarButtonIcons}`}><AiFillFacebook /></div></a>
+          <a href={"#"} className={"linkWrap"}><div className={`${indexComponentStyles.navBarButton} ${indexComponentStyles.navBarButtonIcons} ${indexComponentStyles.insta}`}><AiFillInstagram /></div></a>
+          <a href={"#"}><div className={`${indexComponentStyles.navBarButton} ${indexComponentStyles.navBarButtonIcons} ${indexComponentStyles.fb}`}><AiFillFacebook /></div></a>
         </div>
       </div>
     </div>
