@@ -35,3 +35,26 @@
     justify-content: center;
     align-items: center;
 }
+
+@media only screen and (max-width: 786px) {
+    .container {
+        margin: 0;
+        width: 100%;
+    }
+    .teamHeadText {
+        margin-left: 1rem;
+    }
+    .headByLine {
+        margin-top: -1.5rem;
+        font-size: 14px;
+        margin-left: 1rem;
+    }
+    .creditImagesComponentContainer {
+        margin-left: 1rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

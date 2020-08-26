@@ -30,9 +30,9 @@ const NewIndexPage = () => {
         </div>
         <div className={teamStyles.creditImagesComponentContainer}>
           <CreditImagesComponent imgSrc={"/team/wieTeam/Ameera Sherin.JPG"} name={"Ameera Sherin"} designation={"Link WIE Coordinator"} />
-          <CreditImagesComponent imgSrc={"/team/wieTeam/Fathima Nazreen.jpg"} name={"Fathima Nazreen"} designation={"Travancore Hub WIE Coordinator"} />
-          <CreditImagesComponent imgSrc={"/team/wieTeam/Devika S.jpeg"} name={"Devika S"} designation={"Kochi Hub WIE Coordinator"} />
-          <CreditImagesComponent imgSrc={"/team/wieTeam/Dina Valapra.jpg"} name={"Dina Valapra"} designation={"Malabar Hub WIE Coordinator"} />
+          <CreditImagesComponent imgSrc={"/team/wieTeam/Fathima Nazreen.jpg"} name={"Fathima Nazreen"} designation={"TH WIE Coordinator"} />
+          <CreditImagesComponent imgSrc={"/team/wieTeam/Devika S.jpeg"} name={"Devika S"} designation={"KH WIE Coordinator"} />
+          <CreditImagesComponent imgSrc={"/team/wieTeam/Dina Valapra.jpg"} name={"Dina Valapra"} designation={"MH WIE Coordinator"} />
         </div>
       </div>
       <div className={teamStyles.space}> </div>
@@ -57,10 +57,16 @@ const NewIndexPage = () => {
           <div className={teamStyles.headByLine}>Lorem Ipsum is simply dummy text</div>
         </div>
         <div className={teamStyles.creditImagesComponentContainer}>
-          <CreditImagesComponent imgSrc={"/team/wieTeam/Ameera Sherin.JPG"} name={"Ameera Sherin"} designation={"Link WIE Coordinator"} />
-          <CreditImagesComponent imgSrc={"/team/wieTeam/Fathima Nazreen.jpg"} name={"Fathima Nazreen"} designation={"Travancore Hub WIE Coordinator"} />
-          <CreditImagesComponent imgSrc={"/team/wieTeam/Devika S.jpeg"} name={"Devika S"} designation={"Kochi Hub WIE Coordinator"} />
-          <CreditImagesComponent imgSrc={"/team/wieTeam/Dina Valapra.jpg"} name={"Dina Valapra"} designation={"Malabar Hub WIE Coordinator"} />
+          <CreditImagesComponent imgSrc={"/team/contentTeam/Akshara Bruno IEEE SCT SB.jpg"} name={"Akshara Bruno"} collegeName={"SCT"} />
+          <CreditImagesComponent imgSrc={"/team/contentTeam/Amalu A P IEEE SB CE, PERUMON.jpg"} name={"Amalu A P"} collegeName={"CE,PERUMON"} />
+          <CreditImagesComponent imgSrc={"/team/contentTeam/ANJANA S IEEE SB CE,PERUMON.jpg"} name={"ANJANA S"} collegeName={"CE,PERUMON"} />
+          <CreditImagesComponent imgSrc={"/team/contentTeam/Aslaha Ali IEEE MACE SB.jpg"} name={"Aslaha Ali"} collegeName={"MACE"} />
+          <CreditImagesComponent imgSrc={"/team/contentTeam/Avanthika A IEEE SB CEV.jpg"} name={"Avanthika A"} collegeName={"CE, Vadakara"} />
+          <CreditImagesComponent imgSrc={"/team/contentTeam/Hridaya u mallia IEEE SB ASIET.jpg"} name={"Hridaya mallia"} collegeName={"ASIET"} />
+          <CreditImagesComponent imgSrc={"/team/contentTeam/Meghana N V Govt College Of Engineering Kannur.jpg"} name={"Meghana N V"} collegeName={"GCE, Kannur"} />
+          <CreditImagesComponent imgSrc={"/team/contentTeam/Nanda K R IEEE FISAT SB.jpg"} name={"Nanda K R"} collegeName={"FISAT"} />
+          <CreditImagesComponent imgSrc={"/team/contentTeam/Rajalakshmi A R IEEE FISAT SB .jpg"} name={"Rajalakshmi A R"} collegeName={"FISAT"} />
+          <CreditImagesComponent imgSrc={"/team/contentTeam/Safa V Abdul Ravuf IEEE SB GECI.jpg"} name={"Safa V Abdul Ravuf"} collegeName={"GEC, Idukki"} />
         </div>
       </div>
     </div>

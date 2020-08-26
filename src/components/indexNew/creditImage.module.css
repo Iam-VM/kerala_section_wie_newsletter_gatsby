@@ -34,7 +34,6 @@
 
 .designation {
     color: #333333;
-
     font-family: 'Alata', sans-serif;
     font-size: 14px;
 }
@@ -48,8 +47,15 @@
 
 @media only screen and (max-width: 786px) {
     .container {
-        width: 250px;
+        margin-bottom: 4rem;
+        width: 150px;
         flex-direction: column;
+    }
+    .imageContainer {
+        margin-top: -2rem;
+    }
+    .creditImage {
+        margin-top: 0;
     }
     .detailsContainer {
         align-self: center;
@@ -58,6 +64,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        text-align: center;
     }
     .name {
         margin-bottom: 3px;
