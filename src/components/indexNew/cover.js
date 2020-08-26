@@ -9,7 +9,7 @@ const Cover = () => {
     <div className={indexComponentStyles.coverContainer}>
       <div className={indexComponentStyles.navBarContainer}>
         <div className={indexComponentStyles.purpleRectangle}>
-          <Link className={"linkWrap"} to={"/"}><span className={indexComponentStyles.echoesText}>echoes</span></Link>
+          <Link className={`linkWrap ${indexComponentStyles.echoesTextLink}`} to={"/"}><span className={indexComponentStyles.echoesText}>echoes</span></Link>
         </div>
         <div className={indexComponentStyles.navBarButtonsContainer}>
           <a href={"#"} className={"linkWrap"}><div className={indexComponentStyles.navBarButton}>IEEE</div></a>
