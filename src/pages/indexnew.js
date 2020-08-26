@@ -29,7 +29,7 @@ const NewIndexPage = () => {
           <div className={teamStyles.headByLine}>Lorem Ipsum is simply dummy text</div>
         </div>
         <div className={teamStyles.creditImagesComponentContainer}>
-          <CreditImagesComponent imgSrc={"/team/wieTeam/Ameera Sherin.JPG"} name={"Ameera Sherin"} designation={"Link WIE Coordinator"} />
+          <CreditImagesComponent imgSrc={"/team/wieTeam/Ameera Sherin.jpg"} name={"Ameera Sherin"} designation={"Link WIE Coordinator"} />
           <CreditImagesComponent imgSrc={"/team/wieTeam/Fathima Nazreen.jpg"} name={"Fathima Nazreen"} designation={"TH WIE Coordinator"} />
           <CreditImagesComponent imgSrc={"/team/wieTeam/Devika S.jpeg"} name={"Devika S"} designation={"KH WIE Coordinator"} />
           <CreditImagesComponent imgSrc={"/team/wieTeam/Dina Valapra.jpg"} name={"Dina Valapra"} designation={"MH WIE Coordinator"} />
