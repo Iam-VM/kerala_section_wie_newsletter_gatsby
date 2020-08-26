@@ -23,7 +23,6 @@ const NewIndexPage = () => {
         "             Membership status and quality of programs have shown a tremendous hike in the last two years."]} heightInPX={200} widthInPX={300} />
       </div>
       <ReportLinksComponent />
-      <div className={teamStyles.space}> </div>
       <div className={teamStyles.container}>
         <div className={teamStyles.teamHeadContainer}>
           <div className={teamStyles.teamHeadText}>WIE Team</div>
