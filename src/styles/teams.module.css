@@ -1,5 +1,5 @@
 .container {
-    margin: 0 5rem 0 5rem;
+    margin: 0 5rem 0 6rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -28,7 +28,7 @@
     font-size: 25px;
 }
 .creditImagesComponentContainer {
-    margin: 1rem 0 0 -4rem;
+    margin: 1rem 0 0 -3rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
