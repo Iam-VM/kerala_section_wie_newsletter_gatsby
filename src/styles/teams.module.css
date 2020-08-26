@@ -44,6 +44,9 @@
     .teamHeadText {
         margin-left: 1rem;
     }
+    .teamHeadContainer {
+        margin-left: 1rem;
+    }
     .headByLine {
         margin-top: -1.5rem;
         font-size: 14px;
