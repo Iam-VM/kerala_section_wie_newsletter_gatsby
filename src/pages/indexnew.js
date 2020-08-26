@@ -58,8 +58,8 @@ const NewIndexPage = () => {
         </div>
         <div className={teamStyles.creditImagesComponentContainer}>
           <CreditImagesComponent imgSrc={"/team/contentTeam/Akshara Bruno IEEE SCT SB.jpg"} name={"Akshara Bruno"} collegeName={"SCT"} />
-          <CreditImagesComponent imgSrc={"/team/contentTeam/Amalu A P IEEE SB CE, PERUMON.jpg"} name={"Amalu A P"} collegeName={"CE,PERUMON"} />
-          <CreditImagesComponent imgSrc={"/team/contentTeam/ANJANA S IEEE SB CE,PERUMON.jpg"} name={"ANJANA S"} collegeName={"CE,PERUMON"} />
+          <CreditImagesComponent imgSrc={"/team/contentTeam/Amalu A P IEEE SB CE, PERUMON.jpg"} name={"Amalu A P"} collegeName={"CE, Perumon"} />
+          <CreditImagesComponent imgSrc={"/team/contentTeam/ANJANA S IEEE SB CE,PERUMON.jpg"} name={"ANJANA S"} collegeName={"CE, Perumon"} />
           <CreditImagesComponent imgSrc={"/team/contentTeam/Aslaha Ali IEEE MACE SB.jpg"} name={"Aslaha Ali"} collegeName={"MACE"} />
           <CreditImagesComponent imgSrc={"/team/contentTeam/Avanthika A IEEE SB CEV.jpg"} name={"Avanthika A"} collegeName={"CE, Vadakara"} />
           <CreditImagesComponent imgSrc={"/team/contentTeam/Hridaya u mallia IEEE SB ASIET.jpg"} name={"Hridaya mallia"} collegeName={"ASIET"} />
