@@ -7,6 +7,7 @@ import Cover from "../components/indexNew/cover";
 import ParaBlock from "../components/indexNew/paraBlocks";
 import ReportLinksComponent from "../components/indexNew/reportLinkComponent"
 import CreditImagesComponent from "../components/indexNew/creditImageComponent";
+import LinkContentByNeema from "../components/indexNew/linkContentByNeema"
 
 const NewIndexPage = () => {
   return (
@@ -22,6 +23,7 @@ const NewIndexPage = () => {
         <ParaBlock headPart1={"WOMEN IN ENGINEERING"} headPart2={"Affinity Group - Kerala Section"} para={["Kerala Section WIE affinity group has always been an active and vibrant group with passionate volunteers.\n" +
         "             Membership status and quality of programs have shown a tremendous hike in the last two years."]} heightInPX={200} widthInPX={300} />
       </div>
+      <LinkContentByNeema />
       <ReportLinksComponent />
       <div className={teamStyles.container}>
         <div className={teamStyles.teamHeadContainer}>
