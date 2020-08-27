@@ -11,7 +11,7 @@ slug: "/malabar-hub/nss-college-of-engineering"
 Under continuous training sessions by IEEE SB NSSCE, this workshop was held exclusively for first and second year girls. The topics covered were basics on LED, reading the datasheet, assembling and testing using multimeter, measurement, and setting dimension for our 64X16 LED matrix, drilling, SMPS power supply, soldering the LEDs, designing control circuit using ARDUINO UNO in Easyeda, etc.
 
 
-## NTERACTIVE SESSION ON OPPORTUNITY IN WiE
+## INTERACTIVE SESSION ON OPPORTUNITY IN WiE
 ```Date:   22–02–2020```<br />
 ```Attendance: 30```
 

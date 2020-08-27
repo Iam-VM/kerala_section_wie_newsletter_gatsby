@@ -3,11 +3,12 @@ import indexStyles from "../styles/indexNew.module.css";
 import teamStyles from "../styles/teams.module.css";
 
 //local
+import AchievementsComponent from "../components/indexNew/achievements";
 import Cover from "../components/indexNew/cover";
 import ParaBlock from "../components/indexNew/paraBlocks";
-import ReportLinksComponent from "../components/indexNew/reportLinkComponent"
+import HubReportLinksComponent from "../components/indexNew/reportLinkComponent"
 import CreditImagesComponent from "../components/indexNew/creditImageComponent";
-import LinkContentByNeema from "../components/indexNew/linkContentByNeema"
+import LinkContentByNeema from "../components/indexNew/linkContentByNeema";
 
 const NewIndexPage = () => {
   return (
@@ -23,8 +24,8 @@ const NewIndexPage = () => {
         <ParaBlock headPart1={"WOMEN IN ENGINEERING"} headPart2={"Affinity Group - Kerala Section"} para={["Kerala Section WIE affinity group has always been an active and vibrant group with passionate volunteers.\n" +
         "             Membership status and quality of programs have shown a tremendous hike in the last two years."]} heightInPX={200} widthInPX={300} />
       </div>
-      <LinkContentByNeema />
-      <ReportLinksComponent />
+      <AchievementsComponent />
+      <HubReportLinksComponent />
       <div className={teamStyles.container}>
         <div className={teamStyles.teamHeadContainer}>
           <div className={teamStyles.teamHeadText}>WIE Team</div>

@@ -4,11 +4,11 @@ import LinkComponent from "./LinkComponent";
 import reportLinkStyles from "./reportLinksAndLink.module.css";
 
 
-const ReportLinksComponent = () => {
+const HubReportLinksComponent = () => {
   return (
     <div className={reportLinkStyles.reportLinksContainer}>
       <div className={reportLinkStyles.linkReportHeadContainer}>
-        <div className={reportLinkStyles.headText}>Link Reports</div>
+        <div className={reportLinkStyles.headText}>Hub Reports</div>
         <div className={reportLinkStyles.headContentText}>Lorem Ipsum is simply dummy text of the printing</div>
       </div>
       <div className={reportLinkStyles.linkContainer}>
@@ -20,4 +20,4 @@ const ReportLinksComponent = () => {
   );
 }
 
-export default ReportLinksComponent;
+export default HubReportLinksComponent;
