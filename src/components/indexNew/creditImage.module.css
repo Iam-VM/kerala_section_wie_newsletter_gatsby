@@ -45,7 +45,7 @@
     color: #5D5C5D;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
     .container {
         margin-bottom: 4rem;
         width: 150px;

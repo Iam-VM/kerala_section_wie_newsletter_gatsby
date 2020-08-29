@@ -1,0 +1,4 @@
+.lastParaStyle:after {
+    content: " !";
+    color: #c70062;
+}

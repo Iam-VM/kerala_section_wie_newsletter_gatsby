@@ -3,17 +3,21 @@ import indexStyles from "../styles/indexNew.module.css";
 import teamStyles from "../styles/teams.module.css";
 
 //local
+import "../styles/utils.css";
 import AchievementsComponent from "../components/indexNew/achievements";
 import Cover from "../components/indexNew/cover";
 import ParaBlock from "../components/indexNew/paraBlocks";
 import HubReportLinksComponent from "../components/indexNew/reportLinkComponent"
 import CreditImagesComponent from "../components/indexNew/creditImageComponent";
-import LinkContentByNeema from "../components/indexNew/linkContentByNeema";
+import WelcomeNote from "../components/indexNew/welcomeNote"
+import FromTheWieChairsDesk from "../components/indexNew/fromTheWieChairsDesk"
 
 const NewIndexPage = () => {
   return (
     <div className={indexStyles.main}>
       <Cover />
+      <WelcomeNote />
+      <FromTheWieChairsDesk />
       <div className={indexStyles.textContentBodyContainer}>
         <ParaBlock headPart1={"About IEEE"} headPart2={"WOMEN IN ENGINEERING"} para={["IEEE Women in Engineering (WIE) is a global network of IEEE members and volunteers dedicated to promoting\n" +
         "            women engineers and scientists, and inspiring girls around the world to follow their academic interests in a\n" +

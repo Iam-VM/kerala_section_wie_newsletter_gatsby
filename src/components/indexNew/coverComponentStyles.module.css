@@ -91,7 +91,7 @@
 .verticalNavBar {
 
 }
-@media only screen and (max-width: 786px){
+@media only screen and (max-width: 768px){
     .echoesTextLink {
         margin-top: 10px;
     }

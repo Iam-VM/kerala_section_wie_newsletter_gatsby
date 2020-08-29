@@ -81,7 +81,7 @@
     color: #c70062;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 768px) {
     .reportLinksContainer {
         flex-wrap: wrap;
         margin: 0 0 12rem 0;
