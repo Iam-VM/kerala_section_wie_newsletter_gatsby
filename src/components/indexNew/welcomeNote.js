@@ -36,12 +36,12 @@ const WelcomeNote = () => {
         </div>
       </div>
       {/*end of for mobile*/}
-      <div className={welcomeNoteStyles.para}>We are wired to be empathetic, but are we independent thinkers ?</div>
-      <div className={welcomeNoteStyles.para}>Independent thinking leads to innovative thoughts and then new concepts arise.
+      <div className={`${welcomeNoteStyles.para}`}>We are wired to be empathetic, but are we independent thinkers ?</div>
+      <div className={`${welcomeNoteStyles.para}`}>Independent thinking leads to innovative thoughts and then new concepts arise.
         Proud that Kerala WiE have a bunch of independent innovative thinkers conceiving
         new programs involving technical and professional content. The new normal has been
         a great equaliser in many ways helping programs to reach a wider audience.</div>
-      <div className={welcomeNoteStyles.para}>Congratulations on this edition of WiE echos which will archive the celebration of
+      <div className={`${welcomeNoteStyles.para}`}>Congratulations on this edition of WiE echos which will archive the celebration of
         WiE Kerala volunteers, in their efforts to be passionate engineers with a motto to give
         back to society.</div>
       <div className={`${welcomeNoteStyles.para} ${fromWieCharsDeskStyles.lastParaStyle}`}>Good luck</div>

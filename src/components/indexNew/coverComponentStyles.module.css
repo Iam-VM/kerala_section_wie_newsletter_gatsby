@@ -1,113 +1,254 @@
 .coverContainer {
+    /*border: 2px solid red;*/
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0;
-    /*background-color: #212121;  !*testing*!*/
+    background-color: #212121;  /*testing*/
     /*background-image: url("../../../static/bg/wieEchoesDesktopCover.png");*/ /*reuse*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
     height: 100vh;
     width: 100vw;
     max-height: 100%;
     max-width: 100%;
 }
-.navBarContainer {
+.verticalNavBarContainer {
+    /*border: 2px solid yellow;*/
+    width: 120px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid #343434;
+}
+.verticalContainerTopIconContainer {
+    /*border: 1px dashed cyan;*/
+    width: 120px;
+    height: 100px;
+    background-color: #343434;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.verticalContainerMenuIcon {
+    color: #eaeded;
+    font-size: 25px;
+}
+.verticalNavBarBottomButtonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.verticalNavBarBottomButton {
+    font-size: 20px;
+    color: #eaeded;
+    margin-bottom: 1rem;
+}
+.coverBody {
+    /*border: 2px solid rebeccapurple;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.horizontalNavBarContainer {
+    flex: 1;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    /*border: 2px dashed darkgoldenrod;*/
     width: 100%;
     height: 100px;
 }
-.purpleRectangle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5rem;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    background-color: #772583;
-    height: 60px;
-    width: 140px;
-    align-self: flex-start;
-    box-shadow: 1px 1px 5px #772583;
-}
-.echoesTextLink {
-    margin-top: 1rem;
-}
-.echoesText {
-    margin-top: 28px;
-    letter-spacing: 0.1rem;
-    align-self: flex-start;
-    font-size: 28px;
+.horizontalNavBarNameElementLeft {
+    margin-left: 2rem;
     color: #eaeded;
-    /*color: #772583;*/
-    font-family: 'Russo One', sans-serif;
-    /*font-family: 'Stint Ultra Expanded', cursive;*/
+    font-size: 35px;
+    font-family: 'MuseoModerno', cursive;
 }
-.navBarButtonsContainer {
-    margin-top: -1rem;
-    margin-right: 5rem;
-    align-content: flex-end;
+.horizontalNavBarButtonsContainer {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
-.navBarButton {
+
+.horizontalNavBarButton {
+    font-weight: 300;
     font-size: 16px;
-    margin-right: 2rem;
-    color: #333333;
+    color: #eaeded;
     font-family: 'Montserrat', sans-serif;
-    transition: all 0.3s;
-    border-bottom: 2px solid #fff;
-    border-radius: 2px;
+    margin-right: 2.5rem;
+    border-bottom: 2px solid #212121;
+    transition: 0.5s all;
 }
-.navBarButton:hover {
-    color:  #772583 ;
-    border-bottom: 2px solid  #772583 ;
+
+.horizontalNavBarButton:hover {
+    border-bottom: 2px solid #eaeded;
 }
-.navBarButtonIcons {
-    margin-top: -4px;
-    margin-bottom: 20px;
-    font-size: 28px;
-    border-bottom: none;
-}
-.navBarButtonIcons:hover {
-    color: #772583;
-    border-bottom: none;
-}
-.coverBodyContainer {
+
+.bodyMain {
+    flex: 4;
+    width: 100%;
+    height: 100%;
+    /*border: 2px solid crimson;*/
+    align-self: center;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    height: 70%;
+}
+
+.bodyMainHeadContainer {
+    /*border: 2px solid gold;*/
+    margin-right: 3rem;
+    /*border: 2px solid gold;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.bodyMainHeadHead {
+    /*border: 2px solid crimson;*/
+    width: 300px;
+    color: #eaeded;
+    font-family: 'MuseoModerno', cursive;
+    font-size: 40px;
+}
+.bodyMainHeadSecondLine {
+    margin: -1rem 0 1rem 0;
+}
+.bodyMainHeadText {
+    /*border: 2px dashed green;*/
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #eaeded;
+    width: 500px;
+    text-align: left;
+    height: 100px;
+}
+
+.coverFooterContainer {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /*border: 2px solid gold;*/
     width: 100%;
+    height: 25%;
 }
-.verticalNavBar {
 
+.footerBlock {
+    background-color: #212121;
+    /*opacity: 0.5;*/
+    height: 100%;
+    flex: 2;
+    /*border: 2px dashed green;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
-@media only screen and (max-width: 768px){
-    .echoesTextLink {
-        margin-top: 10px;
-    }
-    .navBarButtonIcons {
-    }
-    .navBarContainer {
-        height: 70px;
-    }
-    .purpleRectangle {
-        /*background: #fff;*/
-        margin-left: 25px;
-        height: 50px;
-        width: 160px;
-    }
-    .navBarButtonsContainer {
-        display: none;
-    }
 
+.footerBlockHead {
+    letter-spacing: 0.15rem;
+    margin: 0.2rem 0 1rem 1.5rem;
+    align-self: flex-start;
+    color: #eaeded;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
 }
+
+.footerBlockText {
+    margin: 0 0.8rem 0 1.5rem;
+    font-size: 14px;
+    color: #eaeded;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.arrow {
+    align-self: flex-end;
+    margin: 0 1rem 0 0;
+    font-size: 25px;
+    color: #c70062;
+}
+
+.onlyText {
+    margin-top: 2.8rem;
+}
+
+.bold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.smallerFooterBlock {
+    flex: 1;
+    background-image: url("../../../static/team/Emi-Yano.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.footerBlockReadText {
+    align-self: flex-end;
+    margin: 0 2.3rem 0 0;
+    font-size: 15px;
+    color: #c70062;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footerBlockReadText:hover {
+    text-decoration: underline;
+    color: #c70062;
+}
+
+.footerBlockWithSwipeLine {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.scrollText {
+    margin: 5rem -1.5rem 0 0;
+    color: #eaeded;
+    letter-spacing: 0.3rem;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    transform: rotate(90deg);
+}
+.footerArrow {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footerLongDownLine {
+    margin: 0 1rem 0 0;
+    align-self: flex-start;
+    background-color: #eaeded;
+    width: 1px;
+    height: 88%;
+}
+
+.arrowHead {
+    /*border: 1px solid #c70062;*/
+    margin: -0.5rem 0 0 -1.05rem;
+    padding: 0;
+    color: #eaeded;
+}
+

@@ -12,6 +12,7 @@ import CreditImagesComponent from "../components/indexNew/creditImageComponent";
 import WelcomeNote from "../components/indexNew/welcomeNote"
 import FromTheWieChairsDesk from "../components/indexNew/fromTheWieChairsDesk"
 
+
 const NewIndexPage = () => {
   return (
     <div className={indexStyles.main}>
