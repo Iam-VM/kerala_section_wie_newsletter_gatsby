@@ -20,7 +20,7 @@ const FromTheWieChairsDesk = () => {
             opportunity for overcoming barriers in a level
             playing field.</div>
         </div>
-        <img src={"/team/wie-ks-chair.jpeg"} className={welcomeNoteStyles.imageMobile} />
+        <img src={"/team/wie-ks-chair.jpeg"} className={welcomeNoteStyles.image} />
       </div>
       {/*for mobile*/}
       <div className={welcomeNoteStyles.topContainerMobile} >
