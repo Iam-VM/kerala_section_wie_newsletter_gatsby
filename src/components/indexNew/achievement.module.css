@@ -26,7 +26,7 @@
 
 @media only screen and (max-width: 768px) {
     .container {
-        margin: 0 0 0 0;
+        margin: 0 0 0 -1rem;
     }
     .achievementsContainer {
         width: 90%;
