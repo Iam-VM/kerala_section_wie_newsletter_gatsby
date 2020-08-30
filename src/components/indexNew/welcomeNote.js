@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react"
 import welcomeNoteStyles from "./welcomeNote.module.css";
 import fromWieCharsDeskStyles from "./fromTheWieChairsDesk.module.css";
+import Aos from "aos";
+
 
 const WelcomeNote = () => {
+  useEffect(() => {
+    Aos.init()
+  }, []);
   return (
-    <div className={welcomeNoteStyles.container}>
+    <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1500" className={welcomeNoteStyles.container}>
       {/*for desktop*/}
       <div className={welcomeNoteStyles.topContainer}>
         <div className={welcomeNoteStyles.headAndTopSmallContainer}>
