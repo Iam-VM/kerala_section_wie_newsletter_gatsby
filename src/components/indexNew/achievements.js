@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react"
 import indexStyles from "../../styles/indexNew.module.css";
 import teamStyles from "../../styles/teams.module.css";
 import achievementStyles from "./achievement.module.css";
 import {FaTrophy} from "react-icons/fa";
+import Aos from "aos";
 
 const AchievementsComponent = () => {
+  useEffect(() => {
+    Aos.init()
+  }, []);
   return (
-    <div className={`${teamStyles.container} ${achievementStyles.container}`}>
+    <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1500"  className={`${teamStyles.container} ${achievementStyles.container}`}>
       <div className={teamStyles.teamHeadContainer}>
         <div className={teamStyles.teamHeadText}>Achievements</div>
         <div className={teamStyles.headByLine}>Lorem Ipsum is simply dummy text</div>

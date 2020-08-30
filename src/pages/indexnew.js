@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"
 import indexStyles from "../styles/indexNew.module.css";
 import teamStyles from "../styles/teams.module.css";
 
@@ -11,9 +11,12 @@ import HubReportLinksComponent from "../components/indexNew/reportLinkComponent"
 import CreditImagesComponent from "../components/indexNew/creditImageComponent";
 import WelcomeNote from "../components/indexNew/welcomeNote"
 import FromTheWieChairsDesk from "../components/indexNew/fromTheWieChairsDesk"
-
+import Aos from "aos";
 
 const NewIndexPage = () => {
+  useEffect(() => {
+    Aos.init()
+  }, []);
   return (
     <div className={indexStyles.main}>
       <Cover />
@@ -31,7 +34,7 @@ const NewIndexPage = () => {
       </div>
       <AchievementsComponent />
       <HubReportLinksComponent />
-      <div className={teamStyles.container}>
+      <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1500"  className={teamStyles.container}>
         <div className={teamStyles.teamHeadContainer}>
           <div className={teamStyles.teamHeadText}>WIE Team</div>
           <div className={teamStyles.headByLine}>Lorem Ipsum is simply dummy text</div>
@@ -44,7 +47,7 @@ const NewIndexPage = () => {
         </div>
       </div>
       <div className={teamStyles.space}> </div>
-      <div className={teamStyles.container}>
+      <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1500"  className={teamStyles.container}>
         <div className={teamStyles.teamHeadContainer}>
           <div className={teamStyles.teamHeadText}>Design Team</div>
           <div className={teamStyles.headByLine}>Lorem Ipsum is simply dummy text</div>
@@ -59,7 +62,7 @@ const NewIndexPage = () => {
         </div>
       </div>
       <div className={teamStyles.space}> </div>
-      <div className={teamStyles.container}>
+      <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1500"  className={teamStyles.container}>
         <div className={teamStyles.teamHeadContainer}>
           <div className={teamStyles.teamHeadText}>Content Team</div>
           <div className={teamStyles.headByLine}>Lorem Ipsum is simply dummy text</div>
