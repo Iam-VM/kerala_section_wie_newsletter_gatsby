@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react"
 import {Link} from "gatsby";
 import coverStyles from "./coverComponentStyles.module.css";
 import {AiFillInstagram, AiFillFacebook, AiFillCode, AiOutlineArrowRight} from "react-icons/ai";
@@ -6,9 +6,42 @@ import {BiMenuAltRight} from "react-icons/bi";
 import {RiArrowDropDownFill} from "react-icons/ri";
 import {BsThreeDots} from "react-icons/bs";
 
+
+
 const Cover = () => {
+  let i = 0;
+
+  const footerArray = [
+    <div className={coverStyles.footerContainerMobile}>
+      <div className={coverStyles.footerBlockHeadMobile}>Reports</div>
+      <div className={coverStyles.footerBlockTextMobile}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+      <Link to={"#"} className={coverStyles.footerBlockReadTextMobile}><div className={coverStyles.arrowMobile}><AiOutlineArrowRight /></div></Link>
+    </div>,
+    <div className={coverStyles.footerContainerMobile}>
+      <div className={coverStyles.footerBlockHeadMobile}>Interview with Emi Yano</div>
+      <div className={`${coverStyles.footerBlockTextMobile}`}>Discover what <span className={coverStyles.bold}>Emi Yano</span> has to tell us.</div>
+      <Link to={"/emi-yano"} className={coverStyles.footerBlockReadTextMobile}>Read</Link>
+    </div>,
+    <div className={coverStyles.footerContainerMobile}>
+      <div className={coverStyles.footerBlockHeadMobile}>Meet The WIE Team</div>
+      <div className={`${coverStyles.footerBlockTextMobile}`}>Lorem Ipsum is simply dummy text <span className={coverStyles.bold}>WIE Team.</span></div>
+      <Link to={"#"} className={coverStyles.footerBlockReadTextMobile}><div className={coverStyles.arrow}><BsThreeDots /></div></Link>
+    </div>
+  ];
+
+  const [footerState, setFooterState] = useState(footerArray[i]);
+
+  useEffect(() => {
+    setInterval(() => {
+      i++
+      if (i === footerArray.length) i = 0;
+      setFooterState(footerArray[i]);
+    }, 4000);
+  }, [setFooterState]);
+
+
   return (
-    <div className={coverStyles.coverContainer}>
+    <div className={`${coverStyles.coverContainer}`}>
       <div className={coverStyles.verticalNavBarContainer}>
         <div className={coverStyles.verticalContainerTopIconContainer}><BiMenuAltRight className={coverStyles.verticalContainerMenuIcon}/></div>
         <div className={coverStyles.verticalNavBarBottomButtonContainer}>
@@ -34,6 +67,7 @@ const Cover = () => {
             <div className={coverStyles.bodyMainHeadText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
           </div>
         </div>
+        {/*for desktop*/}
         <div className={coverStyles.coverFooterContainer}>
           <div className={coverStyles.footerBlock}>
             <div className={coverStyles.footerBlockHead}>Reports</div>
@@ -55,6 +89,8 @@ const Cover = () => {
             <div className={coverStyles.footerArrow}><div className={coverStyles.footerLongDownLine}></div><RiArrowDropDownFill className={coverStyles.arrowHead}/></div>
           </div>
         </div>
+        {/*end of for desktop*/}
+        {footerState}
       </div>
     </div>
   );
