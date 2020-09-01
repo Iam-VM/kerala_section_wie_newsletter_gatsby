@@ -5,39 +5,20 @@ import {AiFillInstagram, AiFillFacebook, AiFillCode, AiOutlineArrowRight} from "
 import {BiMenuAltRight} from "react-icons/bi";
 import {RiArrowDropDownFill} from "react-icons/ri";
 import {BsThreeDots} from "react-icons/bs";
+import MobileFooter from "./mobileFooter"
 
-
-
+let i = 0;
 const Cover = () => {
-  let i = 0;
-
-  const footerArray = [
-    <div className={coverStyles.footerContainerMobile}>
-      <div className={coverStyles.footerBlockHeadMobile}>Reports</div>
-      <div className={coverStyles.footerBlockTextMobile}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-      <Link to={"#"} className={coverStyles.footerBlockReadTextMobile}><div className={coverStyles.arrowMobile}><AiOutlineArrowRight /></div></Link>
-    </div>,
-    <div className={coverStyles.footerContainerMobile}>
-      <div className={coverStyles.footerBlockHeadMobile}>Interview with Emi Yano</div>
-      <div className={`${coverStyles.footerBlockTextMobile}`}>Discover what <span className={coverStyles.bold}>Emi Yano</span> has to tell us.</div>
-      <Link to={"/emi-yano"} className={coverStyles.footerBlockReadTextMobile}>Read</Link>
-    </div>,
-    <div className={coverStyles.footerContainerMobile}>
-      <div className={coverStyles.footerBlockHeadMobile}>Meet The WIE Team</div>
-      <div className={`${coverStyles.footerBlockTextMobile}`}>Lorem Ipsum is simply dummy text <span className={coverStyles.bold}>WIE Team.</span></div>
-      <Link to={"#"} className={coverStyles.footerBlockReadTextMobile}><div className={coverStyles.arrow}><BsThreeDots /></div></Link>
-    </div>
-  ];
-
-  const [footerState, setFooterState] = useState(footerArray[i]);
+  const [footerNumber, setFooterNumber] = useState(i);
 
   useEffect(() => {
-    setInterval(() => {
-      i++
-      if (i === footerArray.length) i = 0;
-      setFooterState(footerArray[i]);
-    }, 4000);
-  }, [setFooterState]);
+    const timer = setTimeout(() => {
+      i += 1;
+      if (i === 3) i = 0;
+      setFooterNumber(i);
+    }, 6000);
+    return () => clearTimeout(timer);
+  });
 
 
   return (
@@ -90,7 +71,24 @@ const Cover = () => {
           </div>
         </div>
         {/*end of for desktop*/}
-        {footerState}
+        {(footerNumber === 0)?<div className={`${coverStyles.footerContainerMobile}`}>
+          <div className={coverStyles.footerBlockHeadMobile}>Reports</div>
+          <div className={coverStyles.footerBlockTextMobile}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+          <Link to={"#"} className={coverStyles.footerBlockReadTextMobile}><div className={coverStyles.arrowMobile}><AiOutlineArrowRight /></div></Link>
+        </div> : null
+        }
+        {(footerNumber === 1)?<div className={`${coverStyles.footerContainerMobile}`}>
+            <div className={coverStyles.footerBlockHeadMobile}>Interview with Emi Yano</div>
+            <div className={`${coverStyles.footerBlockTextMobile}`}>Discover what <span className={coverStyles.bold}>Emi Yano</span> has to tell us.</div>
+            <Link to={"/emi-yano"} className={coverStyles.footerBlockReadTextMobile}>Read</Link>
+          </div> : null
+        }
+        {(footerNumber === 2)?<div className={`${coverStyles.footerContainerMobile}`}>
+            <div className={coverStyles.footerBlockHeadMobile}>Meet The WIE Team</div>
+            <div className={`${coverStyles.footerBlockTextMobile}`}>Lorem Ipsum is simply dummy text <span className={coverStyles.bold}>WIE Team.</span></div>
+            <Link to={"#"} className={coverStyles.footerBlockReadTextMobile}><div className={coverStyles.arrow}><BsThreeDots /></div></Link>
+          </div> : null
+        }
       </div>
     </div>
   );

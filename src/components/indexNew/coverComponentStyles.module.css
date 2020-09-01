@@ -296,7 +296,7 @@
     }
     .horizontalNavBarNameElementLeft {
         align-self: flex-start;
-        margin: 1rem 0 0 1rem;
+        margin: 1rem 0 0 2rem;
         font-size: 30px;
     }
     .horizontalNavBarButtonsContainer {
@@ -335,13 +335,19 @@
     .footerContainerMobile {
         width: 100%;
         height: 100%;
-        margin: 1rem 0 0 0;
+        margin: 1rem 0 0 1rem;
         /*border: 2px solid crimson;*/
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         flex: 2;
+        animation-name: footerAnimation;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1s;
+        animation-play-state: running;
+        animation-direction: normal;
     }
     .footerBlockHeadMobile {
         /*border: 2px solid cyan;*/
@@ -392,6 +398,9 @@
 }
 
 @keyframes footerAnimation {
-    0% {margin-top: 2rem;}
-    100% {margin-top: 0;}
+    0% {opacity: 0;}
+    25% {opacity: 0.50;}
+    50% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 1;}
 }
