@@ -18,7 +18,7 @@
     color: #c70062;
 }
 .headByLine {
-    margin-top: -1rem;
+    /*margin-top: -1rem;*/
     font-size: 16px;
     font-family: 'Noto Sans SC', sans-serif;
 }
@@ -47,7 +47,7 @@
     .teamHeadContainer {
     }
     .headByLine {
-        margin-top: -1.5rem;
+        /*margin-top: -1.5rem;*/
         font-size: 14px;
         margin-left: 1rem;
     }

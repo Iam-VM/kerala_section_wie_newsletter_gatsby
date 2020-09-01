@@ -33,7 +33,7 @@
     font-family: Bebas Neue, cursive;
 }
 .headTextPart2 {
-    margin-top: -9px;
+    /*margin-top: -9px;*/
     text-align: left;
     font-size: 25px;
     color: #333333;
@@ -46,7 +46,7 @@
 }
 .para {
     color: #2D2C2D;
-    text-align: left;
+    text-align: justify;
     font-family: 'Noto Sans SC', sans-serif;
     font-size: 14px;
 }

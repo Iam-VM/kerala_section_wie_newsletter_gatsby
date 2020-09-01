@@ -1,3 +1,84 @@
 .footerContainer {
+    margin: 6rem 0 0 0;
+    height: 14rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #212121;
+}
+
+.devNamesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.devNamesHeadContainer {
+    background-color: #eaeded;
+    width: 60px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.devHead {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+.devHead:after {
+    content: ".";
+    color: #c70062;
+    font-size: 35px;
+}
+
+.devNamesListContainer {
+    color: #eaeded;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+.devName {
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.contactNo {
+    color: #eaeded;
+    font-size: 14px;
+    letter-spacing: 0.1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.followText {
+    font-family: 'Russo One', sans-serif;
+    font-size: 16px;
+    color: #eaeded;
+}
+
+.verticalSocialMediaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.verticalSocialButtonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
 
 }
+
+.socialButton {
+    color: #eaeded;
+    font-size: 20px;
+}
+
+

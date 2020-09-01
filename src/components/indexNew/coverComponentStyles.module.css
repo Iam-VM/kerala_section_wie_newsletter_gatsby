@@ -77,6 +77,10 @@
     font-size: 35px;
     font-family: 'MuseoModerno', cursive;
 }
+.horizontalNavBarHeadText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
 .pink {
     color: #c70062;
 }
@@ -89,17 +93,16 @@
 
 .horizontalNavBarButton {
     letter-spacing: 0.05rem;
-    font-weight: 300;
-    font-size: 16px;
+    font-size: 14px;
     color: #eaeded;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-right: 2.5rem;
-    border-bottom: 2px solid #212121;
+    border-bottom: 1px solid #212121;
     transition: 0.5s all;
 }
 
 .horizontalNavBarButton:hover {
-    border-bottom: 2px solid #eaeded;
+    border-bottom: 1px solid #eaeded;
 }
 .bodyMain {
     flex: 4;
@@ -115,7 +118,7 @@
 
 .bodyMainHeadContainer {
     /*border: 2px solid gold;*/
-    margin-right: 3rem;
+    /*margin-right: 3rem;*/
     /*border: 2px solid gold;*/
     display: flex;
     flex-direction: column;
@@ -131,7 +134,7 @@
     font-size: 40px;
 }
 .bodyMainHeadSecondLine {
-    margin: -1rem 0 1rem 0;
+    margin: 0.5rem 0 1rem 0;
 }
 .bodyMainHeadSecondLine:after {
     content: " .";
@@ -140,6 +143,7 @@
 .bodyMainHeadText {
     /*border: 2px dashed green;*/
     font-size: 16px;
+    /*font-family: 'Montserrat', sans-serif;*/
     font-family: 'Montserrat', sans-serif;
     color: #eaeded;
     width: 500px;
@@ -200,12 +204,10 @@
 .onlyText {
     margin-top: 2.8rem;
 }
-
 .bold {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
 }
-
 .smallerFooterBlock {
     align-self: flex-end;
     height: 80%;
@@ -216,7 +218,6 @@
     background-position: top;
     background-size: cover;
 }
-
 .footerBlockReadText {
     align-self: flex-end;
     margin: 0 2.3rem 0 0;
@@ -224,12 +225,11 @@
     color: #c70062;
     font-family: 'Roboto', sans-serif;
 }
-
 .footerBlockReadText:hover {
-    text-decoration: underline;
+    border-bottom: 1px solid #c70062;
+    padding-bottom: 0.3rem;
     color: #c70062;
 }
-
 .footerBlockWithSwipeLine {
     flex: 1;
     display: flex;
@@ -237,7 +237,6 @@
     align-items: flex-start;
     justify-content: flex-end;
 }
-
 .scrollText {
     margin: 5rem -1.5rem 0 0;
     color: #eaeded;
@@ -253,7 +252,6 @@
     justify-content: flex-start;
     align-items: center;
 }
-
 .footerLongDownLine {
     margin: 0 1rem 0 0;
     align-self: flex-start;
@@ -261,7 +259,6 @@
     width: 1px;
     height: 88%;
 }
-
 .arrowHead {
     /*border: 1px solid #c70062;*/
     margin: -0.5rem 0 0 -1.05rem;
@@ -296,8 +293,11 @@
     }
     .horizontalNavBarNameElementLeft {
         align-self: flex-start;
-        margin: 1rem 0 0 2rem;
+        margin: 1rem 0 0 1rem;
         font-size: 30px;
+    }
+    .horizontalNavBarHeadText {
+        font-size: 10px;
     }
     .horizontalNavBarButtonsContainer {
         display: none;
@@ -313,7 +313,7 @@
        width:80%;
        /*border: 2px dashed darkgoldenrod;*/
        align-self: flex-start;
-       margin: 3rem 0 0 0;
+       margin: 3rem 0 0 -1rem;
     }
     .bodyMainHeadHead {
         width: auto;
@@ -322,7 +322,7 @@
     }
     .bodyMainHeadSecondLine {
         /*border: 2px solid rebeccapurple;*/
-        margin: -1rem 0 0.5rem 0;
+        margin: 0.5rem 0 1rem 0;
     }
     .bodyMainHeadText {
         /*border: 2px solid salmon;*/
@@ -335,7 +335,7 @@
     .footerContainerMobile {
         width: 100%;
         height: 100%;
-        margin: 1rem 0 0 1rem;
+        margin: 1rem 0 0 0;
         /*border: 2px solid crimson;*/
         display: flex;
         flex-direction: column;
@@ -375,8 +375,8 @@
         font-family: 'Noto Sans SC', sans-serif;
     }
     .arrowMobile {
-        align-self: flex-end;
-        margin: 0 0 0 0;
+        align-self: flex-start;
+        margin: 2rem 0 0 0;
         font-size: 25px;
         color: #c70062;
     }
@@ -385,15 +385,16 @@
         font-weight: 900;
     }
     .footerBlockReadTextMobile {
-        align-self: flex-end;
-        margin: -2rem 6rem 0 0;
+        align-self: flex-start;
+        margin: -2rem 6rem 0 10rem;
         font-size: 15px;
         color: #c70062;
         font-family: 'Roboto', sans-serif;
     }
     .footerBlockReadTextMobile:hover {
-        text-decoration: underline;
         color: #c70062;
+        border-bottom: 1px solid #c70062;
+        padding-bottom: 0.3rem;
     }
 }
 
