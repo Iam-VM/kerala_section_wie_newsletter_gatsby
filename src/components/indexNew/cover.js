@@ -5,6 +5,7 @@ import {AiFillInstagram, AiFillFacebook, AiFillCode, AiOutlineArrowRight} from "
 import {BiMenuAltRight} from "react-icons/bi";
 import {RiArrowDropDownFill} from "react-icons/ri";
 import {BsThreeDots} from "react-icons/bs";
+import {MdKeyboardArrowDown} from "react-icons/md";
 
 let i = 0;
 const Cover = () => {
@@ -18,6 +19,10 @@ const Cover = () => {
     }, 6000);
     return () => clearTimeout(timer);
   });
+
+  const scrollToWelcomeNote = () => {
+    window.scrollTo({top: 590, behavior: 'smooth'});
+  };
 
 
   return (
@@ -92,6 +97,51 @@ const Cover = () => {
           </div> : null
         }
       </div>
+      {/*entirely for mobile*/}
+      <div className={coverStyles.navBarContainerMobile}>
+        <div className={coverStyles.echoesHeadMobile}>
+          <div className={coverStyles.echoesTextMobile}>Echo<span className={coverStyles.pink}>es</span></div>
+          <div className={coverStyles.echoesHeadByLine}>Lorem Ipsum is simply</div>
+        </div>
+        <div className={coverStyles.hamburgerButtonMobile}><BiMenuAltRight className={coverStyles.verticalContainerMenuIcon}/></div>
+      </div>
+
+      <div className={coverStyles.mainTextMobileContainer}>
+        <div className={coverStyles.mainTextMobileHead1}>Lorem</div>
+        <div className={`${coverStyles.mainTextMobileHead1} ${coverStyles.mainTextMobileHead2}`}>Ipsum Lorem</div>
+        <div className={coverStyles.mainTextMobileByLine}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+      </div>
+
+      {(footerNumber === 0)?<div className={`${coverStyles.footerContainerMobile}`}>
+        <div className={coverStyles.footerBlockHeadMobile}>Reports</div>
+        <div className={coverStyles.footerBlockTextMobile}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <Link to={"#"} className={`${coverStyles.footerBlockReadTextMobile} linkWrap`}><div className={coverStyles.arrowMobile}><BsThreeDots /></div></Link>
+      </div> : null
+      }
+      {(footerNumber === 1)?<div className={`${coverStyles.footerContainerMobile}`}>
+        <div className={coverStyles.footerBlockHeadMobile}>Interview with Emi Yano</div>
+        <div className={`${coverStyles.footerBlockTextMobile}`}>Discover what <span className={coverStyles.bold}>Emi Yano</span> has to tell us.</div>
+        <Link to={"/emi-yano"} className={`${coverStyles.footerBlockReadTextMobile} linkWrap`}>Read</Link>
+      </div> : null
+      }
+      {(footerNumber === 2)?<div className={`${coverStyles.footerContainerMobile}`}>
+        <div className={coverStyles.footerBlockHeadMobile}>Meet The WIE Team</div>
+        <div className={`${coverStyles.footerBlockTextMobile}`}>Lorem Ipsum is simply dummy text <span className={coverStyles.bold}>WIE Team.</span></div>
+        <Link to={"#"} className={`${coverStyles.footerBlockReadTextMobile} linkWrap`}><div className={coverStyles.arrowMobile}><BsThreeDots /></div></Link>
+      </div> : null
+      }
+
+      <div className={coverStyles.socialButtonsMobileContainer}>
+        <a href={"#"} className={`${coverStyles.socialButton} linkWrap`}><AiFillInstagram /></a>
+        <a href={"#"} className={`${coverStyles.socialButton} linkWrap`}><AiFillFacebook /></a>
+        <a href={"#"} className={`${coverStyles.socialButton} linkWrap`}><AiFillCode /></a>
+      </div>
+
+
+      <div className={coverStyles.goDownMobileContainer} onClick={scrollToWelcomeNote}>
+        <MdKeyboardArrowDown />
+      </div>
+
     </div>
   );
 };

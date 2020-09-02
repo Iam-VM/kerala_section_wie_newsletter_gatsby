@@ -73,13 +73,15 @@
 }
 .horizontalNavBarNameElementLeft {
     margin-left: 2rem;
+    margin-bottom: 4px;
     color: #eaeded;
     font-size: 35px;
     font-family: 'MuseoModerno', cursive;
 }
 .horizontalNavBarHeadText {
+    margin-top: -13px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 10px;
 }
 .pink {
     color: #c70062;
@@ -261,87 +263,291 @@
 }
 .arrowHead {
     /*border: 1px solid #c70062;*/
-    margin: -0.5rem 0 0 -1.05rem;
+    margin: -0.5rem 0 0 -17px;
     padding: 0;
     color: #eaeded;
 }
+.navBarContainerMobile {
+    display: none;
+}
+
 @media only screen and (min-width: 768px) {
     .footerContainerMobile {
+        display: none;
+    }
+    .navBarContainerMobile {
+        display: none;
+
+    }
+    .hamburgerButtonMobile {
+        display: none;
+
+    }
+    .echoesHeadMobile {
+        display: none;
+
+    }
+    .echoesTextMobile {
+        display: none;
+
+    }
+    .echoesHeadByLine {
+        display: none;
+
+    }
+    .mainTextMobileContainer {
+        display: none;
+    }
+    .mainTextMobileHead1 {
+        display: none;
+    }
+    .mainTextMobileHead2 {
+        display: none;
+
+
+    }
+    .mainTextMobileHead2:after {
+        display: none;
+
+    }
+    .mainTextMobileByLine {
+        display: none;
+
+    }
+
+    .socialButtonsMobileContainer {
+        display: none;
+
+    }
+
+    .socialButton {
+        display: none;
+
+    }
+
+    .goDownMobileContainer {
+        display: none;
+
+    }
+    .goDownMobileContainer:active {
         display: none;
     }
 }
 
 @media only screen and (max-width: 768px) {
+    .coverContainer {
+        height: 70vh;
+        width: 100vw;
+        background-color: #212121;
+        margin: 0 0 5rem 0;
+        display:  flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
     .verticalNavBarContainer {
-        /*border: 2px solid yellow;*/
-        width: 60px;
-        height: 100%;
-    }
-    .verticalContainerTopIconContainer {
-        /*border: 1px dashed cyan;*/
-        width: 60px;
-        height: 60px;
-        background-color: #333333;
-        border-right: 1px solid #343434;
-    }
-    .verticalNavBarBottomButtonContainer {
-        margin-bottom: 4rem;
-    }
-    .horizontalNavBarContainer {
-        /*border: 2px solid gold;*/
-        height: 60px;
-    }
-    .horizontalNavBarNameElementLeft {
-        align-self: flex-start;
-        margin: 1rem 0 0 1rem;
-        font-size: 30px;
-    }
-    .horizontalNavBarHeadText {
-        font-size: 10px;
-    }
-    .horizontalNavBarButtonsContainer {
         display: none;
     }
-    .bodyMain {
-        height: 100%;
-        /*border: 2px solid saddlebrown;*/
-        justify-content: center;
-        align-items: flex-start;
-    }
-    .bodyMainHeadContainer {
-       height: 100%;
-       width:80%;
-       /*border: 2px dashed darkgoldenrod;*/
-       align-self: flex-start;
-       margin: 3rem 0 0 -1rem;
-    }
-    .bodyMainHeadHead {
-        width: auto;
-        /*border: 2px solid greenyellow;*/
-        font-size: 30px;
-    }
-    .bodyMainHeadSecondLine {
-        /*border: 2px solid rebeccapurple;*/
-        margin: 0.5rem 0 1rem 0;
-    }
-    .bodyMainHeadText {
-        /*border: 2px solid salmon;*/
-        font-size: 16px;
-        width: 200px;
-    }
-    .coverFooterContainer {
+    .coverBody {
         display: none;
     }
-    .footerContainerMobile {
-        width: 100%;
-        height: 100%;
+    .navBarContainerMobile {
         margin: 1rem 0 0 0;
-        /*border: 2px solid crimson;*/
+        /*border: 1px solid gold;*/
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hamburgerButtonMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2rem 0 0 ;
+        /*background-color: #333333;*/
+        font-size: x-large;
+        width: 2rem;
+        height: 2rem;
+        align-self: center;
+        color: #eaeded;
+    }
+    .echoesHeadMobile {
+        margin: 0 0 0 1rem;
+        /*border: 1px dashed green;*/
+        align-self: center;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        flex: 2;
+    }
+    .echoesTextMobile {
+        font-family: 'MuseoModerno', cursive;
+        font-size: 28px;
+        color: #eaeded;
+    }
+    .echoesHeadByLine {
+        margin-top: -12px;
+        letter-spacing: 0.1rem;
+        color: #eaeded;
+        font-family: 'Noto Sans SC', sans-serif;
+        font-size: 9px;
+    }
+    .mainTextMobileContainer {
+        margin: 5vh 0 0 0 ;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .mainTextMobileHead1 {
+        color: #eaeded;
+        font-size: 30px;
+        font-family: 'MuseoModerno', cursive;
+    }
+    .mainTextMobileHead2 {
+        margin-top: -1rem;
+
+    }
+    .mainTextMobileHead2:after {
+        content: " .";
+        color: #c70062;
+        font-size: 30px;
+    }
+    .mainTextMobileByLine {
+        display: none;
+        width: 75%;
+        text-align: center;
+        color: #eaeded;
+        font-size: 13px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .socialButtonsMobileContainer {
+        border-radius: 15px;
+        border: 1px solid #c70062;
+        width: 12rem;
+        height: 2.5rem;
+        margin: 0 0 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .socialButton {
+        margin: 3px 0 0 0;
+        align-self: center;
+        color: #eaeded;
+        font-size: 25px;
+    }
+
+    .goDownMobileContainer {
+        /*border: 1px solid green;*/
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto 0 0 0;
+        color: #eaeded;
+        font-size: 25px;
+        width: 100vw;
+    }
+    .goDownMobileContainer:active {
+        background-color: #333333;
+    }
+
+
+
+
+
+    /*.verticalNavBarContainer {*/
+    /*    display: none;*/
+    /*    align-self: flex-end;*/
+    /*    height: 70%;*/
+    /*    justify-content: center;*/
+    /*    !*border-right: none;*!*/
+    /*    border: 2px solid yellow;*/
+    /*    width: 60px;*/
+    /*    !*height: 100%;*!*/
+    /*}*/
+    /*.verticalContainerTopIconContainer {*/
+    /*    align-self: flex-end;*/
+    /*    display: none;*/
+    /*    !*border: 1px dashed cyan;*!*/
+    /*    width: 60px;*/
+    /*    height: 60px;*/
+    /*    background-color: #333333;*/
+    /*    border-right: 1px solid #343434;*/
+    /*}*/
+    /*.verticalNavBarBottomButtonContainer {*/
+    /*    margin-bottom: 4rem;*/
+    /*}*/
+    /*.horizontalNavBarContainer {*/
+    /*    width: 100vw;*/
+    /*    margin: 0 0 0 0;*/
+    /*    border: 2px solid gold;*/
+    /*    height: 40px;*/
+    /*}*/
+    /*.horizontalNavBarNameElementLeft {*/
+    /*    align-self: center;*/
+    /*    margin: -1rem 0 0 1rem;*/
+    /*    font-size: 30px;*/
+    /*}*/
+    /*.horizontalNavBarHeadText {*/
+    /*    margin-top: -0.5rem;*/
+    /*    font-size: 10px;*/
+    /*}*/
+    /*.horizontalNavBarButtonsContainer {*/
+    /*    display: none;*/
+    /*}*/
+    /*.bodyMain {*/
+    /*    height: 100%;*/
+    /*    !*border: 2px solid saddlebrown;*!*/
+    /*    justify-content: center;*/
+    /*    align-items: flex-start;*/
+    /*}*/
+    /*.bodyMainHeadContainer {*/
+    /*   height: 100%;*/
+    /*   width:80%;*/
+    /*   !*border: 2px dashed darkgoldenrod;*!*/
+    /*   align-self: flex-start;*/
+    /*   margin: 3rem 0 0 -1rem;*/
+    /*}*/
+    /*.bodyMainHeadHead {*/
+    /*    width: auto;*/
+    /*    !*border: 2px solid greenyellow;*!*/
+    /*    font-size: 30px;*/
+    /*}*/
+    /*.bodyMainHeadSecondLine {*/
+    /*    !*border: 2px solid rebeccapurple;*!*/
+    /*    margin: 0.5rem 0 1rem 0;*/
+    /*}*/
+    /*.bodyMainHeadText {*/
+    /*    !*border: 2px solid salmon;*!*/
+    /*    font-size: 16px;*/
+    /*    width: 200px;*/
+    /*}*/
+    /*.coverFooterContainer {*/
+    /*    display: none;*/
+    /*}*/
+
+
+    .footerContainerMobile {
+        height: 150px;
+        width: 75%;
+        margin: 12vh 0 0 0;
+        /*border: 2px solid crimson;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
         animation-name: footerAnimation;
         animation-fill-mode: forwards;
         animation-timing-function: ease-in-out;
@@ -350,14 +556,11 @@
         animation-direction: normal;
     }
     .footerBlockHeadMobile {
+        text-align: center;
         /*border: 2px solid cyan;*/
-        height: 30px;
-        width: 250px;
-        margin: 0 0 0 1.5rem;
         letter-spacing: 0.15rem;
         color: #eaeded;
         font-family: 'Bebas Neue', cursive;
-        align-self: flex-start;
         font-size: 18px;
     }
     .footerBlockHeadMobile:after {
@@ -366,17 +569,16 @@
         font-size: 25px;
     }
     .footerBlockTextMobile {
-        height: 80px;
-        width: 200px;
         /*border: 2px dashed green;*/
-        margin: 0 0.8rem 0 1.5rem;
+        margin: 0.5rem 0 0 0;
         font-size: 14px;
+        text-align: center;
         color: #eaeded;
         font-family: 'Noto Sans SC', sans-serif;
     }
     .arrowMobile {
-        align-self: flex-start;
-        margin: 2rem 0 0 0;
+        /*margin-right: -0.2rem;*/
+        text-align: center;
         font-size: 25px;
         color: #c70062;
     }
@@ -385,16 +587,11 @@
         font-weight: 900;
     }
     .footerBlockReadTextMobile {
-        align-self: flex-start;
-        margin: -2rem 6rem 0 10rem;
+        text-align: center;
+        margin: 0.5rem 0 0 0;
         font-size: 15px;
         color: #c70062;
         font-family: 'Roboto', sans-serif;
-    }
-    .footerBlockReadTextMobile:hover {
-        color: #c70062;
-        border-bottom: 1px solid #c70062;
-        padding-bottom: 0.3rem;
     }
 }
 

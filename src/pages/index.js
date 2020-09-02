@@ -12,7 +12,7 @@ import CreditImagesComponent from "../components/indexNew/creditImageComponent";
 import WelcomeNote from "../components/indexNew/welcomeNote"
 import FromTheWieChairsDesk from "../components/indexNew/fromTheWieChairsDesk"
 import Aos from "aos";
-import Footer from "../components/indexNew/footer"
+import Footer from "../components/indexNew/footer";
 
 const NewIndexPage = () => {
   useEffect(() => {
