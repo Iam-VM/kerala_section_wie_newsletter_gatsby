@@ -21,7 +21,7 @@ const Cover = () => {
   });
 
   const scrollToWelcomeNote = () => {
-    window.scrollTo({top: 650, behavior: 'smooth'});
+    window.scrollTo({top: 590, behavior: 'smooth'});
   };
 
 
