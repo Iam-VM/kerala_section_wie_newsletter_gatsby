@@ -6,9 +6,11 @@ import {FaTrophy} from "react-icons/fa";
 import Aos from "aos";
 
 const AchievementsComponent = () => {
+
   useEffect(() => {
     Aos.init()
   }, []);
+
   return (
     <div data-aos-once="true" data-aos="fade-up" data-aos-duration="800"  className={`${teamStyles.container} ${achievementStyles.container}`}>
       <div className={teamStyles.teamHeadContainer}>

@@ -21,7 +21,7 @@ const Cover = () => {
       i += 1;
       if (i === 3) i = 0;
       setFooterNumber(i);
-    }, 6000);
+    }, 4000);
     return () => clearTimeout(timer);
   });
 
