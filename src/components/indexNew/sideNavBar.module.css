@@ -1,5 +1,5 @@
 .container {
-    border-bottom-left-radius: 25px;
+    /*border-bottom-left-radius: 25px;*/
     position: absolute;
     z-index: 10;
     align-self: flex-start;
