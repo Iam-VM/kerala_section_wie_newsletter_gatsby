@@ -84,7 +84,7 @@
 @media only screen and (max-width: 768px) {
     .reportLinksContainer {
         flex-wrap: wrap;
-        margin: 0 0 12rem 0;
+        margin: 2rem 0 16rem 0;
     }
     .headContentText {
         width: 70%;

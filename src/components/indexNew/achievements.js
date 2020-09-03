@@ -10,7 +10,7 @@ const AchievementsComponent = () => {
     Aos.init()
   }, []);
   return (
-    <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1500"  className={`${teamStyles.container} ${achievementStyles.container}`}>
+    <div data-aos-once="true" data-aos="fade-up" data-aos-duration="800"  className={`${teamStyles.container} ${achievementStyles.container}`}>
       <div className={teamStyles.teamHeadContainer}>
         <div className={teamStyles.teamHeadText}>Achievements</div>
         <div className={teamStyles.headByLine}>Lorem Ipsum is simply dummy text</div>

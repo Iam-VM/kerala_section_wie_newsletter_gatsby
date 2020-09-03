@@ -9,7 +9,7 @@ const WelcomeNote = () => {
     Aos.init()
   }, []);
   return (
-    <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1500" className={welcomeNoteStyles.container}>
+    <div data-aos-once="true" data-aos="fade-up" data-aos-duration="800" className={welcomeNoteStyles.container}>
       {/*for desktop*/}
       <div className={welcomeNoteStyles.topContainer}>
         <div className={welcomeNoteStyles.headAndTopSmallContainer}>
