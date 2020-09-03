@@ -13,6 +13,7 @@ import WelcomeNote from "../components/indexNew/welcomeNote"
 import FromTheWieChairsDesk from "../components/indexNew/fromTheWieChairsDesk"
 import Aos from "aos";
 import Footer from "../components/indexNew/footer";
+import BestWishes from "../components/indexNew/bestWishes";
 
 const NewIndexPage = () => {
   useEffect(() => {
@@ -34,6 +35,8 @@ const NewIndexPage = () => {
         "             Membership status and quality of programs have shown a tremendous hike in the last two years."]} heightInPX={200} widthInPX={300} />
       </div>
       <AchievementsComponent />
+      <BestWishes />
+      {/*<ProActivities />*/}
       <HubReportLinksComponent />
       <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1500"  className={teamStyles.container}>
         <div className={teamStyles.teamHeadContainer}>

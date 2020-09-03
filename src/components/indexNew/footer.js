@@ -15,7 +15,7 @@ const Footer = () => {
           <div className={footerStyles.devName}>Neema Francis</div>
           <div className={footerStyles.devName}>Vishnu Mohanan</div>
         </div>
-        <div className={footerStyles.contactNo}>+91 9544236163</div>
+        <div className={footerStyles.contactNo}>+91 9544 236 163</div>
       </div>
       <div className={footerStyles.verticalSocialMediaContainer}>
         <div className={footerStyles.followText}>follow us on</div>

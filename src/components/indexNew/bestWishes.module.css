@@ -1,0 +1,28 @@
+.container {
+    align-self: center;
+    margin: 5rem 0 5rem 5rem;
+}
+
+.sbNameListContainer {
+    margin: 1rem 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sbNameContainer {
+    font-family: 'Noto Sans SC', sans-serif ;
+    color: #333333;
+    margin: 0.5rem 3rem 0 0 ;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 0 0 0 0;
+    }
+    .sbNameListContainer {
+        margin: 0 0 0 2rem;
+    }
+}
