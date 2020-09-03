@@ -79,7 +79,6 @@
 }
 
 .leave {
-    box-shadow: none;
     animation-name: leaveAnimation;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -91,7 +90,7 @@
 
 @keyframes leaveAnimation {
     0% {left: 0;}
-    100% {left: -70vw;}
+    100% {left: -70vw;box-shadow: none;}
 }
 
 .noSideNav {
