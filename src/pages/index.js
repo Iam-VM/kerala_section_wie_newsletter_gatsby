@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import indexStyles from "../styles/indexNew.module.css";
 import teamStyles from "../styles/teams.module.css";
 
@@ -15,12 +15,18 @@ import Aos from "aos";
 import Footer from "../components/indexNew/footer";
 import BestWishes from "../components/indexNew/bestWishes";
 
+
+
 const NewIndexPage = () => {
+
+
   useEffect(() => {
     Aos.init()
   }, []);
+
+
   return (
-    <div className={indexStyles.main}>
+    <div className={indexStyles.main} >
       <Cover />
       <WelcomeNote />
       <FromTheWieChairsDesk />

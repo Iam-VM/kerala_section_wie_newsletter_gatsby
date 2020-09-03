@@ -376,6 +376,13 @@
         align-self: center;
         color: #eaeded;
     }
+    .hamburgerIcon {
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    .hamburgerIcon:active {
+        background-color: #333333;
+    }
     .echoesHeadMobile {
         margin: 0 0 0 2rem;
         /*border: 1px dashed green;*/

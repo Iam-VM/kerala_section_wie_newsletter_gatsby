@@ -1,0 +1,99 @@
+.container {
+    border-bottom-left-radius: 25px;
+    position: absolute;
+    z-index: 10;
+    align-self: flex-start;
+    background-color: #eaeded;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 80vh;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 2px 8px #aaa;
+}
+
+.enter {
+    animation-name: sidenavAnimation;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+}
+
+@keyframes sidenavAnimation {
+    0% {left: -70vw;}
+    100% {left: 0;}
+}
+
+.changeColorOfHeadToBlack {
+    color: #333333;
+}
+
+.listContainer {
+    /*border: 1px solid green;*/
+    align-self: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navBarItemContainer {
+    cursor: pointer;
+    color: #333333;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    /*border: 1px dashed red;*/
+    width: 100%;
+    height: 2.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /*transition: 5ms all;*/
+}
+
+.navBarItemContainer:active {
+    background-color: #ccc;
+}
+
+.icon {
+    font-size: 20px;
+    margin: 0 0 0 1rem;
+}
+
+.itemName {
+    margin: 0 0 0 1rem;
+}
+
+.underline {
+    background-color: #ccc;
+    height: 1px;
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+}
+
+.leave {
+    box-shadow: none;
+    animation-name: leaveAnimation;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+}
+
+
+@keyframes leaveAnimation {
+    0% {left: 0;}
+    100% {left: -70vw;}
+}
+
+.noSideNav {
+    display: none;
+}

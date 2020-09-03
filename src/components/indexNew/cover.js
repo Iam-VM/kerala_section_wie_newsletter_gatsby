@@ -6,10 +6,15 @@ import {BiMenuAltRight} from "react-icons/bi";
 import {RiArrowDropDownFill} from "react-icons/ri";
 import {BsThreeDots} from "react-icons/bs";
 import {MdKeyboardArrowDown} from "react-icons/md";
+import SideNavBar from "./sideNavBar";
+import sideNavBarStyles from "./sideNavBar.module.css";
 
 let i = 0;
 const Cover = () => {
   const [footerNumber, setFooterNumber] = useState(i);
+  const [hamburgerButtonClicked, setHamburgerButtonClicked] = useState(false);
+  const [pageLoading, setPageLoading] = useState(true);
+
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -26,7 +31,11 @@ const Cover = () => {
 
 
   return (
-    <div className={`${coverStyles.coverContainer}`}>
+    <div className={`${coverStyles.coverContainer}`} onClick={() => {
+      if (hamburgerButtonClicked) {
+        setHamburgerButtonClicked(false);
+      }
+    }}>
       <div className={coverStyles.verticalNavBarContainer}>
         <div className={coverStyles.verticalContainerTopIconContainer}><BiMenuAltRight className={coverStyles.verticalContainerMenuIcon}/></div>
         <div className={coverStyles.verticalNavBarBottomButtonContainer}>
@@ -78,32 +87,20 @@ const Cover = () => {
           </div>
         </div>
         {/*end of for desktop*/}
-        {(footerNumber === 0)?<div className={`${coverStyles.footerContainerMobile}`}>
-          <div className={coverStyles.footerBlockHeadMobile}>Reports</div>
-          <div className={coverStyles.footerBlockTextMobile}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-          <Link to={"#"} className={`${coverStyles.footerBlockReadTextMobile} linkWrap`}><div className={coverStyles.arrowMobile}><AiOutlineArrowRight /></div></Link>
-        </div> : null
-        }
-        {(footerNumber === 1)?<div className={`${coverStyles.footerContainerMobile}`}>
-            <div className={coverStyles.footerBlockHeadMobile}>Interview with Emi Yano</div>
-            <div className={`${coverStyles.footerBlockTextMobile}`}>Discover what <span className={coverStyles.bold}>Emi Yano</span> has to tell us.</div>
-            <Link to={"/emi-yano"} className={`${coverStyles.footerBlockReadTextMobile} linkWrap`}>Read</Link>
-          </div> : null
-        }
-        {(footerNumber === 2)?<div className={`${coverStyles.footerContainerMobile}`}>
-            <div className={coverStyles.footerBlockHeadMobile}>Meet The WIE Team</div>
-            <div className={`${coverStyles.footerBlockTextMobile}`}>Lorem Ipsum is simply dummy text <span className={coverStyles.bold}>WIE Team.</span></div>
-            <Link to={"#"} className={`${coverStyles.footerBlockReadTextMobile} linkWrap`}><div className={coverStyles.arrow}><BsThreeDots /></div></Link>
-          </div> : null
-        }
       </div>
       {/*entirely for mobile*/}
+      {(hamburgerButtonClicked)?<SideNavBar active={true} />:<SideNavBar active={false} pageLoading={pageLoading} />}
       <div className={coverStyles.navBarContainerMobile}>
         <div className={coverStyles.echoesHeadMobile}>
           <div className={coverStyles.echoesTextMobile}>Echo<span className={coverStyles.pink}>es</span></div>
           <div className={coverStyles.echoesHeadByLine}>Lorem Ipsum is simply</div>
         </div>
-        <div className={coverStyles.hamburgerButtonMobile}><BiMenuAltRight className={coverStyles.verticalContainerMenuIcon}/></div>
+        <div className={coverStyles.hamburgerButtonMobile}><BiMenuAltRight style={(hamburgerButtonClicked)?{backgroundColor: `#333333`}:{}} className={coverStyles.hamburgerIcon} onClick={() => {
+          if (!hamburgerButtonClicked) {
+            setHamburgerButtonClicked(true);
+            setPageLoading(false);
+          }
+        }} /></div>
       </div>
 
       <div className={coverStyles.mainTextMobileContainer}>
