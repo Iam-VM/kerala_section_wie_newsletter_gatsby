@@ -26,7 +26,7 @@ const Cover = () => {
   });
 
   const scrollToWelcomeNote = () => {
-    window.scrollBy({top: document.documentElement.clientHeight - 40 - window.scrollY, behavior: 'smooth'});
+    window.scrollBy({top: document.documentElement.clientHeight - window.scrollY, behavior: 'smooth'});
   };
 
 
