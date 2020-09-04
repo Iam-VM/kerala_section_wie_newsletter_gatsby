@@ -79,6 +79,7 @@
     font-family: 'MuseoModerno', cursive;
 }
 .horizontalNavBarHeadText {
+    margin-left: 4px;
     margin-top: -13px;
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
@@ -136,7 +137,7 @@
     font-size: 40px;
 }
 .bodyMainHeadSecondLine {
-    margin: 0.5rem 0 1rem 0;
+    margin: -0.8rem 0 1rem 0;
 }
 .bodyMainHeadSecondLine:after {
     content: " .";
@@ -398,7 +399,8 @@
         color: #eaeded;
     }
     .echoesHeadByLine {
-        margin-top: -12px;
+        margin-left: 4px;
+        margin-top: -10px;
         letter-spacing: 0.1rem;
         color: #eaeded;
         font-family: 'Noto Sans SC', sans-serif;

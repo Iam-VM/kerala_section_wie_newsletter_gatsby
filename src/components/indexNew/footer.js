@@ -3,6 +3,7 @@ import footerStyles from "./footer.module.css";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai"
 import Aos from "aos";
 
+
 const Footer = () => {
 
   useEffect(() => {
@@ -31,6 +32,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
+
   );
 }
 
