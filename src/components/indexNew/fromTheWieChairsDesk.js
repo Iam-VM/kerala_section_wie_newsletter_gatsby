@@ -11,7 +11,7 @@ const FromTheWieChairsDesk = () => {
     <div data-aos-once="true" data-aos="fade-up" data-aos-duration="800"  className={welcomeNoteStyles.container}>
       <div className={welcomeNoteStyles.topContainer} >
         <div className={welcomeNoteStyles.headAndTopSmallContainer}>
-          <div className={welcomeNoteStyles.head}>FROM THE WIE CHAIRS DESK</div>
+          <div className={welcomeNoteStyles.head}>FROM THE WIE CHAIR'S DESK</div>
           <div className={welcomeNoteStyles.byLine}>Mini Ulanat - Chair, IEEE WIE AG Kerala Section</div>
           <div className={welcomeNoteStyles.topPara}>21st Century changed the conventional mode of
             knowledge sharing, information delivery and

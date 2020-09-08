@@ -1,4 +1,5 @@
 .container {
+    /*border: 1px solid #c70062;*/
     margin: 0 auto 4vh 0;
     align-self: flex-start;
     color: #333333;
@@ -54,6 +55,7 @@
 
 @media only screen and (max-width: 768px) {
     .container {
+        margin-left: 1rem;
         width: 100vw;
         margin-bottom: 3rem;
         align-self: center;
