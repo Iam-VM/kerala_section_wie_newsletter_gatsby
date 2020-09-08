@@ -10,11 +10,11 @@ import {Link} from "gatsby";
 
 
 const SideNavBar = (props) => {
-console.log('this is sidenav and  ' + props.pageLoading);
+const vh = window.innerHeight;
 
 
   return(
-    <div className={`${sideNavBarStyles.container} ${(props.active)?sideNavBarStyles.enter:sideNavBarStyles.leave} ${(props.pageLoading)?sideNavBarStyles.noSideNav:null}`} >
+    <div style={{height: `calc(var(--${vh}, 1vh) * 100)`}} className={`${sideNavBarStyles.container} ${(props.active)?sideNavBarStyles.enter:sideNavBarStyles.leave} ${(props.pageLoading)?sideNavBarStyles.noSideNav:null}`} >
       <div className={coverStyles.echoesHeadMobile} style={{marginTop: `1rem`, marginLeft: `1rem`, marginBottom: '2rem', alignSelf: `flex-start`}}>
         <div className={`${coverStyles.echoesTextMobile} ${sideNavBarStyles.changeColorOfHeadToBlue}`}>Echo<span className={coverStyles.pink}>es</span></div>
         <div className={`${coverStyles.echoesHeadByLine} ${sideNavBarStyles.changeColorOfHeadToBlue}`}>Lorem Ipsum is simply</div>

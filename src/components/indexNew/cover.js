@@ -14,7 +14,7 @@ const Cover = () => {
   const [footerNumber, setFooterNumber] = useState(i);
   const [hamburgerButtonClicked, setHamburgerButtonClicked] = useState(false);
   const [pageLoading, setPageLoading] = useState(true);
-
+  const vh = window.innerHeight;
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -31,7 +31,7 @@ const Cover = () => {
 
 
   return (
-    <div className={`${coverStyles.coverContainer}`} onClick={() => {
+    <div className={`${coverStyles.coverContainer}`} style={{height: `calc(var(--${vh}, 1vh) * 100)`}} onClick={() => {
       if (hamburgerButtonClicked) {
         setHamburgerButtonClicked(false);
       }
