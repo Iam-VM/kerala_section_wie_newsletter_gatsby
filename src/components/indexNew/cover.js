@@ -47,14 +47,13 @@ const Cover = () => {
       <div className={coverStyles.coverBody}>
         <div className={coverStyles.horizontalNavBarContainer}>
           <div className={coverStyles.horizontalNavBarNameElementLeft}>
-            <div className={coverStyles.horizontalNavBarNameElementLeftHead}>Echo<span className={coverStyles.pink}>es</span></div>
+            <div className={coverStyles.horizontalNavBarNameElementLeftHead}>ECHOES</div>
             <div className={coverStyles.horizontalNavBarHeadText}>Lorem Ipsum is simply</div>
           </div>
           <div className={coverStyles.horizontalNavBarButtonsContainer}>
             <a href={"#"} className={"linkWrap"}><div className={coverStyles.horizontalNavBarButton}>IEEE</div></a>
-            <a href={"#"} className={"linkWrap"}><div className={coverStyles.horizontalNavBarButton}>Women in Engineering</div></a>
-            <a href={"#"} className={"linkWrap"}><div className={coverStyles.horizontalNavBarButton}>Kerala Section</div></a>
-            <a href={"#"} className={"linkWrap"}><div className={coverStyles.horizontalNavBarButton}>Linkline</div></a>
+            <a href={"#"} className={"linkWrap"}><div className={coverStyles.horizontalNavBarButton}>WOMEN IN ENGINEERING</div></a>
+            <a href={"#"} className={"linkWrap"}><div className={coverStyles.horizontalNavBarButton}>KERALA SECTION</div></a>
           </div>
         </div>
         <div className={coverStyles.bodyMain}>
@@ -69,7 +68,7 @@ const Cover = () => {
           <div className={coverStyles.footerBlock}>
             <div className={coverStyles.footerBlockHead}>Reports</div>
             <div className={coverStyles.footerBlockText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-            <Link to={"#"} className={`${coverStyles.footerBlockReadText} linkWrap`}><div className={coverStyles.arrow}><AiOutlineArrowRight /></div></Link>
+            <Link to={"#"} className={`${coverStyles.footerBlockReadText} linkWrap`}><div className={coverStyles.arrow}><BsThreeDots /></div></Link>
           </div>
           <div className={coverStyles.footerBlock}>
             <div className={`${coverStyles.footerBlockText} ${coverStyles.onlyText}`}>Discover what <span className={coverStyles.bold}>Emi Yano</span> has to tell us.</div>
@@ -81,10 +80,10 @@ const Cover = () => {
             <div className={`${coverStyles.footerBlockText} ${coverStyles.onlyText}`}>Lorem Ipsum is simply dummy text <span className={coverStyles.bold}>WIE Team.</span></div>
             <Link to={"#"} className={`${coverStyles.footerBlockReadText} linkWrap`}><div className={coverStyles.arrow}><BsThreeDots /></div></Link>
           </div>
-          <div className={`${coverStyles.footerBlock} ${coverStyles.footerBlockWithSwipeLine}`}>
-            <div className={coverStyles.scrollText}>scroll</div>
-            <div className={coverStyles.footerArrow}><div className={coverStyles.footerLongDownLine}></div><RiArrowDropDownFill className={coverStyles.arrowHead}/></div>
-          </div>
+          {/*<div className={`${coverStyles.footerBlock} ${coverStyles.footerBlockWithSwipeLine}`}>*/}
+          {/*  <div className={coverStyles.scrollText}>scroll</div>*/}
+          {/*  <div className={coverStyles.footerArrow}><div className={coverStyles.footerLongDownLine}></div><RiArrowDropDownFill className={coverStyles.arrowHead}/></div>*/}
+          {/*</div>*/}
         </div>
         {/*end of for desktop*/}
       </div>

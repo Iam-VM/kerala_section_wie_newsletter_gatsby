@@ -1,6 +1,7 @@
 .container {
     /*border: 2px solid red;*/
-    margin: 5rem 10rem 0 15rem ;
+    /*margin: 5rem 10rem 0 15rem ;*/
+    margin: 9rem 8vw 0 8vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -21,7 +22,7 @@
 }
 
 .image {
-    margin: 4rem 7rem 0 0;
+    margin: 0 10vw 0 0;
     /*border: 2px solid salmon ;*/
     border-radius: 2px;
     /*box-shadow: 2px 2px 5px #333;*/

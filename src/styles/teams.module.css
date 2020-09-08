@@ -42,6 +42,7 @@
         width: 100%;
     }
     .teamHeadText {
+        margin-bottom: 1vh;
         margin-left: 1rem;
     }
     .teamHeadContainer {
@@ -50,6 +51,11 @@
         /*margin-top: -1.5rem;*/
         font-size: 14px;
         margin-left: 1rem;
+    }
+    .headByLine:after {
+        content: " .";
+        color: #c70062;
+        font-size: 18px;
     }
     .creditImagesComponentContainer {
         margin-left: 1rem;

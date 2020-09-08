@@ -56,10 +56,6 @@ console.log('this is sidenav and  ' + props.pageLoading);
           <AiOutlineFileProtect className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>Women In Engineering</div>
         </div></a>
-        <a href={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
-          <AiOutlineFileProtect className={sideNavBarStyles.icon} />
-          <div className={sideNavBarStyles.itemName}>Linkline</div>
-        </div></a>
       </div>
     </div>
   );

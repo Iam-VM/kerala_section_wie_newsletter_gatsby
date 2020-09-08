@@ -1,13 +1,13 @@
 .container {
     align-self: center;
-    margin: 5rem 0 8rem 5rem;
+    margin: 5rem 8vw 8rem 8vw;
 }
 
 .sbNameListContainer {
     margin: 2rem 0 0 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -18,6 +18,10 @@
     margin: 0.5rem 3rem 0 0 ;
 }
 
+.headByline {
+    font-size: 16px;
+}
+
 @media only screen and (max-width: 768px) {
     .container {
         margin: 0 0 2rem 0;
@@ -25,4 +29,19 @@
     .sbNameListContainer {
         margin: 2rem 0 0 2rem;
     }
+
+    .headByline {
+        /*margin-top: 2px;*/
+        font-size: 13px;
+    }
+    .headByline:after {
+        font-size: 15px;
+    }
 }
+
+@media only screen and (max-width: 340px) {
+    .headByline {
+        font-size: 12px;
+    }
+}
+
