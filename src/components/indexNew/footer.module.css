@@ -50,9 +50,9 @@
 
 .contactNo {
     color: #eaeded;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .followText {
@@ -68,6 +68,7 @@
 }
 
 .verticalSocialButtonsContainer {
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
