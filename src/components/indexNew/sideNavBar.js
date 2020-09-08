@@ -1,8 +1,12 @@
 import React from "react";
 import sideNavBarStyles from "./sideNavBar.module.css";
 import coverStyles from "./coverComponentStyles.module.css";
-import {AiOutlineFileProtect} from "react-icons/ai";
+import {RiProfileLine, RiTeamFill, RiGatsbyFill} from "react-icons/ri";
+import {FaFortAwesomeAlt, FaReadme} from "react-icons/fa";
+import {FcEngineering} from "react-icons/fc";
+import { GiSwordwoman } from "react-icons/gi";
 import {Link} from "gatsby";
+
 
 
 const SideNavBar = (props) => {
@@ -17,31 +21,31 @@ console.log('this is sidenav and  ' + props.pageLoading);
       </div>
       <div className={sideNavBarStyles.listContainer}>
         <Link to={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
-          <AiOutlineFileProtect className={sideNavBarStyles.icon} />
+          <FaReadme className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>Read Interview</div>
         </div></Link>
-        <Link to={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
-          <AiOutlineFileProtect className={sideNavBarStyles.icon} />
+         <Link to={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
+          <FaFortAwesomeAlt className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>MH Report</div>
         </div></Link>
         <Link to={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
-          <AiOutlineFileProtect className={sideNavBarStyles.icon} />
+          <FaFortAwesomeAlt className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>KH Report</div>
         </div></Link>
         <Link to={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
-          <AiOutlineFileProtect className={sideNavBarStyles.icon} />
+          <FaFortAwesomeAlt className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>TH Report</div>
         </div></Link>
         <Link to={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
-          <AiOutlineFileProtect className={sideNavBarStyles.icon} />
+          <RiProfileLine className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>Professional Activities</div>
         </div></Link>
         <Link to={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
-          <AiOutlineFileProtect className={sideNavBarStyles.icon} />
+          <RiTeamFill className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>Meet the WIE Team</div>
         </div></Link>
         <Link to={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
-          <AiOutlineFileProtect className={sideNavBarStyles.icon} />
+          <RiGatsbyFill className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>Developers</div>
         </div></Link>
       </div>
@@ -49,11 +53,11 @@ console.log('this is sidenav and  ' + props.pageLoading);
       </div>
       <div className={sideNavBarStyles.listContainer}>
         <a href={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
-          <AiOutlineFileProtect className={sideNavBarStyles.icon} />
+          <FcEngineering className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>IEEE</div>
         </div></a>
         <a href={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
-          <AiOutlineFileProtect className={sideNavBarStyles.icon} />
+          <GiSwordwoman className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>Women In Engineering</div>
         </div></a>
       </div>
