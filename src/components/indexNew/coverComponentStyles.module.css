@@ -6,7 +6,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: #212121;  /*testing*/
+    background-color: #070723;  /*testing*/
     /*background-image: url("../../../static/bg/wieEchoesDesktopCover.png");*/ /*reuse*/
     /*background-position: center;*/
     /*background-repeat: no-repeat;*/
@@ -24,13 +24,13 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border-right: 1px solid #343434;
+    border-right: 1px solid #555;
 }
 .verticalContainerTopIconContainer {
     /*border: 1px dashed cyan;*/
     width: 120px;
     height: 100px;
-    background-color: #343434;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,10 +110,10 @@
 .horizontalNavBarButton {
     letter-spacing: 0.05rem;
     font-size: 14px;
-    color: #eaeded;
+    color: #fff;
     font-weight: 300;
     font-family: 'Lato', sans-serif;
-    border-bottom: 1px solid #212121;
+    border-bottom: 1px solid #070723;
     transition: 0.5s all;
 }
 
@@ -193,7 +193,7 @@
 }
 
 .footerBlock {
-    background-color: #212121;
+    background-color: transparent;
     /*opacity: 0.5;*/
     height: 100%;
     flex: 4;
@@ -238,8 +238,11 @@
     font-weight: 900;
 }
 .smallerFooterBlock {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    box-shadow: 2px 0px 5px #000;
     align-self: flex-end;
-    height: 80%;
+    height: 100%;
     opacity: 0.7;
     /*width: auto;*/
     flex: 2;
@@ -350,7 +353,7 @@
     .coverContainer {
         height: 90vh;
         width: 100vw;
-        background-color: #212121;
+        background-color: #070723;
         margin: 0 0 10rem 0;
         display:  flex;
         flex-direction: column;

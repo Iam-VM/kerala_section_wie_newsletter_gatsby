@@ -12,8 +12,8 @@ console.log('this is sidenav and  ' + props.pageLoading);
   return(
     <div className={`${sideNavBarStyles.container} ${(props.active)?sideNavBarStyles.enter:sideNavBarStyles.leave} ${(props.pageLoading)?sideNavBarStyles.noSideNav:null}`} >
       <div className={coverStyles.echoesHeadMobile} style={{marginTop: `1rem`, marginLeft: `1rem`, marginBottom: '2rem', alignSelf: `flex-start`}}>
-        <div className={`${coverStyles.echoesTextMobile} ${sideNavBarStyles.changeColorOfHeadToBlack}`}>Echo<span className={coverStyles.pink}>es</span></div>
-        <div className={`${coverStyles.echoesHeadByLine} ${sideNavBarStyles.changeColorOfHeadToBlack}`}>Lorem Ipsum is simply</div>
+        <div className={`${coverStyles.echoesTextMobile} ${sideNavBarStyles.changeColorOfHeadToBlue}`}>Echo<span className={coverStyles.pink}>es</span></div>
+        <div className={`${coverStyles.echoesHeadByLine} ${sideNavBarStyles.changeColorOfHeadToBlue}`}>Lorem Ipsum is simply</div>
       </div>
       <div className={sideNavBarStyles.listContainer}>
         <Link to={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
