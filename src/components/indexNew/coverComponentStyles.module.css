@@ -348,7 +348,7 @@
 
 @media only screen and (max-width: 768px) {
     .coverContainer {
-        height: 95vh;
+        height: 90vh;
         width: 100vw;
         background-color: #212121;
         margin: 0 0 10rem 0;
