@@ -3,7 +3,7 @@ module.exports = {
     title: `Wie AG Kerala Section Newsletter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `Iam-VM`,
-    theme: `#212121`,
+    theme: `#070723`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,8 +30,8 @@ module.exports = {
         name: `WIE Echoes - IEEE WIE Kerala Section`,
         short_name: `WIE Echoes`,
         start_url: `/`,
-        background_color: `#212121`,
-        theme_color: `#212121`,
+        background_color: `#070723`,
+        theme_color: `#070723`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
