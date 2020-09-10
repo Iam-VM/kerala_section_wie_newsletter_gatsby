@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+
+/*Authored by Aysha Rasheed*/
+
+/*.masthead {
+  height: 100vh;
+  min-height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-image: url('https://s3.ap-south-1.amazonaws.com/yepdesk-profile-images/prod/KPVU78MI_normal.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+}*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+}
+
+
+a {
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /*background-image: url('/background.jpg');*/
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-size: cover;
+}
+
+.gradientText {
+  /* Fallback: Set a background color. */
+  background-image: linear-gradient(90deg, rgba(146,212,189,1) 0%, rgba(66,150,141,1) 40%, rgba(13,65,113,1) 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  text-align: center;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 100%;
+  background-color: #212121;
+  font-family: 'Archivo', sans-serif;
+}
+
+:root {
+  --color: #13b1bd;
+  --transition-time: 0.5s;
+}
+
+.cardsWrapper {
+  margin: 0 7rem 12rem 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/*.cardsWrapper {*/
+/*  !*width: fit-content;*!*/
+/*  !*!*margin: 0;*!*!*/
+/*  min-height: 100vh;*/
+/*  font-family: 'Montserrat', sans-serif;*/
+/*  !*background: #fafafa;*!*/
+
+/*  !*from here*!*/
+/*  display: grid;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  grid-template-columns: 1fr 1fr 1fr;*/
+/*  grid-gap: 4rem;*/
+/*  padding: 4rem;*/
+/*  margin: 0 auto;*/
+/*  width: max-content;*/
+/*}*/
+
+.card {
+  margin: 3rem 2rem 0 2rem ;
+  /*--bg-filter-opacity: 0.5;*/
+  /*background-color: blue-grey;*/
+  height: 10em;
+  width: 10em;
+  font-size: 1em;
+  color: black;
+  /*border-radius: 1em;*/
+  padding: 1em;
+  /*margin: 2em;*/
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  /*box-shadow: 0 0 2.5em -1em rgb(4,96,105);*/
+  transition: var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  /*border: 10px solid #ccc;*/
+  background-color: white;
+  vertical-align: center;
+  text-decoration: none;
+  border-radius: 50% 20% / 10% 40%;
+}
+
+.card:hover {
+  transform: rotate(0);
+}
+
+.card h1 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin: 0;
+  font-size: 1.3em;
+  /*padding: 320px 0;*/
+  line-height: 1.2em;
+  /*font-weight: 20px; Iam-VM commented this*/
+}
+
+
+
+
+.card:before, .card:after {
+
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: var(--transition-time);
+  /*transition-timing-function: fade-up;*/
+}
+
+
+
+.card:before {
+  /*background: #ddd;*/
+  width: 250%;
+  height: 250%;
+}
+
+
+.card:after {
+  background: black;
+  width: 200%;
+  height: 200%;
+}
+
+
+
+.card:hover {
+  color: var(--color);
+}
+
+.card:hover:before, .card:hover:after {
+  transform: scale(1);
+}
+
+/*.card-grid-space .num {
+  font-size: 3em;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem;
+}*/
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1285px) {
+  .cardsWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cardsWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .header{
+    padding: 18.5rem 2rem;
+  }
+/*  .card-grid-space .num {
+    /margin-left: 0;
+    /text-align: center;
+  }*/
+}
+
+@media screen and (max-width: 500px) {
+  .header{
+    padding: 18.5rem 3rem;
+  }
+  .cardsWrapper {
+    padding: 4rem 2rem;
+  }
+  .card {
+    max-width: calc(100vw - 4rem);
+  }
+}

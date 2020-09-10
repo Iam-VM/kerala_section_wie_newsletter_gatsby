@@ -1,6 +1,7 @@
 import React from "react";
 import {graphql} from "gatsby";
 import "../../static/collegePage.css";
+import Footer from "../components/indexNew/footer"
 
 const CollegePage = ({data}) => {
   const {markdownRemark} = data;
@@ -17,7 +18,8 @@ const CollegePage = ({data}) => {
     <div className={"collegePageContainer"}>
       <h4 className={"hubName"}>{frontmatter.hubname}</h4>
       <h1 className={"collegeName"}>{frontmatter.collegename}</h1>
-      <div dangerouslySetInnerHTML={{__html: htmlToBeInjected}} />
+      <div className={"injectionWrapper"} dangerouslySetInnerHTML={{__html: htmlToBeInjected}} />
+      <Footer />
     </div>
   );
 };

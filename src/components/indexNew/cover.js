@@ -5,9 +5,10 @@ import {AiFillInstagram, AiFillFacebook, AiFillCode, AiOutlineArrowRight} from "
 import {BiMenuAltRight} from "react-icons/bi";
 import {RiArrowDropDownFill} from "react-icons/ri";
 import {BsThreeDots} from "react-icons/bs";
+import {FaDev} from "react-icons/fa";
 import {MdKeyboardArrowDown} from "react-icons/md";
 import SideNavBar from "./sideNavBar";
-import sideNavBarStyles from "./sideNavBar.module.css";
+
 
 let i = 0;
 const Cover = () => {
@@ -40,19 +41,20 @@ const Cover = () => {
         <div className={coverStyles.verticalNavBarBottomButtonContainer}>
           <a href={"#"} className={`${coverStyles.verticalNavBarBottomButton} linkWrap`}><AiFillInstagram /></a>
           <a href={"#"} className={`${coverStyles.verticalNavBarBottomButton} linkWrap`}><AiFillFacebook /></a>
-          <a href={"#"} className={`${coverStyles.verticalNavBarBottomButton} linkWrap`}><AiFillCode /></a>
+          <div onClick={() => {window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})}} className={`${coverStyles.verticalNavBarBottomButton} linkWrap`}><FaDev /></div>
         </div>
       </div>
       <div className={coverStyles.coverBody}>
         <div className={coverStyles.horizontalNavBarContainer}>
           <div className={coverStyles.horizontalNavBarNameElementLeft}>
+            {/*<img src={'/wieTeam.png'} alt={"ECHOES"} className={coverStyles.horizontalNavBarTextLogoImage}/>*/}
             <div className={coverStyles.horizontalNavBarNameElementLeftHead}>ECHOES</div>
             <div className={coverStyles.horizontalNavBarHeadText}>Lorem Ipsum is simply</div>
           </div>
           <div className={coverStyles.horizontalNavBarButtonsContainer}>
-            <a href={"#"} className={"linkWrap"}><div className={coverStyles.horizontalNavBarButton}>IEEE</div></a>
-            <a href={"#"} className={"linkWrap"}><div className={coverStyles.horizontalNavBarButton}>WOMEN IN ENGINEERING</div></a>
-            <a href={"#"} className={"linkWrap"}><div className={coverStyles.horizontalNavBarButton}>KERALA SECTION</div></a>
+            <a href={"https://www.ieee.org"} target={"_blank"} className={"linkWrap"}><div className={coverStyles.horizontalNavBarButton}>IEEE</div></a>
+            <a href={"https://wie.ieee.org"} target={"_blank"} className={"linkWrap"}><div className={coverStyles.horizontalNavBarButton}>WOMEN IN ENGINEERING</div></a>
+            <a href={"https://ieeekerala.org"} target={"_blank"} className={"linkWrap"}><div className={coverStyles.horizontalNavBarButton}>KERALA SECTION</div></a>
           </div>
         </div>
         <div className={coverStyles.bodyMain}>
@@ -71,7 +73,7 @@ const Cover = () => {
           </div>
           <div className={coverStyles.footerBlock}>
             <div className={`${coverStyles.footerBlockText} ${coverStyles.onlyText}`}>Discover what <span className={coverStyles.bold}>Emi Yano</span> has to tell us.</div>
-            <Link to={"/emi-yano"} className={`${coverStyles.footerBlockReadText} linkWrap`}>Read</Link>
+            <Link to={"/interview/emiyano"} className={`${coverStyles.footerBlockReadText} linkWrap`}>Read</Link>
           </div>
           <div className={`${coverStyles.footerBlock} ${coverStyles.smallerFooterBlock}`}>
           </div>
@@ -129,14 +131,13 @@ const Cover = () => {
       <div className={coverStyles.socialButtonsMobileContainer}>
         <a href={"#"} className={`${coverStyles.socialButton} linkWrap`}><AiFillInstagram /></a>
         <a href={"#"} className={`${coverStyles.socialButton} linkWrap`}><AiFillFacebook /></a>
-        <a href={"#"} className={`${coverStyles.socialButton} linkWrap`}><AiFillCode /></a>
+        <div onClick={()=>{window.scrollTo({top: document.body.scrollHeight, behaviour: 'smooth'})}} className={`${coverStyles.socialButton} linkWrap`}><FaDev /></div>
       </div>
 
 
       <div className={coverStyles.goDownMobileContainer} onClick={scrollToWelcomeNote}>
         <MdKeyboardArrowDown />
       </div>
-
     </div>
   );
 };

@@ -73,11 +73,18 @@
     height: 100px;
 }
 .horizontalNavBarNameElementLeft {
+    /*border: 2px solid orange;*/
     margin-left: 2rem;
     margin-bottom: 4px;
     color: #eaeded;
     font-size: 35px;
     font-family: 'MuseoModerno', cursive;
+}
+.horizontalNavBarTextLogoImage {
+    margin: 0 0 0 2rem;
+    /*height: 100px;*/
+    width: 15vw;
+    height: auto;
 }
 .horizontalNavBarNameElementLeftHead {
     /*background: -webkit-linear-gradient(180deg, rgba(57,154,236,1) 0%, rgba(222,105,250,1) 100%, rgba(177,25,120,1) 100%);*/
@@ -106,7 +113,6 @@
     justify-content: space-around;
     align-items: center;
 }
-
 .horizontalNavBarButton {
     letter-spacing: 0.05rem;
     font-size: 14px;
@@ -116,7 +122,6 @@
     border-bottom: 1px solid #070723;
     transition: 0.5s all;
 }
-
 .horizontalNavBarButton:hover {
     border-bottom: 1px solid #eaeded;
 }
@@ -131,7 +136,6 @@
     justify-content: flex-end;
     align-items: center;
 }
-
 .bodyMainHeadContainer {
     /*border: 2px solid gold;*/
     /*margin-right: 3rem;*/
@@ -141,7 +145,6 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
-
 .bodyMainHeadHead {
     background: -webkit-linear-gradient(180deg, rgba(57,154,236,1) 0%, rgba(43,215,112,1) 100%, rgba(177,25,120,1) 100%);
     -webkit-text-fill-color: transparent;
@@ -191,7 +194,6 @@
     width: 100%;
     height: auto;
 }
-
 .footerBlock {
     background-color: transparent;
     /*opacity: 0.5;*/
@@ -204,7 +206,6 @@
     justify-content: flex-start;
     align-items: center;
 }
-
 .footerBlockHead {
     letter-spacing: 0.15rem;
     margin: 0.2rem 0 1rem 1.5rem;
@@ -351,7 +352,7 @@
 
 @media only screen and (max-width: 768px) {
     .coverContainer {
-        height: 90vh;
+        height: 80vh;
         width: 100vw;
         background-color: #070723;
         margin: 0 0 10rem 0;

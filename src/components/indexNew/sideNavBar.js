@@ -10,8 +10,6 @@ import {Link} from "gatsby";
 
 
 const SideNavBar = (props) => {
-const vh = window.innerHeight;
-
 
   return(
     <div className={`${sideNavBarStyles.container} ${(props.active)?sideNavBarStyles.enter:sideNavBarStyles.leave} ${(props.pageLoading)?sideNavBarStyles.noSideNav:null}`} >
@@ -20,23 +18,23 @@ const vh = window.innerHeight;
         <div className={`${coverStyles.echoesHeadByLine} ${sideNavBarStyles.changeColorOfHeadToBlue}`}>Lorem Ipsum is simply</div>
       </div>
       <div className={sideNavBarStyles.listContainer}>
-        <Link to={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
+        <Link to={'/interview/emiyano'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
           <FaReadme className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>Read Interview</div>
         </div></Link>
-         <Link to={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
+         <Link to={'/report/hub/malabar'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
           <FaFortAwesomeAlt className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>MH Report</div>
         </div></Link>
-        <Link to={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
+        <Link to={'/report/hub/kochi'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
           <FaFortAwesomeAlt className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>KH Report</div>
         </div></Link>
-        <Link to={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
+        <Link to={'/report/hub/travancore'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
           <FaFortAwesomeAlt className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>TH Report</div>
         </div></Link>
-        <Link to={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
+        <Link to={'/activities'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
           <RiProfileLine className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>Professional Activities</div>
         </div></Link>
@@ -44,10 +42,10 @@ const vh = window.innerHeight;
           <RiTeamFill className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>Meet the WIE Team</div>
         </div></Link>
-        <Link to={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
+        <div onClick={() => {window.scrollTo({top: document.body.scrollHeight, behaviour: 'smooth'});}} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
           <RiGatsbyFill className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>Developers</div>
-        </div></Link>
+        </div></div>
       </div>
       <div className={sideNavBarStyles.underline}>
       </div>

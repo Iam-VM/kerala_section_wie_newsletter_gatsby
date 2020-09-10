@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import indexStyles from "../styles/indexNew.module.css";
+import indexStyles from "../styles/index.module.css";
 import teamStyles from "../styles/teams.module.css";
 
 //local

@@ -9,8 +9,6 @@ slug: "/kochi-hub/federal-institute-of-science-and-technology"
 ```Attendance: 75```
 
 
-![Image failed to load!](/wieTeam.png "Cognizance 9.0")
-
 Second year IEEE members of FISAT SB in association with WIE AG FISAT organised Cognizance 9.0 which served as a platform for the second years to polish their techno-managerial skills. 
 
 

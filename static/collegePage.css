@@ -3,7 +3,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin: 0 auto 0 auto;
+}
+
+.injectionWrapper  {
+    margin: 0 8vw 0 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /*h4 is for hubname head*/
@@ -18,6 +25,18 @@
     font-size: 20px;
     color: #2a2a56;
     align-self: center;
+    letter-spacing: 0.03rem;
+    animation-name: collegePageAnimation;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
+}
+
+@keyframes collegePageAnimation {
+   0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 /*h1 is for collegeName*/
@@ -28,8 +47,15 @@
     margin: 1rem 1rem 5rem 1rem;
     text-align: center;
     align-self: center;
+    animation-name: collegePageAnimation;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
 }
 h2 {
+    /*border: 1px solid crimson;*/
     padding: 1rem;
     font-size: 25px;
     font-family: 'Montserrat', sans-serif;
@@ -37,6 +63,12 @@ h2 {
     text-align: center;
     color: #2a2a56;
     margin-bottom: 2rem;
+    animation-name: collegePageAnimation;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
 }
 h2:before {
     content: "#";
@@ -45,21 +77,89 @@ h2:before {
 }
 
 p {
+    /*border:  2px solid greenyellow;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid black;*/
     font-size: 16px;
     font-weight: 500;
     padding: 0 1rem 0 1rem;
     align-self: center;
     margin: -1rem auto 4rem auto;
-    text-align: center;
+    text-align: justify;
     font-family: 'Noto Sans SC', sans-serif;
+    animation-name: collegePageAnimation;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
 }
 code {
-    margin: 0 0 -1rem 0;
+    /*border: 1px solid purple;*/
+    text-align: justify;
+    margin: 0 auto -1rem auto;
     font-size: 14px;
     color: #333333;
     align-self: center;
+    background-color: #eaeded;
+    animation-name: collegePageAnimation;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
 }
+
+img {
+    margin-top: 4rem;
+}
+
+ul {
+    /*border:  2px solid #000;*/
+    width: 50%;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 1rem 0 1rem;
+    align-self: center;
+    margin: 0 auto 3rem auto;
+    text-align: justify;
+    font-family: 'Noto Sans SC', sans-serif;
+    animation-name: collegePageAnimation;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
+}
+
+li {
+    /*border:  2px solid red;*/
+    margin-bottom: 1rem;
+}
+
+ol {
+    /*border:  2px solid #000;*/
+    width: 50%;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 1rem 0 1rem;
+    align-self: center;
+    margin: 0 auto 3rem auto;
+    text-align: justify;
+    font-family: 'Noto Sans SC', sans-serif;
+    animation-name: collegePageAnimation;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
+}
+
 table {
+    /*border:  2px solid crimson;*/
     margin: 0 auto 3rem auto;
     height: 70vh;
     overflow-x: scroll;
@@ -69,6 +169,12 @@ table {
     width: 75%;
     align-self: center;
     align-content: center;
+    animation-name: collegePageAnimation;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
 }
 thead {
     text-align: center;
@@ -97,16 +203,45 @@ caption {
     align-content: center;
     margin: 0 auto 4rem auto;
     text-align: center;
+    animation-name: collegePageAnimation;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
 }
 center{
+    /*border:  2px solid #2a2a56;*/
     margin-bottom: 4rem;
 }
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
+    p {
+        width: 90%;
+        padding: 0;
+    }
+    .injectionWrapper {
+        margin-left: 0;
+        margin-right:0;
+    }
+    h2 {
+        width: 95%;
+        padding: 0;
+    }
+    ul {
+        width: 90%;
+    }
+    ol {
+        width: 90%;
+    }
+    img {
+        height: auto;
+        width:100%;
+    }
     thead {
         text-align: right;
     }
     table {
-        width: auto;
+        width: 100%;
     }
     th {
         padding: 1rem;
@@ -120,16 +255,16 @@ h4 {
     text-align: center;
 }
 
-@media only screen and (min-width: 786px) {
+@media only screen and (min-width: 768px) {
 }
 
-@media only screen and (min-width: 786px) {
+@media only screen and (min-width: 768px) {
     table {
         height: 50vh;
         width: 50%;
     }
     p {
-        width: 60%;
+        width: 70%;
     }
     td {
         margin: 0 auto 0 auto;
