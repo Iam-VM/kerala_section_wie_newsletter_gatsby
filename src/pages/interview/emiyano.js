@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react"
 import interviewStyles from "../../styles/emiyano.module.css";
-import aos from "aos";
+import Aos from "aos";
 import Footer from "../../components/indexNew/footer"
 
 const EmiYano = () => {
-  aos.init({
-    duration: 800,
-    once: true,
-  });
+  useEffect(() => {
+    Aos.init({
+      duration: 800,
+      once: true,
+    })
+  }, []);
 
   return (
     <div className={interviewStyles.interviewMainContainer} id="monster">
