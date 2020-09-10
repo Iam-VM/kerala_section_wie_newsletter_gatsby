@@ -1,6 +1,5 @@
 import React from "react";
 import hubStyles from "../../../styles/StyleHub.module.css";
-import Footer from "../../../components/indexNew/footer"
 
 
 const Kochi = () => {
@@ -153,7 +152,6 @@ const Kochi = () => {
         </div>
 
       </div>
-      <Footer />
     </div>
 
   );

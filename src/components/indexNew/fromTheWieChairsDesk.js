@@ -29,7 +29,7 @@ const FromTheWieChairsDesk = () => {
       {/*for mobile*/}
       <div className={welcomeNoteStyles.topContainerMobile} >
         <div className={welcomeNoteStyles.headAndTopSmallContainerMobile}>
-          <div className={welcomeNoteStyles.headMobile}>FROM THE WIE CHAIRS DESK</div>
+          <div className={welcomeNoteStyles.headMobile}>FROM THE WIE CHAIR'S DESK</div>
           <div className={welcomeNoteStyles.byLineMobile}>Mini Ulanat - Chair, IEEE WIE AG Kerala Section</div>
           <img src={"/team/wie-ks-chair.jpeg"} className={welcomeNoteStyles.imageMobile} />
           <div className={welcomeNoteStyles.topParaMobile}>21st Century changed the conventional mode of

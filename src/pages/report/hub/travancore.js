@@ -1,6 +1,5 @@
 import React from "react";
 import hubStyles from "../../../styles/StyleHub.module.css";
-import Footer from "../../../components/indexNew/footer"
 
 
 
@@ -8,6 +7,12 @@ const Travancore = () => {
   return (
 
     <div className={hubStyles.container}>
+
+      <div className={hubStyles.header}>
+        <h1 className={hubStyles.gradientText}>IEEE TRAVANCORE HUB</h1>
+      </div>
+
+
       <div className={hubStyles.cardsWrapper}>
 
         <div>
@@ -94,7 +99,6 @@ const Travancore = () => {
           </a>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

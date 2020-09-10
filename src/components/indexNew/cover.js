@@ -55,38 +55,66 @@ const Cover = () => {
             <a href={"https://www.ieee.org"} target={"_blank"} className={"linkWrap"}><div className={coverStyles.horizontalNavBarButton}>IEEE</div></a>
             <a href={"https://wie.ieee.org"} target={"_blank"} className={"linkWrap"}><div className={coverStyles.horizontalNavBarButton}>WOMEN IN ENGINEERING</div></a>
             <a href={"https://ieeekerala.org"} target={"_blank"} className={"linkWrap"}><div className={coverStyles.horizontalNavBarButton}>KERALA SECTION</div></a>
+            <a href={"https://ieeekerala.org/wie-affinity-group/"} target={"_blank"} className={"linkWrap"}><div className={coverStyles.horizontalNavBarButton}>WIE AFFINITY GROUP KS</div></a>
           </div>
         </div>
+        {/*<div className={coverStyles.bodyMain}>*/}
+        {/*  <div className={coverStyles.bodyMainHeadContainer}>*/}
+        {/*    <div className={coverStyles.bodyMainHeadHead}>Lorem</div>*/}
+        {/*    <div className={`${coverStyles.bodyMainHeadHead} ${coverStyles.bodyMainHeadSecondLine}`}>Ipsum Lorem</div>*/}
+        {/*    <div className={coverStyles.bodyMainHeadText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
+        {/*new plan for desktop animation*/}
         <div className={coverStyles.bodyMain}>
+          {(footerNumber === 0)?
           <div className={coverStyles.bodyMainHeadContainer}>
-            <div className={coverStyles.bodyMainHeadHead}>Lorem</div>
-            <div className={`${coverStyles.bodyMainHeadHead} ${coverStyles.bodyMainHeadSecondLine}`}>Ipsum Lorem</div>
+            <div className={coverStyles.bodyMainHeadHead}>Reports .</div>
+            {/*<div className={`${coverStyles.bodyMainHeadHead} ${coverStyles.bodyMainHeadSecondLine}`}>Ipsum Lorem</div>*/}
             <div className={coverStyles.bodyMainHeadText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-          </div>
-        </div>
+            <Link to={"#"} className={`${coverStyles.footerBlockReadText} linkWrap`}><div className={coverStyles.arrow}><BsThreeDots /></div></Link>
+          </div> : null
+        }
+        {(footerNumber === 1)? <div className={coverStyles.bodyMainHeadContainer}>
+            <div className={coverStyles.bodyMainHeadHead}>Interview</div>
+            <div className={`${coverStyles.bodyMainHeadHead} ${coverStyles.bodyMainHeadSecondLine}`}>With Emi Yano</div>
+            <div className={coverStyles.bodyMainHeadText}>Discover what <span className={coverStyles.bold}>Emi Yano</span> has to tell us.</div>
+            <Link to={"#"} className={`${coverStyles.footerBlockReadText} linkWrap`}><div className={coverStyles.arrow}><BsThreeDots /></div></Link>
+          </div> : null
+        }
+        {(footerNumber === 2)? <div className={coverStyles.bodyMainHeadContainer}>
+            <div className={coverStyles.bodyMainHeadHead}>Meet</div>
+            <div className={`${coverStyles.bodyMainHeadHead} ${coverStyles.bodyMainHeadSecondLine}`}>the WIE Team</div>
+            <div className={coverStyles.bodyMainHeadText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+            <Link to={"#"} className={`${coverStyles.footerBlockReadText} linkWrap`}><div className={coverStyles.arrow}><BsThreeDots /></div></Link>
+          </div> : null
+        }
+        <img src={'/wie-logo-cropped.png'} alt={'WIE woman'} className={coverStyles.womanImage} />
+        {/*end of new plan for desktop animation*/}
         {/*for desktop*/}
-        <div className={coverStyles.coverFooterContainer}>
-          <div className={coverStyles.footerBlock}>
-            <div className={coverStyles.footerBlockHead}>Reports</div>
-            <div className={coverStyles.footerBlockText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-            <Link to={"#"} className={`${coverStyles.footerBlockReadText} linkWrap`}><div className={coverStyles.arrow}><BsThreeDots /></div></Link>
-          </div>
-          <div className={coverStyles.footerBlock}>
-            <div className={`${coverStyles.footerBlockText} ${coverStyles.onlyText}`}>Discover what <span className={coverStyles.bold}>Emi Yano</span> has to tell us.</div>
-            <Link to={"/interview/emiyano"} className={`${coverStyles.footerBlockReadText} linkWrap`}>Read</Link>
-          </div>
-          <div className={`${coverStyles.footerBlock} ${coverStyles.smallerFooterBlock}`}>
-          </div>
-          <div className={coverStyles.footerBlock}>
-            <div className={`${coverStyles.footerBlockText} ${coverStyles.onlyText}`}>Lorem Ipsum is simply dummy text <span className={coverStyles.bold}>WIE Team.</span></div>
-            <Link to={"#"} className={`${coverStyles.footerBlockReadText} linkWrap`}><div className={coverStyles.arrow}><BsThreeDots /></div></Link>
-          </div>
-          {/*<div className={`${coverStyles.footerBlock} ${coverStyles.footerBlockWithSwipeLine}`}>*/}
-          {/*  <div className={coverStyles.scrollText}>scroll</div>*/}
-          {/*  <div className={coverStyles.footerArrow}><div className={coverStyles.footerLongDownLine}></div><RiArrowDropDownFill className={coverStyles.arrowHead}/></div>*/}
-          {/*</div>*/}
-        </div>
+        {/*<div className={coverStyles.coverFooterContainer}>*/}
+        {/*  <div className={coverStyles.footerBlock}>*/}
+        {/*    <div className={coverStyles.footerBlockHead}>Reports</div>*/}
+        {/*    <div className={coverStyles.footerBlockText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>*/}
+        {/*    <Link to={"#"} className={`${coverStyles.footerBlockReadText} linkWrap`}><div className={coverStyles.arrow}><BsThreeDots /></div></Link>*/}
+        {/*  </div>*/}
+        {/*  <div className={coverStyles.footerBlock}>*/}
+        {/*    <div className={`${coverStyles.footerBlockText} ${coverStyles.onlyText}`}>Discover what <span className={coverStyles.bold}>Emi Yano</span> has to tell us.</div>*/}
+        {/*    <Link to={"/interview/emiyano"} className={`${coverStyles.footerBlockReadText} linkWrap`}>Read</Link>*/}
+        {/*  </div>*/}
+        {/*  <div className={`${coverStyles.footerBlock} ${coverStyles.smallerFooterBlock}`}>*/}
+        {/*  </div>*/}
+        {/*  <div className={coverStyles.footerBlock}>*/}
+        {/*    <div className={`${coverStyles.footerBlockText} ${coverStyles.onlyText}`}>Lorem Ipsum is simply dummy text <span className={coverStyles.bold}>WIE Team.</span></div>*/}
+        {/*    <Link to={"#"} className={`${coverStyles.footerBlockReadText} linkWrap`}><div className={coverStyles.arrow}><BsThreeDots /></div></Link>*/}
+        {/*  </div>*/}
+        {/*  /!*<div className={`${coverStyles.footerBlock} ${coverStyles.footerBlockWithSwipeLine}`}>*!/*/}
+        {/*  /!*  <div className={coverStyles.scrollText}>scroll</div>*!/*/}
+        {/*  /!*  <div className={coverStyles.footerArrow}><div className={coverStyles.footerLongDownLine}></div><RiArrowDropDownFill className={coverStyles.arrowHead}/></div>*!/*/}
+        {/*  /!*</div>*!/*/}
+        {/*</div>*/}
         {/*end of for desktop*/}
+        </div>
       </div>
       {/*entirely for mobile*/}
       {(hamburgerButtonClicked)?<SideNavBar active={true} />:<SideNavBar active={false} pageLoading={pageLoading} />}
@@ -118,7 +146,7 @@ const Cover = () => {
       {(footerNumber === 1)?<div className={`${coverStyles.footerContainerMobile}`}>
         <div className={coverStyles.footerBlockHeadMobile}>Interview with Emi Yano</div>
         <div className={`${coverStyles.footerBlockTextMobile}`}>Discover what <span className={coverStyles.bold}>Emi Yano</span> has to tell us.</div>
-        <Link to={"/emi-yano"} className={`${coverStyles.footerBlockReadTextMobile} linkWrap`}>Read</Link>
+        <Link to={"/interview/emiyano"} className={`${coverStyles.footerBlockReadTextMobile} linkWrap`}>Read</Link>
       </div> : null
       }
       {(footerNumber === 2)?<div className={`${coverStyles.footerContainerMobile}`}>

@@ -6,7 +6,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: #070723;  /*testing*/
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(232,208,236,1) 100%);  /*testing*/
     /*background-image: url("../../../static/bg/wieEchoesDesktopCover.png");*/ /*reuse*/
     /*background-position: center;*/
     /*background-repeat: no-repeat;*/
@@ -18,18 +18,18 @@
 }
 .verticalNavBarContainer {
     /*border: 2px solid yellow;*/
-    width: 120px;
+    width: 90px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border-right: 1px solid #555;
+    border-right: 1px solid #eaeded;
 }
 .verticalContainerTopIconContainer {
     /*border: 1px dashed cyan;*/
-    width: 120px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background-color: transparent;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@
     align-items: center;
 }
 .verticalContainerMenuIcon {
-    color: #eaeded;
+    color: #772583;
     font-size: 25px;
 }
 .verticalNavBarBottomButtonContainer {
@@ -49,7 +49,7 @@
 }
 .verticalNavBarBottomButton {
     font-size: 20px;
-    color: #eaeded;
+    color: #772583;
     margin-bottom: 1rem;
 }
 .coverBody {
@@ -62,7 +62,7 @@
     height: 100%;
 }
 .horizontalNavBarContainer {
-    margin: 3vh 0 0 0 ;
+    margin: 0 0 0 0 ;
     /*flex: 1;*/
     display: flex;
     flex-direction: row;
@@ -75,8 +75,8 @@
 .horizontalNavBarNameElementLeft {
     /*border: 2px solid orange;*/
     margin-left: 2rem;
-    margin-bottom: 4px;
-    color: #eaeded;
+    /*margin-bottom: 4px;*/
+    color: #772583;
     font-size: 35px;
     font-family: 'MuseoModerno', cursive;
 }
@@ -90,13 +90,15 @@
     /*background: -webkit-linear-gradient(180deg, rgba(57,154,236,1) 0%, rgba(222,105,250,1) 100%, rgba(177,25,120,1) 100%);*/
     /*-webkit-text-fill-color: transparent;*/
     /*-webkit-background-clip: text;*/
-    color: #999;
+    background: -webkit-linear-gradient(180deg, rgba(105,33,186,1) 0%, rgba(215,43,176,1) 100%, rgba(177,25,120,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     letter-spacing: 0.1rem;
     font-size: 25px;
     font-family: 'Comfortaa', cursive;
 }
 .horizontalNavBarHeadText {
-    margin-left: 4px;
+    margin-left: 2px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     letter-spacing: 0.08rem;
@@ -116,14 +118,14 @@
 .horizontalNavBarButton {
     letter-spacing: 0.05rem;
     font-size: 14px;
-    color: #fff;
+    color: #772583;
     font-weight: 300;
     font-family: 'Lato', sans-serif;
-    border-bottom: 1px solid #070723;
+    border-bottom: 1px solid transparent;
     transition: 0.5s all;
 }
 .horizontalNavBarButton:hover {
-    border-bottom: 1px solid #eaeded;
+    border-bottom: 1px solid #772583;
 }
 .bodyMain {
     /*flex: 4;*/
@@ -133,39 +135,45 @@
     align-self: center;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+}
+.womanImage {
+    /*border: 2px solid red;*/
+    margin: -5% 0 0 0;
 }
 .bodyMainHeadContainer {
     /*border: 2px solid gold;*/
     /*margin-right: 3rem;*/
     /*border: 2px solid gold;*/
+    margin: -10% 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    animation-name: footerAnimation;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-play-state: running;
+    animation-direction: normal;
 }
 .bodyMainHeadHead {
-    background: -webkit-linear-gradient(180deg, rgba(57,154,236,1) 0%, rgba(43,215,112,1) 100%, rgba(177,25,120,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(105,33,186,1) 0%, rgba(215,43,176,1) 100%, rgba(177,25,120,1) 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     /*border: 2px solid crimson;*/
     /*width: 300px;*/
     color: #eaeded;
-    font-family: 'MuseoModerno', cursive;
+    font-family: 'Bebas Neue', cursive;
     font-size: 4vw;
+    letter-spacing: 0.1rem;
 }
 .bodyMainHeadSecondLine {
-    background: -webkit-linear-gradient(180deg, rgba(57,154,236,1) 0%, rgba(43,215,112,1) 100%, rgba(177,25,120,1) 100%);
+    /*background: -webkit-linear-gradient(180deg, rgba(57,154,236,1) 0%, rgba(43,215,112,1) 100%, rgba(177,25,120,1) 100%);*/
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     margin: -0.8rem 0 0 0;
-}
-.bodyMainHeadSecondLine:after {
-    /*background: -webkit-linear-gradient(#c70062, #c70062);*/
-    /*-webkit-text-fill-color: transparent;*/
-    /*-webkit-background-clip: text;*/
-    content: " .";
 }
 .bodyMainHeadText {
     /*border: 2px dashed green;*/
@@ -174,15 +182,10 @@
     font-weight: 300;
     font-family: 'Noto Sans JP', sans-serif;
     letter-spacing: 0.05rem;
-    color: #eaeded;
+    color: #772583;
     width: 40vw;
     text-align: left;
     height: auto;
-}
-.bodyMainHeadText:after {
-    content: " .";
-    color: #c70062;
-    font-size: 20px;
 }
 .coverFooterContainer {
     /*flex: 2;*/
@@ -253,8 +256,8 @@
     background-size: cover;
 }
 .footerBlockReadText {
-    align-self: flex-end;
-    margin: 0 2.3rem 0 0;
+    align-self: center;
+    margin: 1rem 2.3rem 0 0;
     font-size: 15px;
     color: #c70062;
     font-family: 'Roboto', sans-serif;
@@ -354,7 +357,7 @@
     .coverContainer {
         height: 80vh;
         width: 100vw;
-        background-color: #070723;
+        background: #070723;
         margin: 0 0 10rem 0;
         display:  flex;
         flex-direction: column;

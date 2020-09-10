@@ -1,11 +1,15 @@
 import React from "react";
 import hubStyles from "../../../styles/StyleHub.module.css";
-import Footer from "../../../components/indexNew/footer"
 
 
 const Malabar = () => {
   return (
     <div className={hubStyles.container}>
+
+      <div className={hubStyles.header}>
+        <h1 className={hubStyles.gradientText}>IEEE MALABAR HUB</h1>
+      </div>
+
 
       <div className={hubStyles.cardsWrapper}>
 
@@ -121,7 +125,6 @@ const Malabar = () => {
         </div>
 
       </div>
-      <Footer />
     </div>
 
   );

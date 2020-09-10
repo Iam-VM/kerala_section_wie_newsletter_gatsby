@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import interviewStyles from "../../styles/emiyano.module.css";
 import Aos from "aos";
-import Footer from "../../components/indexNew/footer"
+
 
 const EmiYano = () => {
   useEffect(() => {
@@ -138,7 +138,6 @@ const EmiYano = () => {
       <div style = {{marginTop: '5rem', marginBottom: '2rem'}}>
       </div>
 
-      <Footer />
     </div>
   );
 };
