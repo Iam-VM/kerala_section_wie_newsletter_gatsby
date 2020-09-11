@@ -34,14 +34,14 @@ const SideNavBar = (props) => {
           <FaFortAwesomeAlt className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>TH Report</div>
         </div></Link>
-        <Link to={'/activities'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
+        <Link to={'/activities/ks'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
           <RiProfileLine className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>Professional Activities</div>
         </div></Link>
-        <Link to={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
+        <div className={sideNavBarStyles.navBarItemContainer} onClick={props.scrollToMeetTheWieTeam}>
           <RiTeamFill className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>Meet the WIE Team</div>
-        </div></Link>
+        </div>
         <div onClick={() => {window.scrollTo({top: document.body.scrollHeight, behaviour: 'smooth'});}} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
           <RiGatsbyFill className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>Developers</div>
@@ -50,11 +50,11 @@ const SideNavBar = (props) => {
       <div className={sideNavBarStyles.underline}>
       </div>
       <div className={sideNavBarStyles.listContainer}>
-        <a href={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
+        <a href={'https://www.ieee.org'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
           <FcEngineering className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>IEEE</div>
         </div></a>
-        <a href={'#'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
+        <a href={'https://wie.ieee.org'} className={`linkWrap`} style={{width: '100%'}}><div className={sideNavBarStyles.navBarItemContainer}>
           <GiSwordwoman className={sideNavBarStyles.icon} />
           <div className={sideNavBarStyles.itemName}>Women In Engineering</div>
         </div></a>

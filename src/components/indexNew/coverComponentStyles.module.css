@@ -41,6 +41,8 @@
     font-size: 25px;
 }
 .verticalNavBarBottomButtonContainer {
+	height: 20%;
+	width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -48,9 +50,12 @@
     margin-bottom: 2rem;
 }
 .verticalNavBarBottomButton {
-    font-size: 20px;
+	font-size: 23px;
+	-webkit-tap-highlight-color: transparent;
+	margin-top: auto;
+	margin-bottom: auto;
     color: #772583;
-    margin-bottom: 1rem;
+    transition: 0.5s all;
 }
 .coverBody {
     /*border: 2px solid rebeccapurple;*/
@@ -73,6 +78,7 @@
     height: 100px;
 }
 .horizontalNavBarNameElementLeft {
+    cursor: pointer;
     /*border: 2px solid orange;*/
     margin-left: 2rem;
     /*margin-bottom: 4px;*/
@@ -108,7 +114,7 @@
     color: #c70062;
 }
 .horizontalNavBarButtonsContainer {
-    width: 70%;
+    width: 80%;
     /*border: 1px solid rebeccapurple;*/
     display: flex;
     flex-direction: row;
@@ -139,6 +145,8 @@
     align-items: center;
 }
 .womanImage {
+	width: auto;
+	max-height: 60%;
     /*border: 2px solid red;*/
     margin: -5% 0 0 0;
 }
@@ -256,9 +264,9 @@
     background-size: cover;
 }
 .footerBlockReadText {
+	cursor: pointer;
     align-self: center;
     margin: 1rem 2.3rem 0 0;
-    font-size: 15px;
     color: #c70062;
     font-family: 'Roboto', sans-serif;
 }
@@ -570,7 +578,6 @@
         height: 150px;
         width: 75%;
         margin: 12vh 0 0 0;
-        /*border: 2px solid crimson;*/
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -584,7 +591,6 @@
     }
     .footerBlockHeadMobile {
         text-align: center;
-        /*border: 2px solid cyan;*/
         letter-spacing: 0.15rem;
         color: #eaeded;
         font-family: 'Bebas Neue', cursive;
@@ -596,7 +602,6 @@
         font-size: 25px;
     }
     .footerBlockTextMobile {
-        /*border: 2px dashed green;*/
         margin: 0.5rem 0 0 0;
         font-size: 14px;
         text-align: center;

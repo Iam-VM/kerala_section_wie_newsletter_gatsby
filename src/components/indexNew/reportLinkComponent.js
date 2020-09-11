@@ -4,12 +4,12 @@ import LinkComponent from "./LinkComponent";
 import reportLinkStyles from "./reportLinksAndLink.module.css";
 import Aos from "aos";
 
-const HubReportLinksComponent = () => {
+const HubReportLinksComponent = (props) => {
   useEffect(() => {
     Aos.init()
   }, []);
   return (
-    <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1500"  className={reportLinkStyles.reportLinksContainer}>
+    <div ref={props.reportsRef} data-aos-once="true" data-aos="fade-up" data-aos-duration="1500"  className={reportLinkStyles.reportLinksContainer}>
       <div className={reportLinkStyles.linkReportHeadContainer}>
         <div className={reportLinkStyles.headText}>Reports</div>
         <div className={reportLinkStyles.headContentText}>Lorem Ipsum is simply dummy text of the printing</div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import {Link} from "gatsby";
+import {Link, navigate} from "gatsby";
 import coverStyles from "./coverComponentStyles.module.css";
 import {AiFillInstagram, AiFillFacebook, AiFillCode, AiOutlineArrowRight} from "react-icons/ai";
 import {BiMenuAltRight} from "react-icons/bi";
@@ -11,7 +11,7 @@ import SideNavBar from "./sideNavBar";
 
 
 let i = 0;
-const Cover = () => {
+const Cover = (props) => {
   const [footerNumber, setFooterNumber] = useState(i);
   const [hamburgerButtonClicked, setHamburgerButtonClicked] = useState(false);
   const [pageLoading, setPageLoading] = useState(true);
@@ -24,10 +24,6 @@ const Cover = () => {
     }, 4000);
     return () => clearTimeout(timer);
   });
-
-  const scrollToWelcomeNote = () => {
-    window.scrollBy({top: document.documentElement.clientHeight - window.scrollY + 50, behavior: 'smooth'});
-  };
 
 
   return (
@@ -46,7 +42,7 @@ const Cover = () => {
       </div>
       <div className={coverStyles.coverBody}>
         <div className={coverStyles.horizontalNavBarContainer}>
-          <div className={coverStyles.horizontalNavBarNameElementLeft}>
+          <div className={coverStyles.horizontalNavBarNameElementLeft} onClick={() => {navigate('/')}}>
             {/*<img src={'/wieTeam.png'} alt={"ECHOES"} className={coverStyles.horizontalNavBarTextLogoImage}/>*/}
             <div className={coverStyles.horizontalNavBarNameElementLeftHead}>ECHOES</div>
             <div className={coverStyles.horizontalNavBarHeadText}>Lorem Ipsum is simply</div>
@@ -72,21 +68,21 @@ const Cover = () => {
             <div className={coverStyles.bodyMainHeadHead}>Reports .</div>
             {/*<div className={`${coverStyles.bodyMainHeadHead} ${coverStyles.bodyMainHeadSecondLine}`}>Ipsum Lorem</div>*/}
             <div className={coverStyles.bodyMainHeadText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-            <Link to={"#"} className={`${coverStyles.footerBlockReadText} linkWrap`}><div className={coverStyles.arrow}><BsThreeDots /></div></Link>
+            <div className={`${coverStyles.footerBlockReadText} ${coverStyles.arrow}`} onClick={props.scrollToReports}><BsThreeDots /></div>
           </div> : null
         }
         {(footerNumber === 1)? <div className={coverStyles.bodyMainHeadContainer}>
             <div className={coverStyles.bodyMainHeadHead}>Interview</div>
             <div className={`${coverStyles.bodyMainHeadHead} ${coverStyles.bodyMainHeadSecondLine}`}>With Emi Yano</div>
             <div className={coverStyles.bodyMainHeadText}>Discover what <span className={coverStyles.bold}>Emi Yano</span> has to tell us.</div>
-            <Link to={"#"} className={`${coverStyles.footerBlockReadText} linkWrap`}><div className={coverStyles.arrow}><BsThreeDots /></div></Link>
+            <Link to={"/interview/emiyano"} className={`${coverStyles.footerBlockReadText} linkWrap`}><div className={coverStyles.arrow}><BsThreeDots /></div></Link>
           </div> : null
         }
         {(footerNumber === 2)? <div className={coverStyles.bodyMainHeadContainer}>
             <div className={coverStyles.bodyMainHeadHead}>Meet</div>
             <div className={`${coverStyles.bodyMainHeadHead} ${coverStyles.bodyMainHeadSecondLine}`}>the WIE Team</div>
             <div className={coverStyles.bodyMainHeadText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-            <Link to={"#"} className={`${coverStyles.footerBlockReadText} linkWrap`}><div className={coverStyles.arrow}><BsThreeDots /></div></Link>
+            <div className={`${coverStyles.footerBlockReadText} ${coverStyles.arrow}`} onClick={props.scrollToMeetTheWieTeam}><BsThreeDots /></div>
           </div> : null
         }
         <img src={'/wie-logo-cropped.png'} alt={'WIE woman'} className={coverStyles.womanImage} />
@@ -117,9 +113,9 @@ const Cover = () => {
         </div>
       </div>
       {/*entirely for mobile*/}
-      {(hamburgerButtonClicked)?<SideNavBar active={true} />:<SideNavBar active={false} pageLoading={pageLoading} />}
+      {(hamburgerButtonClicked)?<SideNavBar active={true} scrollToMeetTheWieTeam={props.scrollToMeetTheWieTeam} />:<SideNavBar active={false} pageLoading={pageLoading} />}
       <div className={coverStyles.navBarContainerMobile}>
-        <div className={coverStyles.echoesHeadMobile}>
+        <div className={coverStyles.echoesHeadMobile} onClick={() => {navigate('/')}}>
           <div className={coverStyles.echoesTextMobile}>Echo<span className={coverStyles.pink}>es</span></div>
           <div className={coverStyles.echoesHeadByLine}>Lorem Ipsum is simply</div>
         </div>
@@ -140,7 +136,7 @@ const Cover = () => {
       {(footerNumber === 0)?<div className={`${coverStyles.footerContainerMobile}`}>
         <div className={coverStyles.footerBlockHeadMobile}>Reports</div>
         <div className={coverStyles.footerBlockTextMobile}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-        <Link to={"#"} className={`${coverStyles.footerBlockReadTextMobile} linkWrap`}><div className={coverStyles.arrowMobile}><BsThreeDots /></div></Link>
+        <div className={coverStyles.arrowMobile} onClick={props.scrollToReports}><BsThreeDots /></div>
       </div> : null
       }
       {(footerNumber === 1)?<div className={`${coverStyles.footerContainerMobile}`}>
@@ -152,7 +148,7 @@ const Cover = () => {
       {(footerNumber === 2)?<div className={`${coverStyles.footerContainerMobile}`}>
         <div className={coverStyles.footerBlockHeadMobile}>Meet The WIE Team</div>
         <div className={`${coverStyles.footerBlockTextMobile}`}>Lorem Ipsum is simply dummy text <span className={coverStyles.bold}>WIE Team.</span></div>
-        <Link to={"#"} className={`${coverStyles.footerBlockReadTextMobile} linkWrap`}><div className={coverStyles.arrowMobile}><BsThreeDots /></div></Link>
+        <div className={coverStyles.arrowMobile} onClick={props.scrollToMeetTheWieTeam}><BsThreeDots /></div>
       </div> : null
       }
 
@@ -163,7 +159,7 @@ const Cover = () => {
       </div>
 
 
-      <div className={coverStyles.goDownMobileContainer} onClick={scrollToWelcomeNote}>
+      <div className={coverStyles.goDownMobileContainer} onClick={props.scrollToWelcomeNote}>
         <MdKeyboardArrowDown />
       </div>
     </div>

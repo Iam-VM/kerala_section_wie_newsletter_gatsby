@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import indexStyles from "../styles/index.module.css";
 import teamStyles from "../styles/teams.module.css";
 
@@ -16,6 +16,9 @@ import Footer from "../components/indexNew/footer";
 import BestWishes from "../components/indexNew/bestWishes";
 
 
+const scrollToComponent = (ref) => {
+  window.scrollTo({top: ref.current.offsetTop, behavior: 'smooth'} );
+};
 
 const NewIndexPage = () => {
 
@@ -24,11 +27,15 @@ const NewIndexPage = () => {
     Aos.init()
   }, []);
 
+  const meetTheWieTeamRef = useRef(null);
+  const reportsRef = useRef(null);
+  const welcomeNoteRef = useRef(null);
+
 
   return (
     <div className={indexStyles.main} >
-      <Cover />
-      <WelcomeNote />
+      <Cover scrollToMeetTheWieTeam={() => scrollToComponent(meetTheWieTeamRef)} scrollToReports={() => scrollToComponent(reportsRef)} scrollToWelcomeNote={() => scrollToComponent(welcomeNoteRef)} />
+      <WelcomeNote welcomeNoteRef={welcomeNoteRef} />
       <FromTheWieChairsDesk />
       <div className={indexStyles.textContentBodyContainer}>
         <ParaBlock headPart1={"About IEEE"} headPart2={"WOMEN IN ENGINEERING"} para={["IEEE Women in Engineering (WIE) is a global network of IEEE members and volunteers dedicated to promoting\n" +
@@ -43,8 +50,8 @@ const NewIndexPage = () => {
       <AchievementsComponent />
       <BestWishes />
       {/*<ProActivities />*/}
-      <HubReportLinksComponent />
-      <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1500"  className={teamStyles.container}>
+      <HubReportLinksComponent reportsRef={reportsRef} />
+      <div ref={meetTheWieTeamRef} data-aos-once="true" data-aos="fade-up" data-aos-duration="1500"  className={teamStyles.container}>
         <div className={teamStyles.teamHeadContainer}>
           <div className={teamStyles.teamHeadText}>WIE Team</div>
           <div className={teamStyles.headByLine}>Lorem Ipsum is simply dummy text</div>
