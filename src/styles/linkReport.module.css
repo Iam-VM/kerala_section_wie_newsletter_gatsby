@@ -1,0 +1,125 @@
+.first{
+    width: 100%;
+    margin: auto;
+}
+.intro{
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    background: url("/linkreportshead.jpg") no-repeat 50% 50%;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+.intro .inner{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+.content{
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+
+}
+.content  {
+    font-family: 'Bebas Neue',cursive;
+    color: #bf084e;
+    text-shadow: 0px 0px 300px #000;
+    font-size: 400%;
+}
+.content {
+    color: #000;
+    font-size: 250%;
+    font-family: 'Bebas Neue',cursive;
+
+}
+.btn{
+    font-family: 'Bebas Neue',cursive;
+    color: #f9f3f4;
+    font-size: 140%;
+    padding: 10px 20px;
+    background-color: #16094e;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color:#09093d83;
+}
+.container{
+    margin: 2rem 8vw 3rem 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.ieeeLinkHeadDegreeTwo {
+    align-self: center;
+    margin: 4rem 0;
+    font-size: 250%;
+    color: #2a2a56;
+    font-family: 'Bebas Neue',cursive;
+}
+.para{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+    background-color: #bedaec3b;
+    text-align: center;
+}
+.eventHead {
+    text-align: left;
+    margin: 3rem 0 2rem 2rem ;
+    letter-spacing: 0.04rem;
+    align-self:flex-start;
+    color: #2a2a56;
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+}
+.date {
+    text-align: left;
+    margin: 0 0 0.5rem 2rem;
+    color: #333333;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+.participants {
+    margin: 0 0 2rem 2rem;
+    color: #333333;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+.paraTag {
+    font-size: 15px;
+    color: #333333;
+    margin: 0 3rem 4rem 2rem;
+    align-self: flex-start;
+    text-align:justify;
+    font-family: 'Noto Sans SC',sans-serif;
+}
+.listElement {
+    color: #212121;
+    display: block;
+}
+@media screen and (max-width:768px){
+    .content{
+        margin-left: 3%;
+    }
+    .content {
+        font-size: 300%;
+    }
+    .content {
+        font-size: 195%;
+    }
+    .btn{
+        font-size: 120%;
+        padding: 8px 16px;
+    }
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

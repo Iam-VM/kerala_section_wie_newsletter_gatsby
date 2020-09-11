@@ -34,8 +34,6 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  /*background-image: url('/background.jpg');*/
-  background-color: #d3e0d6;
   background-repeat: no-repeat;
   /*background-attachment: fixed;*/
   background-size: cover;
@@ -103,7 +101,7 @@ a {
   height: 10em;
   width: 10em;
   font-size: 1em;
-  color: black;
+  color: #333333;
   /*border-radius: 1em;*/
   padding: 1em;
   /*margin: 2em;*/
@@ -115,7 +113,7 @@ a {
   transition: var(--transition-time);
   position: relative;
   overflow: hidden;
-  /*border: 10px solid #ccc;*/
+  border: 10px solid #ccc;
   background-color: white;
   vertical-align: center;
   text-decoration: none;
@@ -196,10 +194,6 @@ a {
   .cardsWrapper {
     grid-template-columns: 1fr;
   }
-
-  .header{
-    padding: 18.5rem 2rem;
-  }
 /*  .card-grid-space .num {
     /margin-left: 0;
     /text-align: center;
@@ -207,9 +201,6 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-  .header{
-    padding: 18.5rem 3rem;
-  }
   .cardsWrapper {
     padding: 4rem 2rem;
   }

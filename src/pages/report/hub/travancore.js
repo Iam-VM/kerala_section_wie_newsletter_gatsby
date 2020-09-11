@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react"
 import hubStyles from "../../../styles/StyleHub.module.css";
+import Aos from "aos"
 
 
 
 const Travancore = () => {
+
+  useEffect(() => {
+    Aos.init()
+  }, []);
+  
+  
   return (
 
     <div className={hubStyles.container}>
@@ -16,7 +23,7 @@ const Travancore = () => {
       <div className={hubStyles.cardsWrapper}>
 
         <div>
-          <a className={hubStyles.card} href={"/travancore-hub/lbs-institute-of-technology-for-women"}
+          <a data-aos-once="true" data-aos="fade-up" data-aos-duration="800"  className={hubStyles.card} href={"/travancore-hub/lbs-institute-of-technology-for-women"}
              style={{textDecoration:  'none', borderRadius: '50% 20% / 10% 40%'}}>
             <div>
               <h1>Lal Bahadur Shastri Institute of Technology</h1>
@@ -25,7 +32,7 @@ const Travancore = () => {
         </div>
 
         <div>
-          <a className={hubStyles.card} href={"/travancore-hub/government-engineering-college-barton-hill"}
+          <a data-aos-once="true" data-aos="fade-up" data-aos-duration="800"  className={hubStyles.card} href={"/travancore-hub/government-engineering-college-barton-hill"}
              style={{textDecoration:  'none', borderRadius: '50% 20% / 10% 40%'}}>
             <div>
               <h1>Government College of Engineering, Barton Hill</h1>
@@ -34,7 +41,7 @@ const Travancore = () => {
         </div>
 
         <div>
-          <a className={hubStyles.card} href={"/travancore-hub/sree-chitra-thirunal-college of-engineering"}
+          <a data-aos-once="true" data-aos="fade-up" data-aos-duration="800"  className={hubStyles.card} href={"/travancore-hub/sree-chitra-thirunal-college of-engineering"}
              style={{textDecoration:  'none', borderRadius: '50% 20% / 10% 40%'}}>
             <div>
               <h1>Shree Chitra Thirunal College of Engineering</h1>
@@ -44,7 +51,7 @@ const Travancore = () => {
 
 
         <div>
-          <a className={hubStyles.card} href={"/travancore-hub/ukf-college-of-engineering-and-technology"}
+          <a data-aos-once="true" data-aos="fade-up" data-aos-duration="800"  className={hubStyles.card} href={"/travancore-hub/ukf-college-of-engineering-and-technology"}
              style={{textDecoration:  'none', borderRadius: '50% 20% / 10% 40%'}}>
             <div>
               <h1>UKF College of Engineering and Technology</h1>
@@ -54,7 +61,7 @@ const Travancore = () => {
 
 
         <div>
-          <a className={hubStyles.card} href={"/travancore-hub/mar-baselios-college-of-engineering"}
+          <a data-aos-once="true" data-aos="fade-up" data-aos-duration="800"  className={hubStyles.card} href={"/travancore-hub/mar-baselios-college-of-engineering"}
              style={{textDecoration:  'none', borderRadius: '50% 20% / 10% 40%'}}>
             <div>
               <h1>MB College of Engineering and Technology</h1>
@@ -63,7 +70,7 @@ const Travancore = () => {
         </div>
 
         <div>
-          <a className={hubStyles.card} href={"/travancore-hub/tkmit"}
+          <a data-aos-once="true" data-aos="fade-up" data-aos-duration="800"  className={hubStyles.card} href={"/travancore-hub/tkmit"}
              style={{textDecoration:  'none', borderRadius: '50% 20% / 10% 40%'}}>
             <div>
               <h1>Thangal Kunju Musaliar Institute of Technology</h1>
@@ -73,7 +80,7 @@ const Travancore = () => {
 
 
         <div>
-          <a className={hubStyles.card} href={"/travancore-hub/tkm-college-of-engineering"}
+          <a data-aos-once="true" data-aos="fade-up" data-aos-duration="800"  className={hubStyles.card} href={"/travancore-hub/tkm-college-of-engineering"}
              style={{textDecoration:  'none', borderRadius: '50% 20% / 10% 40%'}}>
             <div>
               <h1>TKM College of Engineering</h1>
@@ -82,7 +89,7 @@ const Travancore = () => {
         </div>
 
         <div>
-          <a className={hubStyles.card} href={"/travancore-hub/college-of-engineering-trivandrum"}
+          <a data-aos-once="true" data-aos="fade-up" data-aos-duration="800"  className={hubStyles.card} href={"/travancore-hub/college-of-engineering-trivandrum"}
              style={{textDecoration:  'none', borderRadius: '50% 20% / 10% 40%'}}>
             <div>
               <h1>College of Engineering Trivandrum</h1>
@@ -91,7 +98,7 @@ const Travancore = () => {
         </div>
 
         <div>
-          <a className={hubStyles.card} href={"/travancore-hub/college-of-engineering-perumon"}
+          <a data-aos-once="true" data-aos="fade-up" data-aos-duration="800"  className={hubStyles.card} href={"/travancore-hub/college-of-engineering-perumon"}
              style={{textDecoration:  'none', borderRadius: '50% 20% / 10% 40%'}}>
             <div>
               <h1>College of Engineering Perumon</h1>

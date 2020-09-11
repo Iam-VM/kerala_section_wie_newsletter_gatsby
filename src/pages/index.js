@@ -53,6 +53,18 @@ const NewIndexPage = () => {
       <HubReportLinksComponent reportsRef={reportsRef} />
       <div ref={meetTheWieTeamRef} data-aos-once="true" data-aos="fade-up" data-aos-duration="1500"  className={teamStyles.container}>
         <div className={teamStyles.teamHeadContainer}>
+          <div className={teamStyles.teamHeadText}>EXECOM</div>
+          <div className={teamStyles.headByLine}>IEEE Kerala Section WIE AG Execom</div>
+        </div>
+        <div className={teamStyles.creditImagesComponentContainer} style={{alignSelf: 'center'}}>
+          <CreditImagesComponent imgSrc={"/team/wie-ks-chair.jpeg"} name={"Mini Ulanat"} designation={"Chair"} />
+          <CreditImagesComponent imgSrc={"/team/meenakshy.jpg"} name={"Meenakshi Kurup"} designation={"Vice Chair"} />
+          <CreditImagesComponent imgSrc={"/team/deepa.jpeg"} name={"Deepa A K"} designation={"Secratary"} />
+        </div>
+      </div>
+      <div className={teamStyles.space}> </div>
+      <div ref={meetTheWieTeamRef} data-aos-once="true" data-aos="fade-up" data-aos-duration="1500"  className={teamStyles.container}>
+        <div className={teamStyles.teamHeadContainer}>
           <div className={teamStyles.teamHeadText}>WIE Team</div>
           <div className={teamStyles.headByLine}>Lorem Ipsum is simply dummy text</div>
         </div>
