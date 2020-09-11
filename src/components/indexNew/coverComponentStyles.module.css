@@ -391,6 +391,7 @@
         align-items: center;
     }
     .hamburgerButtonMobile {
+        -webkit-tap-highlight-color: transparent;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -404,6 +405,7 @@
         color: #eaeded;
     }
     .hamburgerIcon {
+        -webkit-tap-highlight-color: transparent;
         cursor: pointer;
         border-radius: 3px;
     }
@@ -475,6 +477,7 @@
     }
 
     .socialButton {
+        -webkit-tap-highlight-color: transparent;
         margin: 3px 0 0 0;
         align-self: center;
         color: #eaeded;
