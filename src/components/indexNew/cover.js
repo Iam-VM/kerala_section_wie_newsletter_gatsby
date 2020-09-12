@@ -34,8 +34,8 @@ const Cover = (props) => {
       <div className={coverStyles.verticalNavBarContainer}>
         <div className={coverStyles.verticalContainerTopIconContainer}><BiMenuAltRight className={coverStyles.verticalContainerMenuIcon}/></div>
         <div className={coverStyles.verticalNavBarBottomButtonContainer}>
-          <a href={"https://www.instagram.com/ieeekerala/"} className={`${coverStyles.verticalNavBarBottomButton} linkWrap`}><AiFillInstagram /></a>
-          <a href={"https://www.linkedin.com/company/ieeekerala/"} className={`${coverStyles.verticalNavBarBottomButton} linkWrap`}><AiFillLinkedin /></a>
+          <a href={"https://www.instagram.com/ieeekerala/"}  target={"_blank"} className={`${coverStyles.verticalNavBarBottomButton} linkWrap`}><AiFillInstagram /></a>
+          <a href={"https://www.linkedin.com/company/ieeekerala/"}  target={"_blank"} className={`${coverStyles.verticalNavBarBottomButton} linkWrap`}><AiFillLinkedin /></a>
           <div onClick={() => {window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})}} className={`${coverStyles.verticalNavBarBottomButton} linkWrap`}><FaDev /></div>
         </div>
       </div>
@@ -152,8 +152,8 @@ const Cover = (props) => {
       }
 
       <div className={coverStyles.socialButtonsMobileContainer}>
-        <a href={"https://www.instagram.com/ieeekerala/"} className={`${coverStyles.socialButton} linkWrap`}><AiFillInstagram /></a>
-        <a href={"https://www.linkedin.com/company/ieeekerala/"} className={`${coverStyles.socialButton} linkWrap`}><AiFillLinkedin /></a>
+        <a href={"https://www.instagram.com/ieeekerala/"} target={"_blank"} className={`${coverStyles.socialButton} linkWrap`}><AiFillInstagram /></a>
+        <a href={"https://www.linkedin.com/company/ieeekerala/"} target={"_blank"} className={`${coverStyles.socialButton} linkWrap`}><AiFillLinkedin /></a>
         <div onClick={()=>{window.scrollTo({top: document.body.scrollHeight, behaviour: 'smooth'})}} className={`${coverStyles.socialButton} linkWrap`}><FaDev /></div>
       </div>
 

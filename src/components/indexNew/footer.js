@@ -27,8 +27,8 @@ const Footer = () => {
       <div className={footerStyles.verticalSocialMediaContainer}>
         <div className={footerStyles.followText}>follow us on</div>
         <div className={footerStyles.verticalSocialButtonsContainer}>
-          <a href={"https://www.instagram.com/ieeekerala/"} className={`${footerStyles.socialButton} linkWrap`}><AiFillInstagram /></a>
-          <a href={"https://www.linkedin.com/company/ieeekerala/"} className={`${footerStyles.socialButton} linkWrap`}><AiFillLinkedin /></a>
+          <a href={"https://www.instagram.com/ieeekerala/"} target={"_blank"} className={`${footerStyles.socialButton} linkWrap`}><AiFillInstagram /></a>
+          <a href={"https://www.linkedin.com/company/ieeekerala/"} target={"_blank"} className={`${footerStyles.socialButton} linkWrap`}><AiFillLinkedin /></a>
         </div>
       </div>
     </div>

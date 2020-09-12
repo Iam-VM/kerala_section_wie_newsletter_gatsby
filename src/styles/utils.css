@@ -24,11 +24,17 @@ body, html {
     text-decoration: none;
     outline: none;
 }
-.linkWrap:hover {
-    text-decoration: none;
-    color: #2a2a56;
+
+@media only screen and (min-width: 768px) {
+    .linkWrap:hover {
+        text-decoration: none;
+        color: #2a2a56;
+    }
+    .linkWrap:active {
+        text-decoration: none;
+        color: #2a2a56;
+    }
 }
-.linkWrap:active {
-    text-decoration: none;
-    color: #2a2a56;
-}
+
+
+
