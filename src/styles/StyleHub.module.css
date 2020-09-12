@@ -113,7 +113,7 @@ a {
   transition: var(--transition-time);
   position: relative;
   overflow: hidden;
-  border: 10px solid #ccc;
+  border: 3px solid #ccc;
   background-color: white;
   vertical-align: center;
   text-decoration: none;
