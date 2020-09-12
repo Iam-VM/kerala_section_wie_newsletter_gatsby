@@ -116,7 +116,7 @@ const Cover = (props) => {
       {(hamburgerButtonClicked)?<SideNavBar active={true} scrollToMeetTheWieTeam={props.scrollToMeetTheWieTeam} />:<SideNavBar active={false} pageLoading={pageLoading} />}
       <div className={coverStyles.navBarContainerMobile}>
         <div className={coverStyles.echoesHeadMobile} onClick={() => {navigate('/')}}>
-          <div className={coverStyles.echoesTextMobile}>Echoes</div>
+          <div className={coverStyles.echoesTextMobile}><span style={{color: '#eaeded'}}>Ech</span>oes</div>
           <div className={coverStyles.echoesHeadByLine}>Voice of WIE</div>
         </div>
         <div className={coverStyles.hamburgerButtonMobile}><BiMenuAltRight style={(hamburgerButtonClicked)?{backgroundColor: `#333333`}:{}} className={coverStyles.hamburgerIcon} onClick={() => {
