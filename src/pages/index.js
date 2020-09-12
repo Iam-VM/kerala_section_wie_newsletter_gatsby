@@ -99,7 +99,7 @@ const NewIndexPage = () => {
       <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1500"  className={teamStyles.container}>
         <div className={teamStyles.teamHeadContainer}>
           <div className={teamStyles.teamHeadText}>Content Team</div>
-          <div className={teamStyles.headByLine}>The minds that connate the painting of the voice</div>
+          <div className={teamStyles.headByLine}>The minds that made magic with their words</div>
         </div>
         <div className={teamStyles.creditImagesComponentContainer}>
           <CreditImagesComponent imgSrc={"/team/contentTeam/Akshara Bruno IEEE SCT SB.jpg"} name={"Akshara Bruno"} collegeName={"SCT"} />
