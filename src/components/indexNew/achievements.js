@@ -15,7 +15,7 @@ const AchievementsComponent = () => {
     <div data-aos-once="true" data-aos="fade-up" data-aos-duration="800"  className={`${teamStyles.container} ${achievementStyles.container}`}>
       <div className={teamStyles.teamHeadContainer}>
         <div className={teamStyles.teamHeadText}>Achievements</div>
-        <div className={teamStyles.headByLine}>Lorem Ipsum is simply dummy text</div>
+        <div className={teamStyles.headByLine}>Proud of our accomplishments and continual efforts</div>
       </div>
       <div className={achievementStyles.achievementsContainer}>
         <div className={achievementStyles.achievement}>

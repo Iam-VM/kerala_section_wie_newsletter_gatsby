@@ -66,7 +66,7 @@ const NewIndexPage = () => {
       <div ref={meetTheWieTeamRef} data-aos-once="true" data-aos="fade-up" data-aos-duration="1500"  className={teamStyles.container}>
         <div className={teamStyles.teamHeadContainer}>
           <div className={teamStyles.teamHeadText}>WIE Team</div>
-          <div className={teamStyles.headByLine}>Lorem Ipsum is simply dummy text</div>
+          <div className={teamStyles.headByLine}>Coordinators leading our WIE community</div>
         </div>
         <div className={teamStyles.creditImagesComponentContainer}>
           <CreditImagesComponent imgSrc={"/team/wieTeam/Ameera Sherin.jpg"} name={"Ameera Sherin"} designation={"Link WIE Coordinator"} />
@@ -79,7 +79,7 @@ const NewIndexPage = () => {
       <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1500"  className={teamStyles.container}>
         <div className={teamStyles.teamHeadContainer}>
           <div className={teamStyles.teamHeadText}>Design Team</div>
-          <div className={teamStyles.headByLine}>Lorem Ipsum is simply dummy text</div>
+          <div className={teamStyles.headByLine}>Team behind the creative vision of Echoes</div>
         </div>
         <div className={teamStyles.creditImagesComponentContainer}>
           <CreditImagesComponent imgSrc={"/team/designTeam/ANJANA S IEEE SB CE,PERUMON.jpg"} name={"Anjana S"} collegeName={"CE, Perumon"} />
@@ -94,7 +94,7 @@ const NewIndexPage = () => {
       <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1500"  className={teamStyles.container}>
         <div className={teamStyles.teamHeadContainer}>
           <div className={teamStyles.teamHeadText}>Content Team</div>
-          <div className={teamStyles.headByLine}>Lorem Ipsum is simply dummy text</div>
+          <div className={teamStyles.headByLine}>The minds that connate the painting of the voice</div>
         </div>
         <div className={teamStyles.creditImagesComponentContainer}>
           <CreditImagesComponent imgSrc={"/team/contentTeam/Akshara Bruno IEEE SCT SB.jpg"} name={"Akshara Bruno"} collegeName={"SCT"} />

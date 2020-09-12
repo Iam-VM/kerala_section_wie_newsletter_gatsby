@@ -12,7 +12,7 @@ const HubReportLinksComponent = (props) => {
     <div ref={props.reportsRef} data-aos-once="true" data-aos="fade-up" data-aos-duration="1500"  className={reportLinkStyles.reportLinksContainer}>
       <div className={reportLinkStyles.linkReportHeadContainer}>
         <div className={reportLinkStyles.headText}>Reports</div>
-        <div className={reportLinkStyles.headContentText}>Lorem Ipsum is simply dummy text of the printing</div>
+        <div className={reportLinkStyles.headContentText}>Synopsis of the activities partaken under the flag of WIE</div>
       </div>
       <div className={reportLinkStyles.linkContainer}>
         <Link to={"/report/link/ks"} className={`linkWrap ${reportLinkStyles.linkWrapLinkReports}`}><LinkComponent hubName={"LINK"} hubNameSize={'20px'} /></Link>

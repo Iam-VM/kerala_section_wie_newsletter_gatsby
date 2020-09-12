@@ -11,7 +11,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div data-aos-once="true" data-aos="zoom-out" data-aos-duration="1000" className={footerStyles.footerContainer}>
+    <div data-aos-once="true" data-aos="fade-down" data-aos-duration="1000" className={footerStyles.footerContainer}>
       <div className={footerStyles.devNamesContainer}>
         <div className={footerStyles.devNamesHeadContainer}>
           <div className={footerStyles.devHead}>Dev</div>
