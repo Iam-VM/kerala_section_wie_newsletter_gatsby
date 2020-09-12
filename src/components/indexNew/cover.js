@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react"
 import {Link, navigate} from "gatsby";
 import coverStyles from "./coverComponentStyles.module.css";
-import {AiFillInstagram, AiFillFacebook, AiFillCode, AiOutlineArrowRight} from "react-icons/ai";
+import {AiFillInstagram, AiFillLinkedin} from "react-icons/ai";
 import {BiMenuAltRight} from "react-icons/bi";
-import {RiArrowDropDownFill} from "react-icons/ri";
 import {BsThreeDots} from "react-icons/bs";
 import {FaDev} from "react-icons/fa";
 import {MdKeyboardArrowDown} from "react-icons/md";
@@ -35,8 +34,8 @@ const Cover = (props) => {
       <div className={coverStyles.verticalNavBarContainer}>
         <div className={coverStyles.verticalContainerTopIconContainer}><BiMenuAltRight className={coverStyles.verticalContainerMenuIcon}/></div>
         <div className={coverStyles.verticalNavBarBottomButtonContainer}>
-          <a href={"#"} className={`${coverStyles.verticalNavBarBottomButton} linkWrap`}><AiFillInstagram /></a>
-          <a href={"#"} className={`${coverStyles.verticalNavBarBottomButton} linkWrap`}><AiFillFacebook /></a>
+          <a href={"https://www.instagram.com/ieeekerala/"} className={`${coverStyles.verticalNavBarBottomButton} linkWrap`}><AiFillInstagram /></a>
+          <a href={"https://www.linkedin.com/company/ieeekerala/"} className={`${coverStyles.verticalNavBarBottomButton} linkWrap`}><AiFillLinkedin /></a>
           <div onClick={() => {window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})}} className={`${coverStyles.verticalNavBarBottomButton} linkWrap`}><FaDev /></div>
         </div>
       </div>
@@ -153,8 +152,8 @@ const Cover = (props) => {
       }
 
       <div className={coverStyles.socialButtonsMobileContainer}>
-        <a href={"#"} className={`${coverStyles.socialButton} linkWrap`}><AiFillInstagram /></a>
-        <a href={"#"} className={`${coverStyles.socialButton} linkWrap`}><AiFillFacebook /></a>
+        <a href={"https://www.instagram.com/ieeekerala/"} className={`${coverStyles.socialButton} linkWrap`}><AiFillInstagram /></a>
+        <a href={"https://www.linkedin.com/company/ieeekerala/"} className={`${coverStyles.socialButton} linkWrap`}><AiFillLinkedin /></a>
         <div onClick={()=>{window.scrollTo({top: document.body.scrollHeight, behaviour: 'smooth'})}} className={`${coverStyles.socialButton} linkWrap`}><FaDev /></div>
       </div>
 

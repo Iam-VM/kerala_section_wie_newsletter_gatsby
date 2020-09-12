@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import footerStyles from "./footer.module.css";
-import { AiFillFacebook, AiFillInstagram } from "react-icons/ai"
+import { AiFillLinkedin, AiFillInstagram } from "react-icons/ai"
 import Aos from "aos";
 
 
@@ -27,8 +27,8 @@ const Footer = () => {
       <div className={footerStyles.verticalSocialMediaContainer}>
         <div className={footerStyles.followText}>follow us on</div>
         <div className={footerStyles.verticalSocialButtonsContainer}>
-          <a href={"#"} className={`${footerStyles.socialButton} linkWrap`}><AiFillInstagram /></a>
-          <a href={"#"} className={`${footerStyles.socialButton} linkWrap`}><AiFillFacebook /></a>
+          <a href={"https://www.instagram.com/ieeekerala/"} className={`${footerStyles.socialButton} linkWrap`}><AiFillInstagram /></a>
+          <a href={"https://www.linkedin.com/company/ieeekerala/"} className={`${footerStyles.socialButton} linkWrap`}><AiFillLinkedin /></a>
         </div>
       </div>
     </div>

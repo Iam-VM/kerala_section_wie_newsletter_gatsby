@@ -60,6 +60,11 @@ const NewIndexPage = () => {
           <CreditImagesComponent imgSrc={"/team/wie-ks-chair.jpeg"} name={"Mini Ulanat"} designation={"Chair"} />
           <CreditImagesComponent imgSrc={"/team/meenakshy.jpg"} name={"Meenakshi Kurup"} designation={"Vice Chair"} />
           <CreditImagesComponent imgSrc={"/team/deepa.jpeg"} name={"Deepa A K"} designation={"Secratary"} />
+          <CreditImagesComponent imgSrc={"/team/ieee-ks-chair.jpg"} name={"Saradha Jayakrishnan"} designation={" "} />
+          <CreditImagesComponent imgSrc={"/team/bijuna kunju.jpeg"} name={"Dr. Bijuna Kunju"} designation={" "} />
+          <CreditImagesComponent imgSrc={"/team/sunitha beevi.jpeg"} name={"Sunitha Beevi"} designation={" "} />
+          <CreditImagesComponent imgSrc={"/team/priyanka chandran.jpeg"} name={"Priyanka Chandran"} designation={" "} />
+          <CreditImagesComponent imgSrc={"/team/jiby krishna.jpeg"} name={"Jiby Krishnan"} designation={" "} />
         </div>
       </div>
       <div className={teamStyles.space}> </div>

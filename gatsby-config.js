@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Wie AG Kerala Section Newsletter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `Iam-VM`,
+    title: `WIE Echoes`,
+    description: `WIE Echoes - Newsletter of IEEE Women In Engineering (WIE) Affinity Group (AG) Kerala Section (KS).`,
+    author: `Vishnu Mohanan aka Iam-VM`,
     theme: `#070723`,
   },
   plugins: [
@@ -33,7 +33,7 @@ module.exports = {
         background_color: `#070723`,
         theme_color: `#070723`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/echoes-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
