@@ -1,10 +1,11 @@
-import React, { useEffect } from "react"
+import React, { useEffect } from "react";
+import {Link} from 'gatsby';
 import footerStyles from "./footer.module.css";
 import { AiFillLinkedin, AiFillInstagram } from "react-icons/ai"
 import Aos from "aos";
 
 
-const Footer = () => {
+const Footer = (props) => {
 
   useEffect(() => {
     Aos.init()
@@ -17,7 +18,7 @@ const Footer = () => {
           <div className={footerStyles.devHead}>Dev</div>
         </div>
         <div className={footerStyles.devNamesListContainer}>
-          <div className={footerStyles.devName}>Aysha Rasheed</div>
+          <div className={footerStyles.devName}>Aysha C M</div>
           <div className={footerStyles.devName}>Greeshma Thankachan</div>
           <div className={footerStyles.devName}>Neema Francis</div>
           <div className={footerStyles.devName}>Vishnu Mohanan</div>
