@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import {Link} from 'gatsby';
 import footerStyles from "./footer.module.css";
 import { AiFillLinkedin, AiFillInstagram } from "react-icons/ai"
 import Aos from "aos";
